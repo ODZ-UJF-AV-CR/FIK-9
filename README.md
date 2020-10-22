@@ -1,8 +1,13 @@
-# TF-B1
-high-altitude balloon experimental platform
+# FIK-6
+Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech Academy of Sciences high-altitude balloon experiment
 
 
 ![Block diagram](doc/img/block_schematics.png)
+
+### Scientific payload
+
+  * Iontometer
+  * AIRDOS dosimeters
 
 ### Design features 
 
