@@ -1,0 +1,3 @@
+[submodule "cad/src/telemetry_helix/gondola_helix"]
+	path = cad/src/telemetry_helix/gondola_helix
+	url = https://github.com/ODZ-UJF-AV-CR/QFH-Antenna.git
