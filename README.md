@@ -9,6 +9,14 @@ Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech 
   * Iontometer
   * AIRDOS dosimeters
 
+
+### Supporting instruments
+
+  * Relative humidity sensor
+  * Temperature sensor
+  * Precise barometer
+  * Spheric (360 deg) camera
+
 ### Design features 
 
   * Redundant telemetry link 
