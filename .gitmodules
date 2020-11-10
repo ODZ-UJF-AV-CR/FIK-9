@@ -4,3 +4,6 @@
 [submodule "doc/LION2CELL01"]
 	path = doc/LION2CELL01
 	url = https://github.com/mlab-modules/LION2CELL01
+[submodule "doc/Nicoll_GT"]
+	path = doc/Nicoll_GT
+	url = https://github.com/Sommema4/Nicoll_GT.git
