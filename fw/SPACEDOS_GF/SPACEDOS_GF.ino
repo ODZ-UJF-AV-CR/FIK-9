@@ -1,9 +1,14 @@
+
 #define DEBUG // Please comment it if you are not debugging
-String githash = "0766a8b";
+String githash = "9e0caba";
 String FWversion = "GF6";
+
+#define ZERO 257  // 5th channel is channel 1 (column 10 from 0, ussually DCoffset or DCoffset+1)
 
 /*
   SPACEDOS for Balloon Fik-6 with GPS
+ 
+3 month endurance with LS 33600 = 7.6 mA
 
 ISP
 ---
@@ -26,12 +31,7 @@ RESET  0   PB0
 
 LED
 ---
-LED_red  23  PC7         // LED for Dasa
-
-Time Synchronisation
---------------------
-SYNC0   18  PC2
-SYNC1   19  PC3
+LED_yellow  23  PC7         // LED for Dasa
 
 
                      Mighty 1284p    
@@ -71,37 +71,31 @@ boolean SDClass::begin(uint32_t clock, uint8_t csPin) {
 #include <SD.h>             // Revised version from MightyCore
 #include "wiring_private.h"
 #include <Wire.h>           
-#include "src/RTCx/RTCx.h"  // Modified version icluded
-#include <Adafruit_MPL3115A2.h>
+#include "src/RTCx/RTCx.h"  // Modified version included
 #include <avr/wdt.h>
 
-#define LED_red   23   // PC7
-#define RESET     0    // PB0
-#define GPSpower  26   // PA2
-#define SDpower1  1    // PB1
-#define SDpower2  2    // PB2
-#define SDpower3  3    // PB3
-#define SS        4    // PB4
-#define MOSI      5    // PB5
-#define MISO      6    // PB6
-#define SCK       7    // PB7
-#define INT       20   // PC4
-#define SYNC0     18   // PC2
-#define SYNC1     19   // PC3
+#define LED_yellow  23   // PC7
+#define RESET       0    // PB0
+#define SDpower1    1    // PB1
+#define SDpower2    2    // PB2
+#define SDpower3    3    // PB3
+#define SS          4    // PB4
+#define MOSI        5    // PB5
+#define MISO        6    // PB6
+#define SCK         7    // PB7
+#define INT         20   // PC4
 
-
-#define CHANNELS 512    // number of channels in buffer for histogram, including negative numbers
-#define GPSerror 700000 // number of cycles for waitig for GPS in case of GPS error 
-#define GPSdelay 5      // number of measurements between obtaining GPS position
-#define TRESHOLD 3*GPSdelay  // ionising radiation flux treshold for obtaining GPS position
+#define CHANNELS 512 // number of channels in buffer for histogram, including negative numbers
+#define GPSerror 100000 // number of cycles for waitig for GPS in case of GPS error 
+#define GPSdelay 20     // number of measurements between obtaining GPS position
 
 uint16_t count = 0;
 uint32_t serialhash = 0;
-uint16_t offset, base_offset;
+uint16_t offset;
+uint16_t base_offset = ZERO - 1;
 uint8_t lo, hi;
 uint16_t u_sensor, maximum;
 struct RTCx::tm tm;
-Adafruit_MPL3115A2 sensor = Adafruit_MPL3115A2();
 
 // Read Analog Differential without gain (read datashet of ATMega1280 and ATMega2560 for refference)
 // Use analogReadDiff(NUM)
@@ -127,30 +121,8 @@ uint8_t analog_reference = INTERNAL2V56; // DEFAULT, INTERNAL, INTERNAL1V1, INTE
 
 void setup()
 {
-  //pinMode(SDpower1, OUTPUT);  // SDcard interface
-  //pinMode(SDpower2, OUTPUT);     
-  //pinMode(SDpower3, OUTPUT);     
-  //pinMode(SS, OUTPUT);     
-  //pinMode(MOSI, INPUT);     
-  //pinMode(MISO, INPUT);     
-  //pinMode(SCK, OUTPUT);  
-  //pinMode(RESET, OUTPUT);   // reset signal for peak detetor
 
-  DDRB = 0b10011110;   // SDcard Power OFF
-  PORTB = 0b00000001;  
-  DDRA = 0b11111100;
-  PORTA = 0b00000000;  // Initiating ports
-  DDRC = 0b11101100;
-  PORTC = 0b00000000;  
-  DDRD = 0b11111100;
-  PORTD = 0b00000000;  
-
-  //watchdog enable
-  wdt_enable(WDTO_8S);
-
-  Wire.setClock(100000);
-
-  // Open serial communications
+  // Open serial communications and wait for port to open:
   Serial.begin(9600);
 
   Serial.println("#Cvak...");
@@ -160,53 +132,69 @@ void setup()
   ADCSRB = 0;               // Switching ADC to Free Running mode
   sbi(ADCSRA, ADATE);       // ADC autotrigger enable (mandatory for free running mode)
   sbi(ADCSRA, ADSC);        // ADC start the first conversions
-  sbi(ADCSRA, 2);           // 0x100 = clock divided by 16, 1 MHz, 13 us for 13 cycles of one AD conversion, 24 us fo 1.5 cycle for sample-hold
+  sbi(ADCSRA, 2);           // 0x100 = clock divided by 16, 62.5 kHz, 208 us for 13 cycles of one AD conversion, 24 us fo 1.5 cycle for sample-hold
   cbi(ADCSRA, 1);        
   cbi(ADCSRA, 0);        
 
-  pinMode(LED_red, OUTPUT);
-  digitalWrite(LED_red, LOW);  
+  pinMode(RESET, OUTPUT);   // reset for peak detetor
+
+  //pinMode(SDpower1, OUTPUT);  // SDcard interface
+  //pinMode(SDpower2, OUTPUT);     
+  //pinMode(SDpower3, OUTPUT);     
+  //pinMode(SS, OUTPUT);     
+  //pinMode(MOSI, INPUT);     
+  //pinMode(MISO, INPUT);     
+  //pinMode(SCK, OUTPUT);  
+
+  DDRB = 0b10011110;
+  PORTB = 0b00000000;  // SDcard Power OFF
+
+  DDRA = 0b11111100;
+  PORTA = 0b00000000;  // SDcard Power OFF
+  DDRC = 0b11101100;
+  PORTC = 0b00000000;  // SDcard Power OFF
+  DDRD = 0b11111100;
+  PORTD = 0b00000000;  // SDcard Power OFF
+
+  //watchdog enable
+  wdt_enable(WDTO_8S);
+
+  pinMode(LED_yellow, OUTPUT);
+  digitalWrite(LED_yellow, LOW);  
   digitalWrite(RESET, LOW);  
   
+  //!!! Wire.setClock(100000);
+
   for(int i=0; i<5; i++)  
   {
     delay(50);
-    digitalWrite(LED_red, HIGH);  // Blink for Dasa 
+    digitalWrite(LED_yellow, HIGH);  // Blink for Dasa 
     delay(50);
-    digitalWrite(LED_red, LOW);  
+    digitalWrite(LED_yellow, LOW);  
   }
 
   Serial.println("#Hmmm...");
 
   // make a string for device identification output
-  String dataString = "$AIRDOS," + FWversion + "," + githash + ","; // FW version and Git hash
+  String dataString = "$AIRDOS," + FWversion + "," + String(ZERO) + "," + githash + ","; // FW version and Git hash
+  
+  Wire.beginTransmission(0x58);                   // request SN from EEPROM
+  Wire.write((int)0x08); // MSB
+  Wire.write((int)0x00); // LSB
+  Wire.endTransmission();
+  Wire.requestFrom((uint8_t)0x58, (uint8_t)16);    
+  for (int8_t reg=0; reg<16; reg++)
+  { 
+    uint8_t serialbyte = Wire.read(); // receive a byte
+    if (serialbyte<0x10) dataString += "0";
+    dataString += String(serialbyte,HEX);    
+    serialhash += serialbyte;
+  }
 
-  if (digitalRead(17)) // Protection against sensor mallfunction 
-  {
-    Wire.beginTransmission(0x58);                   // request SN from EEPROM
-    Wire.write((int)0x08); // MSB
-    Wire.write((int)0x00); // LSB
-    Wire.endTransmission();
-    Wire.requestFrom((uint8_t)0x58, (uint8_t)16);    
-    for (int8_t reg=0; reg<16; reg++)
-    { 
-      uint8_t serialbyte = Wire.read(); // receive a byte
-      if (serialbyte<0x10) dataString += "0";
-      dataString += String(serialbyte,HEX);    
-      serialhash += serialbyte;
-    }
-  }
-  else
-  {
-    dataString += "NaN";    
-  }
-    
   {
     DDRB = 0b10111110;
     PORTB = 0b00001111;  // SDcard Power ON
-
-    delay(1000);
-    
+  
     // make sure that the default chip select pin is set to output
     // see if the card is present and can be initialized:
     if (!SD.begin(SS)) 
@@ -226,16 +214,16 @@ void setup()
       dataFile.println(dataString);  // write to SDcard (800 ms)     
       dataFile.close();
   
-      digitalWrite(LED_red, HIGH);  // Blink for Dasa
+      digitalWrite(LED_yellow, HIGH);  // Blink for Dasa
       Serial.println(dataString);  // print SN to terminal 
-      digitalWrite(LED_red, LOW);          
+      digitalWrite(LED_yellow, LOW);          
     }  
     // if the file isn't open, pop up an error:
     else 
     {
       Serial.println("#error opening datalog.txt");
     }
-    
+  
     DDRB = 0b10011110;
     PORTB = 0b00000001;  // SDcard Power OFF          
   }    
@@ -269,50 +257,24 @@ void setup()
   } else {
     u_sensor -= (CHANNELS / 2);
   }
-  //base_offset = u_sensor;
-  base_offset = 256;
 
-  if (digitalRead(17)) // Protection against sensor mallfunction 
-  {
-    // Initiation of RTC
-    rtc.autoprobe();  
-    rtc.resetClock();
-  }
-  
-  // Initiation of GPS
-  {
-    // Switch off Galileo and GLONASS; UBX-CFG-GNSS (6)+4+8*7+(2)=68 configuration bytes
-    const char cmd[68]={0xB5, 0x62, 0x06, 0x3E, 0x3C, 0x00, 0x00, 0x20, 0x20, 0x07, 0x00, 0x08, 0x10, 0x00, 0x01, 0x00, 0x01, 0x01, 0x01, 0x01, 0x03, 0x00, 0x01, 0x00, 0x01, 0x01, 0x02, 0x04, 0x08, 0x00, 0x00, 0x00, 0x01, 0x01, 0x03, 0x08, 0x10, 0x00, 0x00, 0x00, 0x01, 0x01, 0x04, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x03, 0x05, 0x00, 0x03, 0x00, 0x00, 0x00, 0x01, 0x05, 0x06, 0x08, 0x0E, 0x00, 0x00, 0x00, 0x01, 0x01, 0x53, 0x1F};
-    for (int n=0;n<(68);n++) Serial.write(cmd[n]); 
-  }          
-  {
-    // airborne <2g; UBX-CFG-NAV5 (6)+36+(2)=44 configuration bytes
-    const char cmd[44]={0xB5, 0x62 ,0x06 ,0x24 ,0x24 ,0x00 ,0xFF ,0xFF ,0x07 ,0x03 ,0x00 ,0x00 ,0x00 ,0x00 ,0x10 ,0x27 , 0x00 ,0x00 ,0x05 ,0x00 ,0xFA ,0x00 ,0xFA ,0x00 ,0x64 ,0x00 ,0x5E ,0x01 ,0x00 ,0x3C ,0x00 ,0x00 , 0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x00 ,0x85 ,0x2A};
-    for (int n=0;n<(44);n++) Serial.write(cmd[n]); 
-  }
-  {
-    // switch to UTC time; UBX-CFG-RATE (6)+6+(2)=14 configuration bytes
-    const char cmd[14]={0xB5 ,0x62 ,0x06 ,0x08 ,0x06 ,0x00 ,0xE8 ,0x03 ,0x01 ,0x00 ,0x00 ,0x00 ,0x00 ,0x37};
-    for (int n=0;n<(14);n++) Serial.write(cmd[n]); 
-  }
-
-  randomSeed(0); // Initiation of random numbers for time synchronisation
+  // Initiates RTC
+  rtc.autoprobe();
+  rtc.resetClock();
 
   wdt_reset(); //Reset WDT
 }
 
+
 void loop()
 {
-  uint16_t buffer[CHANNELS];
-  uint32_t flux;
+  uint16_t histogram[CHANNELS];
 
-  uint32_t flux_long = 0;
-
-  for(int i=0; i<(GPSdelay); i++)  // measurements between GPS aquisition
+  for(int ii=0; ii<(GPSdelay); ii++)  // measurements between GPS aquisition
   {
     for(int n=0; n<CHANNELS; n++)
     {
-      buffer[n]=0;
+      histogram[n]=0;
     }
   
     // measurement of ADC offset
@@ -333,10 +295,9 @@ void loop()
     ADCSRB = 0;               // Switching ADC to Free Running mode
     sbi(ADCSRA, ADATE);       // ADC autotrigger enable (mandatory for free running mode)
     sbi(ADCSRA, ADSC);        // ADC start the first conversions
-    sbi(ADCSRA, 2);           // 0x110 = clock divided by 64, 250 kHz, 52 us for 13 cycles of one AD conversion, cca 8 us fo 1.5 cycle for sample-hold
-    sbi(ADCSRA, 1);        
+    sbi(ADCSRA, 2);           // 0x100 = clock divided by 16, 62.5 kHz, 208 us for 13 cycles of one AD conversion, 24 us fo 1.5 cycle for sample-hold
+    cbi(ADCSRA, 1);        
     cbi(ADCSRA, 0);        
-    //sbi(ADCSRA, 0);        
     // combine the two bytes
     u_sensor = (hi << 7) | (lo >> 1);
     // manage negative values
@@ -365,15 +326,27 @@ void loop()
     sbi(ADCSRA, ADIF);                  // reset interrupt flag from ADC
     
     // dosimeter integration
-    for (uint32_t i=0; i<65535*2; i++)    // cca 8 s
+    for (uint16_t i=0; i<46000; i++)    // cca 10 s
     {
       wdt_reset(); //Reset WDT
 
       while (bit_is_clear(ADCSRA, ADIF)); // wait for end of conversion 
-      delayMicroseconds(8); // wait for 1.5 cycle of ADC clock for sample/hold for next conversion
+      //delayMicroseconds(24);            // 24 us wait for 1.5 cycle of 62.5 kHz ADC clock for sample/hold for next conversion
+      asm("NOP");                         // cca 8 us after loop
+      asm("NOP");                         
+      asm("NOP");                         
+      asm("NOP");                         
+      asm("NOP");                         
+      asm("NOP");                         
+      
       DDRB = 0b10011111;                  // Reset peak detector
-      delayMicroseconds(2);              
+      asm("NOP");                         // cca 7 us for 2k2 resistor and 100n capacitor in peak detector
+      asm("NOP");                         
+      asm("NOP");                         
+      asm("NOP");                         
+      asm("NOP");                         
       DDRB = 0b10011110;
+      sbi(ADCSRA, ADIF);                  // reset interrupt flag from ADC
   
       // we have to read ADCL first; doing so locks both ADCL
       // and ADCH until ADCH is read.  reading ADCL second would
@@ -381,93 +354,66 @@ void loop()
       // as ADCL and ADCH would be locked when it completed.
       lo = ADCL;
       hi = ADCH;
-      sbi(ADCSRA, ADIF);                  // reset interrupt flag from ADC
   
       // combine the two bytes
       u_sensor = (hi << 7) | (lo >> 1);
+  
       // manage negative values
       if (u_sensor <= (CHANNELS/2)-1 ) {u_sensor += (CHANNELS/2);} else {u_sensor -= (CHANNELS/2);}
-      
-      buffer[u_sensor]++;
-    }  
-    
-    // Data out
-    flux = 0;
-    {
-      // make a string for assembling the data to log:
-      String dataString = "";
-      
-      if (digitalRead(17)) // Protection against sensor mallfunction 
+                
+      if (u_sensor > maximum) // filter double detection for pulses between two samples
       {
-        rtc.readClock(tm);
-        RTCx::time_t t = RTCx::mktime(&tm);
-      
-        // make a string for assembling the data to log:
-        dataString += "$CANDY,";
-    
-        dataString += String(count); 
-        dataString += ",";
-      
-        dataString += String(t-946684800); 
-        dataString += ",";
-  
-        int8_t rnd = random(256);     
-        digitalWrite(SYNC0,bitRead(rnd,0));    // Output Time to synchronisation bits
-        digitalWrite(SYNC1,bitRead(rnd,1));
-        dataString += String(rnd & 3);
-        dataString += ",";
-
-        if (! sensor.begin()) 
-        {
-          dataString += "NaN,NaN,";
-        }
-        else
-        {
-          float pressure = sensor.getPressure();
-          dataString += String(pressure); 
-          dataString += ",";
-      
-          float temperature = sensor.getTemperature();
-          dataString += String(temperature); 
-          dataString += ",";
-        }  
+        maximum = u_sensor;
+        suppress++;
       }
       else
       {
-        dataString += "Error,";
+        histogram[maximum]++;
+        maximum = 0;
       }
-      
-      uint16_t noise = base_offset+14; // first channel for flux calculation
+    }  
+    
+    // Data out
+    {
+      rtc.readClock(tm);
+      RTCx::time_t t = RTCx::mktime(&tm);
+  
+      uint16_t noise = base_offset+4;
+      uint32_t dose=0;
       #define RANGE 252
-      
+  
       for(int n=noise; n<(base_offset+RANGE); n++)  
       {
-        flux += buffer[n]; 
+        dose += histogram[n]; 
       }
   
+      // make a string for assembling the data to log:
+      String dataString = "";
+      
+      // make a string for assembling the data to log:
+      dataString += "$CANDY,";
+      dataString += String(count); 
+      dataString += ",";  
+      dataString += String(t-946684800); 
+      dataString += ",";
       dataString += String(suppress);
       dataString += ",";
-      dataString += String(flux);
+      dataString += String(dose);
       dataString += ",";
       dataString += String(offset);
-
+      
       for(int n=base_offset; n<(base_offset+RANGE); n++)  
       {
         dataString += ",";
-        dataString += String(buffer[n]); 
-        //dataString += "\t";
-        //if (n==NOISE) dataString += "*,";
+        dataString += String(histogram[n]); 
       }
-       
+      
       count++;
-
-      flux_long = flux_long + flux;
-    
-     //if (flux>TRESHOLD)
-     {
+  
+      {
         DDRB = 0b10111110;
         PORTB = 0b00001111;  // SDcard Power ON
-
+  
         // make sure that the default chip select pin is set to output
         // see if the card is present and can be initialized:
         if (!SD.begin(SS)) 
@@ -476,7 +422,7 @@ void loop()
           // don't do anything more:
           return;
         }
-
+  
         // open the file. note that only one file can be open at a time,
         // so you have to close this one before opening another.
         File dataFile = SD.open("datalog.txt", FILE_WRITE);
@@ -484,9 +430,9 @@ void loop()
         // if the file is available, write to it:
         if (dataFile) 
         {
-          //digitalWrite(LED_red, HIGH);  // Blink for Dasa
+          //digitalWrite(LED_yellow, HIGH);  // Blink for Dasa
           dataFile.println(dataString);  // write to SDcard (800 ms)     
-          //digitalWrite(LED_red, LOW);          
+          //digitalWrite(LED_yellow, LOW);          
           dataFile.close();
         }  
         // if the file isn't open, pop up an error:
@@ -496,33 +442,28 @@ void loop()
         }
   
         DDRB = 0b10011110;
-        PORTB = 0b00000001;  // SDcard Power OFF  
+        PORTB = 0b00000001;  // SDcard Power OFF
+  
+  #ifdef DEBUG
+  #else
+        dataString.remove(75); 
+  #endif
+        digitalWrite(LED_yellow, HIGH);  // Blink for Dasa
+        Serial.println(dataString);  // print to terminal (additional 700 ms in DEBUG mode)
+        digitalWrite(LED_yellow, LOW);          
       }          
-
-#ifdef DEBUG
-#else
-      dataString.remove(75); 
-#endif
-
-      digitalWrite(LED_red, HIGH);  // Blink for Dasa
-      Serial.println(dataString);   // print to terminal (additional 700 ms in DEBUG mode)
-      digitalWrite(LED_red, LOW);                
-    }    
-  }
+    }
+  } 
 
   wdt_reset(); //Reset WDT
 
   // GPS **********************
-//  if (flux_long>TRESHOLD)
-//  if (false)
   {
       // make a string for assembling the data to log:
       String dataString = "";
 
 #define MSG_NO 12    // number of logged NMEA messages
 
-    digitalWrite(GPSpower, HIGH); // GPS Power ON
-    delay(100);
     // flush serial buffer
     while (Serial.available()) Serial.read();
 
@@ -536,13 +477,16 @@ void loop()
     boolean flag = false;
     messages = 0;
     nomessages = 0;
+
     while(true)
     {
+
       if (Serial.available()) 
       {
+        
         // read the incoming byte:
         incomingByte = Serial.read();
-        nomessages = 0;
+        //nomessages = 0;
         
         if (incomingByte == '$') {flag = true; messages++;};
         if (messages > MSG_NO)
@@ -561,10 +505,10 @@ void loop()
       else
       {
         nomessages++;  
+        wdt_reset(); //Reset WDT
         if (nomessages > GPSerror) break; // preventing of forever waiting
       }
     }
-    digitalWrite(GPSpower, LOW); // GPS Power OFF
 
     {
         DDRB = 0b10111110;
@@ -586,9 +530,7 @@ void loop()
         // if the file is available, write to it:
         if (dataFile) 
         {
-          digitalWrite(LED_red, HIGH);  // Blink for Dasa
           dataFile.println(dataString); // write to SDcard (800 ms)     
-          digitalWrite(LED_red, LOW);          
           dataFile.close();
         }  
         // if the file isn't open, pop up an error:
@@ -605,4 +547,5 @@ void loop()
     wdt_reset(); //Reset WDT
 #endif
   }
+     
 }

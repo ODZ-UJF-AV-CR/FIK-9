@@ -1,5 +1,5 @@
-#define DEBUG // Please comment it if you are not debugging
-String githash = "0766a8b";
+//#define DEBUG // Please comment it if you are not debugging
+String githash = "9e0caba";
 String FWversion = "NF6";
 
 /*
