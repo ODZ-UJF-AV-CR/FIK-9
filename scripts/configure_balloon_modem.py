@@ -33,7 +33,7 @@ def settings():
 	enter_at_mode(r1)
 	query(r1, b"")
 	query(r1, b"ATS0=26")
-	query(r1, b"ATS1=57")
+	query(r1, b"ATS1=9")
 	query(r1, b"ATS2=2") 	# [2, 4, 8, 16, 19, 24, 32, 64, 96, 128, 192, 250]
 	query(r1, b"ATS3=25")
 	query(r1, b"ATS4=20")
