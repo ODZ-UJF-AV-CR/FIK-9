@@ -1,9 +1,11 @@
 // FIK 6 balloon flight secondary LoRa beacon firmware
 // Derived from basicmac's usage example.
 //
-// Compilation with -D MOCK disables most of the code 
-// and only prints produced messages after reading in
-// sequence of mock NMEA messages.
+// Compilation with -D MOCK disables most of the code and can
+// be used for testing outside of Arduino. If the flag is passed,
+// the code reads in a sequence of mock NMEA messages and prints
+// the produced message payloads, which would otherwise be transmitted
+// over LoRa, on the standard output (hex-encoded).
 
 // ATMEL ATMEGA1284P
 //
@@ -34,7 +36,7 @@
 // SX1262_RST, 0, PB0
 // SX1262_DIO3, 3, PB3
 // SX1262_BUSY, 2, PB2
-// NSS, 4, PB4 
+// CS, 4, PB4
 // MOSI, 5, PB5
 // MISO, 6, PB6
 // SCK, 7, PB7
