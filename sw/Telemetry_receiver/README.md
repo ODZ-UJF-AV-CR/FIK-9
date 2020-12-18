@@ -20,6 +20,14 @@ The software needs a hardware radio modem.  The modem is accessed trought an ser
 
     python habitat_uploader.py /dev/ttyUSB0 rover_calsign
 
+### Program launch TTN
+
+The software needs acces to [TTN LoRa application](https://www.thethingsnetwork.org/docs/applications/). Then the code could be executed by runnig following command: 
+
+    python habitat_uploader.py lora TTN_LoRa
+
+The application hashes should be updated in the code. 
+
 ### Program launch with QGC (Mavlink UDP)
     
     mavlink-routered -c mavlink.conf
