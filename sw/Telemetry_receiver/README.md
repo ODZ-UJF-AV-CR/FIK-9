@@ -24,7 +24,7 @@ The software needs a hardware radio modem.  The modem is accessed trought an ser
 
 The software needs acces to [TTN LoRa application](https://www.thethingsnetwork.org/docs/applications/). Then the code could be executed by runnig following command: 
 
-    python habitat_uploader.py lora TTN_LoRa
+    python habitat_uploader.py lora TTN_LoRa_primary
 
 The application hashes should be updated in the code. 
 
