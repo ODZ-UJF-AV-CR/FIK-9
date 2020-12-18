@@ -7,3 +7,6 @@
 [submodule "doc/Nicoll_GT"]
 	path = doc/Nicoll_GT
 	url = https://github.com/Sommema4/Nicoll_GT.git
+[submodule "sw/autopilot/PX4Firmware"]
+	path = sw/autopilot/PX4Firmware
+	url = git@github.com:ThunderFly-aerospace/PX4Firmware.git
