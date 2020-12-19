@@ -5,7 +5,7 @@ import time
 import random
 import sys
 
-r1 = serial.Serial("/dev/ttyUSB0", baudrate=57600, timeout=0)
+r1 = serial.Serial("/dev/ttyUSB0", baudrate=9600, timeout=0)
 
 def query(r, cmd):
 	r.write(cmd + b"\r")
@@ -36,8 +36,8 @@ def settings():
 	query(r1, b"ATS1=9")
 	query(r1, b"ATS2=2") 	# [2, 4, 8, 16, 19, 24, 32, 64, 96, 128, 192, 250]
 	query(r1, b"ATS3=25")
-	query(r1, b"ATS4=20")
-	query(r1, b"ATS5=1")
+	query(r1, b"ATS4=127")
+	query(r1, b"ATS5=0")
 	query(r1, b"ATS6=1")		 ## 1 - mavlink activated
 	query(r1, b"ATS7=0")
 	query(r1, b"ATS8=434050")
@@ -48,7 +48,7 @@ def settings():
 	query(r1, b"ATS13=0")
 	query(r1, b"ATS14=0")
 	query(r1, b"ATS15=131")
-	query(r1, b"ATS16=0")
+	query(r1, b"ATS16=1")
 	query(r1, b"AT&W")
 	query(r1, b"ATZ")
 	time.sleep(0.5)
