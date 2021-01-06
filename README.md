@@ -6,6 +6,7 @@ Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech 
 
 ![Block diagram](doc/img/block_schematics.png)
 
+
 ### Scientific payload
 
   * Iontometer
@@ -27,3 +28,16 @@ Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech 
   * Possible of use relative high-power payloads
   * Pre-flight continuous charging possible
   * Power monitoring and maximal uptime calculation relevant to actual temperature
+
+### Flight data
+
+
+![Balloon burst at 33 km amsl](doc/img/balloon_burst.JPG)
+
+![Data measured by dosimeters](doc/img/dosimeters_data.png)
+
+
+
+### Links
+
+  * https://www.facebook.com/balonfik/

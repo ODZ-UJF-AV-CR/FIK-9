@@ -10,3 +10,9 @@
 [submodule "sw/autopilot/PX4Firmware"]
 	path = fw/Autopilot/PX4Firmware
 	url = git@github.com:ThunderFly-aerospace/PX4Firmware.git
+[submodule "fw/Autopilot/px4_lora"]
+	path = fw/Autopilot/px4_lora
+	url = git@github.com:povik/px4_lora.git
+[submodule "fw/SiK"]
+	path = fw/SiK
+	url = https://github.com/ThunderFly-aerospace/SiK.git
