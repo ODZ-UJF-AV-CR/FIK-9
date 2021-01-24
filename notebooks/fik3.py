@@ -272,6 +272,7 @@ def read_airdos_ff_log(filename, mergeruns=False):
 
     # Převrátí uspořádání vnořených polí
     ret = tuple(zip(*ret))
+    
 
     if mergeruns:
         return tuple(map(pd.concat, ret))
