@@ -1,5 +1,5 @@
 # FIK-6
-Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech Academy of Sciences high-altitude balloon experiment
+[Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech Academy of Sciences](http://www.ujf.cas.cz/en/departments/department-of-radiation-dosimetry/contact/) high-altitude balloon experiment
 
 ![FIK-6 gondola pre-flight test weight](doc/img/FIK-6_gondola_weight.jpg)
 
@@ -41,4 +41,4 @@ Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech 
 
 ### Links
 
-  * https://www.facebook.com/balonfik/
+  * [Facebook](https://www.facebook.com/balonfik/)
