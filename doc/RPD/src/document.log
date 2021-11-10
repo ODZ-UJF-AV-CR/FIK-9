@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  10 NOV 2021 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  11 NOV 2021 00:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -204,33 +204,69 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 25.
+(Font)              size <6> substituted on input line 26.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 25.
+(Font)              size <6> substituted on input line 26.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 25.
+(Font)              size <6> substituted on input line 26.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [1
+)
+Underfull \hbox (badness 3396) in paragraph at lines 31--36
+\OT1/ptm/m/n/9 maximum varies with geomagnetic vertical cutoff
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 31--36
+\OT1/ptm/m/n/9 at various locations in the word, mainly using
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 31--36
+\OT1/ptm/m/n/9 sensors measuring temperature, pressure, humidity,
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 31--36
+\OT1/ptm/m/n/9 project PX4 and supplemented with an IoT LoRa
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 31--36
+\OT1/ptm/m/n/9 Si-diode based detector SPACEDOSSpacedos, and
+ []
+
+
+Overfull \vbox (3.94676pt too high) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 41--43
+\OT1/ptm/m/n/9 During the first measurements, the construction of
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 Non-PDF special ignored!
 <special> color push
 Non-PDF special ignored!
@@ -265,6 +301,162 @@ Non-PDF special ignored!
 <special> color gray 0
 Non-PDF special ignored!
 <special> color pop
+]
+Underfull \hbox (badness 2452) in paragraph at lines 47--48
+[]\OT1/ptm/m/n/9 Reliable transmission of information about the
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 52--53
+[]\OT1/ptm/m/n/9 Due to the fact that since the first flight there
+ []
+
+
+Underfull \hbox (badness 2213) in paragraph at lines 52--53
+\OT1/ptm/m/n/9 were various partial shortcomings and despite the
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 54--55
+[]\OT1/ptm/m/n/9 An overall overview of the success of the used
+ []
+
+
+Underfull \hbox (badness 5147) in paragraph at lines 58--60
+\OT1/ptm/m/n/9 of supplementary tools have undergone intensive
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 73--74
+\OT1/ptm/m/n/9 parts of avionics are completely separate from the
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 73--74
+\OT1/ptm/m/n/9 system of detectors, simplified the realization of
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 73--74
+\OT1/ptm/m/n/9 next balloon flights. It reduced the complexity of
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 73--74
+\OT1/ptm/m/n/9 connecting different types of detectors and at the
+ []
+
+! Missing endcsname inserted.
+<to be read again> 
+                   hss 
+l.107 \includegraphics
+                      {fig02.eps}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> csnameendcsname\hss .eps\endcsname 
+                                              
+l.107 \includegraphics
+                      {fig02.eps}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<argument> .../csnameendcsname\hss .eps\endcsname 
+                                                  \@gobble 
+l.107 \includegraphics
+                      {fig02.eps}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing endcsname inserted.
+<to be read again> 
+                   hss 
+l.107 \includegraphics
+                      {fig02.eps}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> csnameendcsname\hss .ps\endcsname 
+                                             
+l.107 \includegraphics
+                      {fig02.eps}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<argument> ...o/csnameendcsname\hss .ps\endcsname 
+                                                  \@gobble 
+l.107 \includegraphics
+                      {fig02.eps}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing endcsname inserted.
+<to be read again> 
+                   hss 
+l.107 \includegraphics
+                      {fig02.eps}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> csnameendcsname\hss .pcx\endcsname 
+                                              
+l.107 \includegraphics
+                      {fig02.eps}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<argument> .../csnameendcsname\hss .pcx\endcsname 
+                                                  \@gobble 
+l.107 \includegraphics
+                      {fig02.eps}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing endcsname inserted.
+<to be read again> 
+                   hss 
+l.107 \includegraphics
+                      {fig02.eps}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> csnameendcsname\hss .bmp\endcsname 
+                                              
+l.107 \includegraphics
+                      {fig02.eps}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+<argument> .../csnameendcsname\hss .bmp\endcsname 
+                                                  \@gobble 
+l.107 \includegraphics
+                      {fig02.eps}
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! LaTeX Error: File `\hss ' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 \includegraphics
+                      {fig02.eps}
+I could not locate the file with any of these extensions:
+.eps,.ps,.pcx,.bmp
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (7.69041pt too wide) in paragraph at lines 136--137
+\OT1/ptm/m/n/9 The project was supported from SGS20/181/OHK3/3T/13. 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2
 Non-PDF special ignored!
 <special> color push
 Non-PDF special ignored!
@@ -283,7 +475,48 @@ Non-PDF special ignored!
 <special> color gray 0
 Non-PDF special ignored!
 <special> color pop
-] [2
+Non-PDF special ignored!
+<special> color push
+Non-PDF special ignored!
+<special> color gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push
+Non-PDF special ignored!
+<special> color gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push
+Non-PDF special ignored!
+<special> color gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push
+Non-PDF special ignored!
+<special> color gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push
+Non-PDF special ignored!
+<special> color gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push
+Non-PDF special ignored!
+<special> color gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push
+Non-PDF special ignored!
+<special> color gray 0
+Non-PDF special ignored!
+<special> color pop
 Non-PDF special ignored!
 <special> color push
 Non-PDF special ignored!
@@ -315,21 +548,31 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color pop
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 2521) in paragraph at lines 156--157
+Underfull \hbox (badness 2521) in paragraph at lines 143--144
 []\OT1/ptm/m/n/9 Bag,M., Name2, Name3 (2001) Article title,
  []
 
-Extra height:0.0pt when 301.88844pt
-(2)Left:301.88844pt Right:298.1259pt Output:301.88844pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 71.5pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:71.5pt Right:73.0pt Output:71.5pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:73.0pt Right:73.0pt Output:73.0pt
 - LAST -
 Extra skip:0.0pt
-Left:301.88844pt
-Right:298.1259pt
-Output:301.88844pt
-[3
+Left:73.0pt
+Right:73.0pt
+Output:73.0pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
 Non-PDF special ignored!
 <special> color push
 Non-PDF special ignored!
@@ -348,30 +591,7 @@ Non-PDF special ignored!
 <special> color gray 0
 Non-PDF special ignored!
 <special> color pop
-Non-PDF special ignored!
-<special> color push
-Non-PDF special ignored!
-<special> color gray 0
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push
-Non-PDF special ignored!
-<special> color gray 0
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push
-Non-PDF special ignored!
-<special> color gray 0
-Non-PDF special ignored!
-<special> color pop
-Non-PDF special ignored!
-<special> color push
-Non-PDF special ignored!
-<special> color gray 0
-Non-PDF special ignored!
-<special> color pop
+
 Non-PDF special ignored!
 <special> color push
 Non-PDF special ignored!
@@ -386,25 +606,22 @@ LaTeX Font Warning: Size substitutions with differences
  ) 
 Here is how much of TeX's memory you used:
  2193 strings out of 481775
- 25456 string characters out of 5932103
- 275831 words of memory out of 5000000
- 17282 multiletter control sequences out of 15000+600000
+ 25479 string characters out of 5932103
+ 265830 words of memory out of 5000000
+ 17280 multiletter control sequences out of 15000+600000
  556854 words of font info for 76 fonts, out of 8000000 for 9000
  893 hyphenation exceptions out of 8191
- 39i,11n,32p,334b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,32p,1398b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (3 pages, 88062 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
+mr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on document.pdf (3 pages, 79081 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 39 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
