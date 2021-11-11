@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  11 NOV 2021 23:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  12 NOV 2021 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -282,109 +282,209 @@ Underfull \hbox (badness 2582) in paragraph at lines 31--36
 
 Overfull \vbox (3.94676pt too high) has occurred while \output is active []
 
+<img/FIK-6_experiment_setup.png, id=1, 500.87125pt x 738.76pt>
+File: img/FIK-6_experiment_setup.png Graphic file (type png)
+<use img/FIK-6_experiment_setup.png>
+Package pdftex.def Info: img/FIK-6_experiment_setup.png  used on input line 44.
 
-Underfull \hbox (badness 1231) in paragraph at lines 41--43
-\OT1/ptm/m/n/9 During the first measurements, the construction of
- []
+(pdftex.def)             Requested size: 170.71652pt x 251.79506pt.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 2452) in paragraph at lines 45--46
+Underfull \hbox (badness 2452) in paragraph at lines 56--57
 []\OT1/ptm/m/n/9 Reliable transmission of information about the
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 52--53
+Underfull \hbox (badness 1675) in paragraph at lines 63--64
 []\OT1/ptm/m/n/9 Due to the fact that since the first flight there
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 52--53
+Underfull \hbox (badness 2213) in paragraph at lines 63--64
 \OT1/ptm/m/n/9 were various partial shortcomings and despite the
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 54--55
+Underfull \hbox (badness 1173) in paragraph at lines 65--66
 []\OT1/ptm/m/n/9 An overall overview of the success of the used
  []
 
 
-Underfull \hbox (badness 5147) in paragraph at lines 58--60
+Underfull \hbox (badness 5147) in paragraph at lines 70--72
 \OT1/ptm/m/n/9 of supplementary tools have undergone intensive
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 73--74
+Underfull \hbox (badness 2443) in paragraph at lines 78--79
+[]\OT1/ptm/m/n/9 The schematic diagram of the new avionics is
+ []
+
+Package epstopdf Info: Source file: <img/avionics_block_schematics.eps>
+(epstopdf)                    date: 2021-11-10 23:56:35
+(epstopdf)                    size: 83960 bytes
+(epstopdf)             Output file: <img/avionics_block_schematics-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2021-11-12 00:22:29
+(epstopdf)                    size: 35278 bytes
+(epstopdf)             Command: <repstopdf --outfile=img/avionics_block_schemat
+ics-eps-converted-to.pdf img/avionics_block_schematics.eps>
+(epstopdf)             \includegraphics on input line 83.
+Package epstopdf Info: Output file is already uptodate.
+<img/avionics_block_schematics-eps-converted-to.pdf, id=11, 938.50626pt x 684.5
+575pt>
+File: img/avionics_block_schematics-eps-converted-to.pdf Graphic file (type pdf
+)
+<use img/avionics_block_schematics-eps-converted-to.pdf>
+Package pdftex.def Info: img/avionics_block_schematics-eps-converted-to.pdf  us
+ed on input line 83.
+(pdftex.def)             Requested size: 170.71652pt x 124.5207pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./img/FIK-6_experiment_setup.png> <./img/avionics_block_schematics-eps-con
+verted-to.pdf>]
+Underfull \hbox (badness 1173) in paragraph at lines 88--89
 \OT1/ptm/m/n/9 parts of avionics are completely separate from the
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 73--74
+Underfull \hbox (badness 3158) in paragraph at lines 88--89
 \OT1/ptm/m/n/9 system of detectors, simplified the realization of
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 73--74
+Underfull \hbox (badness 1552) in paragraph at lines 88--89
 \OT1/ptm/m/n/9 next balloon flights. It reduced the complexity of
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 73--74
+Underfull \hbox (badness 1968) in paragraph at lines 88--89
 \OT1/ptm/m/n/9 connecting different types of detectors and at the
  []
 
-<avionics_block_schematics.png, id=10, 1417.05882pt x 1034.45294pt>
-File: avionics_block_schematics.png Graphic file (type png)
-<use avionics_block_schematics.png>
-Package pdftex.def Info: avionics_block_schematics.png  used on input line 106.
 
-(pdftex.def)             Requested size: 142.26378pt x 103.84596pt.
+Underfull \hbox (badness 2020) in paragraph at lines 112--113
+\OT1/ptm/m/n/9 The payload of FIK-5 and FIK-6 flights contains
+ []
 
-Overfull \hbox (7.69041pt too wide) in paragraph at lines 135--136
+
+Underfull \hbox (badness 1953) in paragraph at lines 114--115
+[]\OT1/ptm/m/n/9 SPACEDOS is a lightweight dosimeter intended
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 114--115
+\OT1/ptm/m/n/9 for space applications for measurements on board
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 116--117
+\OT1/ptm/m/n/9 10 mm x 20 mm = 1.6 cm3 and SIPM (Silicon
+ []
+
+<img/FIK-6_RAW_data.png, id=18, 892.33376pt x 1283.79625pt>
+File: img/FIK-6_RAW_data.png Graphic file (type png)
+<use img/FIK-6_RAW_data.png>
+Package pdftex.def Info: img/FIK-6_RAW_data.png  used on input line 127.
+(pdftex.def)             Requested size: 170.71652pt x 245.60849pt.
+
+Underfull \hbox (badness 1019) in paragraph at lines 128--128
+ \OT1/ptm/m/n/8 Temperature near scintillation crystal, Air Pressure inside 
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 128--128
+ \OT1/ptm/m/n/8 counted by scintillator, Radiation Events per 10 seconds 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./img/FIK-6_RAW_data.png>]
+Underfull \hbox (badness 2469) in paragraph at lines 133--134
+\OT1/ptm/m/n/9 100km. During the flight the balloon passed the
+ []
+
+<img/FIK-6_flight_path.png, id=24, 962.59625pt x 628.3475pt>
+File: img/FIK-6_flight_path.png Graphic file (type png)
+<use img/FIK-6_flight_path.png>
+Package pdftex.def Info: img/FIK-6_flight_path.png  used on input line 138.
+(pdftex.def)             Requested size: 170.71652pt x 111.42938pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<img/FIK-6_balloon_burst.png, id=25, 823.075pt x 668.4975pt>
+File: img/FIK-6_balloon_burst.png Graphic file (type png)
+<use img/FIK-6_balloon_burst.png>
+Package pdftex.def Info: img/FIK-6_balloon_burst.png  used on input line 145.
+(pdftex.def)             Requested size: 170.71652pt x 138.65454pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./img/FIK-6_flight_path.png> <./img/FIK-6_balloon_burst.png>]
+Underfull \hbox (badness 2495) in paragraph at lines 155--156
+\OT1/ptm/m/n/9 dat ve sm[]eru vzh[]uru a p[]ri kles[]an[]^^P. Tento rozd[]^^Pl
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 157--158
+[]\OT1/ptm/m/n/9 Zaroven je videt, ze behem klesani dochazi ke
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 157--158
+\OT1/ptm/m/n/9 zna[]cn[]ym vibracim, skokovym zmenam zrychlen[]^^P a
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 163--164
+\OT1/ptm/m/n/9 and their monitoring during flight. Thanks to the
+ []
+
+
+Overfull \hbox (7.69041pt too wide) in paragraph at lines 181--182
 \OT1/ptm/m/n/9 The project was supported from SGS20/181/OHK3/3T/13. 
  []
 
-[2 <./avionics_block_schematics.png>]
-Underfull \hbox (badness 2521) in paragraph at lines 140--141
+
+Underfull \hbox (badness 2521) in paragraph at lines 186--187
 []\OT1/ptm/m/n/9 Bag,M., Name2, Name3 (2001) Article title,
  []
 
 - LAST -
-Extra skip:44.38208pt
-Left:104.651pt/0.0pt
-Right:59.0pt/1.26892pt
-Output:91.8255pt
-[3] (./document.aux)
+Extra skip:30.64587pt
+Left:319.651pt/1.94843pt
+Right:289.68463pt/1.26892pt
+Output:315.66782pt
+[5] (./document.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3100 strings out of 481775
- 40071 string characters out of 5932103
- 283871 words of memory out of 5000000
- 18163 multiletter control sequences out of 15000+600000
- 556854 words of font info for 76 fonts, out of 8000000 for 9000
+ 3138 strings out of 481775
+ 41033 string characters out of 5932103
+ 292902 words of memory out of 5000000
+ 18195 multiletter control sequences out of 15000+600000
+ 557168 words of font info for 77 fonts, out of 8000000 for 9000
  893 hyphenation exceptions out of 8191
- 39i,11n,35p,1398b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,11n,39p,1398b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (3 pages, 115739 bytes).
+Output written on document.pdf (5 pages, 741705 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
