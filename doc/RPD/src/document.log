@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  11 NOV 2021 00:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  11 NOV 2021 23:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,98 +7,76 @@ entering extended mode
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (./Rpd.cls
 Document Class: Rpd 2004/04/08 0.1
-(./crop.sty
-Package: crop 2001/11/16 v1.6 cropmarks (mf)
-\CROP@width=\dimen134
-\CROP@height=\dimen135
+(/usr/share/texlive/texmf-dist/tex/latex/crop/crop.sty
+Package: crop 2003/05/20 v1.9 crop marks (mf)
+\stockwidth=\dimen134
+\stockheight=\dimen135
 \CROP@index=\count167
- (./graphics.sty
-Package: graphics 1999/02/16 v1.0l Standard LaTeX Graphics (DPC,SPQR)
- (./trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-) (./graphics.cfg)
-Package graphics Info: Driver file: dvipsone.def on input line 80.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+ (./color.cfg)
+Package color Info: Driver file: dvipsone.def on input line 147.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsone.def
 File: dvipsone.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (./graphics.cfg)
+Package graphics Info: Driver file: dvipsone.def on input line 105.
+)
 \CROP@offset=\count168
-Package crop Info: Local config file crop.cfg used on input line 344.
- (./crop.cfg))
-(./graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
- (./keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package crop Info: Local config file crop.cfg used on input line 605.
+
+(./crop.cfg)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
-) (./amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
-(./amstext.sty
-Package: amstext 2000/06/29 v2.01
- (./amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen138
-)) (./amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen139
-) (./amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count169
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 227.
 \uproot@=\count170
 \leftroot@=\count171
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 389.
 \classnum@=\count172
 \DOTSCASE@=\count173
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box45
 \strutbox@=\box46
 \big@size=\dimen140
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-
-
-Package amsmath Warning: Unable to redefine math accent \hat.
-
-
-Package amsmath Warning: Unable to redefine math accent \check.
-
-
-Package amsmath Warning: Unable to redefine math accent \tilde.
-
-
-Package amsmath Warning: Unable to redefine math accent \acute.
-
-
-Package amsmath Warning: Unable to redefine math accent \grave.
-
-
-Package amsmath Warning: Unable to redefine math accent \dot.
-
-
-Package amsmath Warning: Unable to redefine math accent \ddot.
-
-
-Package amsmath Warning: Unable to redefine math accent \breve.
-
-
-Package amsmath Warning: Unable to redefine math accent \bar.
-
-
-Package amsmath Warning: Unable to redefine math accent \vec.
-
-
-Package amsmath Warning: Unable to redefine math accent \mathring.
-
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \macc@depth=\count174
 \c@MaxMatrixCols=\count175
 \dotsspace@=\muskip16
@@ -119,23 +97,22 @@ Package amsmath Warning: Unable to redefine math accent \mathring.
 \multlinegap=\skip48
 \multlinetaggap=\skip49
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
-) (./color.sty
-Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
- (./color.cfg)
-Package color Info: Driver file: dvipsone.def on input line 125.
-) (./amssymb.sty
-Package: amssymb 1996/11/03 v2.2b
- (./amsfonts.sty
-Package: amsfonts 1996/11/03 v2.2c
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 119.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 128.
-)) (./amsthm.sty
-Package: amsthm 2000/10/26 v2.08
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks20
 \thm@bodyfont=\toks21
 \thm@headfont=\toks22
@@ -146,39 +123,53 @@ Package: amsthm 2000/10/26 v2.08
 \thm@headsep=\skip52
 \dth@everypar=\toks25
 )
-(./times.sty
-Package: times 2000/01/12 PSNFSS-v8.1 Times font as default roman (SPQR) 
-) (./flushend.sty
-Package: flushend 1997/10/01
-\@aaa=\box47
-\@ccc=\box48
-\@viper=\box49
-\hold@viper=\box50
-\atColsBreak=\toks26
-\@extra@skip=\dimen147
-\@nd@page@rule=\dimen148
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-\fullwidth=\skip53
-\c@section=\count181
-\c@subsection=\count182
-\c@subsubsection=\count183
-\c@paragraph=\count184
-\c@subparagraph=\count185
-\c@figure=\count186
-\c@table=\count187
-\dropfromtop=\skip54
-\extraspace=\skip55
-\t@abstract=\box51
-\abovecaptionskip=\skip56
-\belowcaptionskip=\skip57
-\rotdimen=\dimen149
-\tempdime=\dimen150
-\temptbox=\box52
+(/usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
+Package: flushend 2017/03/27 v3.3 Balancing columns in twocolumn mode
+\flushend@@lastskip@a=\skip53
+\flushend@@lastskip@b=\skip54
+\flushend@@lastskip@c=\skip55
+\flushend@@penalty@a=\count181
+\flushend@@lastkern@a=\dimen147
+\var@@temp@spread=\dimen148
+\var@@temp@a=\dimen149
+\flushend@@page@rule=\dimen150
+\flushend@@varbox@a=\box47
+\flushend@@varbox@c=\box48
+\flushend@@tempbox@a=\box49
+\flushend@@tempbox@c=\box50
+\@viper=\box51
+\hold@viper=\box52
+\atColsBreak=\toks26
+\atColsEnd=\toks27
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count182
+))
+\fullwidth=\skip56
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
+\dropfromtop=\skip57
+\extraspace=\skip58
+\t@abstract=\box53
+\abovecaptionskip=\skip59
+\belowcaptionskip=\skip60
+\rotdimen=\dimen151
+\tempdime=\dimen152
+\temptbox=\box54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count188
-\l__pdf_internal_box=\box53
+\l__kernel_color_stack_int=\count190
+\l__pdf_internal_box=\box55
 )
 (./document.aux)
 \openout1 = `document.aux'.
@@ -202,6 +193,10 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+Package crop Info: requested driver: `' on input line 4.
+Package crop Info: detected driver: `pdftex' on input line 4.
+Package crop Info: using `pdftex' graphics driver on input line 4.
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 26.
@@ -266,7 +261,46 @@ Underfull \hbox (badness 1231) in paragraph at lines 41--43
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+! Undefined control sequence.
+\CROP@kernel ...{\hskip \CROP@horigin \CROP@every 
+                                                  \vbox to\paperheight {\hb@...
+l.43 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\CROP@kernel ...paperwidth {\CROP@ulc \CROP@uedge 
+                                                  \CROP@urc }\CROP@ledge \vs...
+l.43 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\OT1/ptm/m/n/9 picture(0,0)(-35,0)(1,0)30 (0,35)(0,-1)30 picturepicture(0,0)(35
+,0)(-1,0)30 (0,35)(0,-1)30 picture
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1
+Non-PDF special ignored!
+<special> color push
+Non-PDF special ignored!
+<special> color gray 0
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+Non-PDF special ignored!
+<special> color pop
 Non-PDF special ignored!
 <special> color push
 Non-PDF special ignored!
@@ -278,7 +312,6 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color gray 0
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 Non-PDF special ignored!
 <special> color pop
 
@@ -302,7 +335,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color pop
 ]
-Underfull \hbox (badness 2452) in paragraph at lines 47--48
+Underfull \hbox (badness 2452) in paragraph at lines 45--46
 []\OT1/ptm/m/n/9 Reliable transmission of information about the
  []
 
@@ -346,111 +379,55 @@ Underfull \hbox (badness 1968) in paragraph at lines 73--74
 \OT1/ptm/m/n/9 connecting different types of detectors and at the
  []
 
-! Missing endcsname inserted.
-<to be read again> 
-                   hss 
-l.107 \includegraphics
-                      {fig02.eps}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
 
-! Extra \endcsname.
-<argument> csnameendcsname\hss .eps\endcsname 
-                                              
-l.107 \includegraphics
-                      {fig02.eps}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Extra \endcsname.
-<argument> .../csnameendcsname\hss .eps\endcsname 
-                                                  \@gobble 
-l.107 \includegraphics
-                      {fig02.eps}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing endcsname inserted.
-<to be read again> 
-                   hss 
-l.107 \includegraphics
-                      {fig02.eps}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-<argument> csnameendcsname\hss .ps\endcsname 
-                                             
-l.107 \includegraphics
-                      {fig02.eps}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Extra \endcsname.
-<argument> ...o/csnameendcsname\hss .ps\endcsname 
-                                                  \@gobble 
-l.107 \includegraphics
-                      {fig02.eps}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing endcsname inserted.
-<to be read again> 
-                   hss 
-l.107 \includegraphics
-                      {fig02.eps}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-<argument> csnameendcsname\hss .pcx\endcsname 
-                                              
-l.107 \includegraphics
-                      {fig02.eps}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Extra \endcsname.
-<argument> .../csnameendcsname\hss .pcx\endcsname 
-                                                  \@gobble 
-l.107 \includegraphics
-                      {fig02.eps}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing endcsname inserted.
-<to be read again> 
-                   hss 
-l.107 \includegraphics
-                      {fig02.eps}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-<argument> csnameendcsname\hss .bmp\endcsname 
-                                              
-l.107 \includegraphics
-                      {fig02.eps}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Extra \endcsname.
-<argument> .../csnameendcsname\hss .bmp\endcsname 
-                                                  \@gobble 
-l.107 \includegraphics
-                      {fig02.eps}
-I'm ignoring this, since I wasn't doing a \csname.
-
-
-! LaTeX Error: File `\hss ' not found.
+! LaTeX Error: Cannot determine size of graphic in avionics_block_schematics.pn
+g (no BoundingBox).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 \includegraphics
-                      {fig02.eps}
-I could not locate the file with any of these extensions:
-.eps,.ps,.pcx,.bmp
+l.106 ...idth=50mm]{avionics_block_schematics.png}
+                                                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-Overfull \hbox (7.69041pt too wide) in paragraph at lines 136--137
+File: avionics_block_schematics.png Graphic file (type eps)
+<avionics_block_schematics.png>
+Overfull \hbox (7.69041pt too wide) in paragraph at lines 135--136
 \OT1/ptm/m/n/9 The project was supported from SGS20/181/OHK3/3T/13. 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+! Undefined control sequence.
+\CROP@kernel ...{\hskip \CROP@horigin \CROP@every 
+                                                  \vbox to\paperheight {\hb@...
+l.137 \begin{thebibliography}{99.}
+                                  %%the highest numbers has to be given
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\CROP@kernel ...paperwidth {\CROP@ulc \CROP@uedge 
+                                                  \CROP@urc }\CROP@ledge \vs...
+l.137 \begin{thebibliography}{99.}
+                                  %%the highest numbers has to be given
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\OT1/ptm/m/n/9 picture(0,0)(-35,0)(1,0)30 (0,35)(0,-1)30 picturepicture(0,0)(35
+,0)(-1,0)30 (0,35)(0,-1)30 picture
  []
 
 
@@ -498,6 +475,8 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color gray 0
 Non-PDF special ignored!
+<special> PSfile="avionics_block_schematics.png" llx=0 lly=0 urx=72 ury=72 ...
+Non-PDF special ignored!
 <special> color pop
 Non-PDF special ignored!
 <special> color push
@@ -548,31 +527,44 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color pop
 ]
-Underfull \hbox (badness 2521) in paragraph at lines 143--144
+Underfull \hbox (badness 2521) in paragraph at lines 140--141
 []\OT1/ptm/m/n/9 Bag,M., Name2, Name3 (2001) Article title,
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 71.5pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:71.5pt Right:73.0pt Output:71.5pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:73.0pt Right:73.0pt Output:73.0pt
 - LAST -
-Extra skip:0.0pt
-Left:73.0pt
-Right:73.0pt
-Output:73.0pt
+Extra skip:121.3305pt
+Left:179.651pt/1.94843pt
+Right:59.0pt/1.26892pt
+Output:175.8255pt
+! Undefined control sequence.
+\CROP@kernel ...{\hskip \CROP@horigin \CROP@every 
+                                                  \vbox to\paperheight {\hb@...
+l.143 \end{document}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+! Undefined control sequence.
+\CROP@kernel ...paperwidth {\CROP@ulc \CROP@uedge 
+                                                  \CROP@urc }\CROP@ledge \vs...
+l.143 \end{document}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
- [3
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\OT1/ptm/m/n/9 picture(0,0)(-35,0)(1,0)30 (0,35)(0,-1)30 picturepicture(0,0)(35
+,0)(-1,0)30 (0,35)(0,-1)30 picture
+ []
+
+[3
 Non-PDF special ignored!
 <special> color push
 Non-PDF special ignored!
@@ -591,7 +583,18 @@ Non-PDF special ignored!
 <special> color gray 0
 Non-PDF special ignored!
 <special> color pop
-
+Non-PDF special ignored!
+<special> color push
+Non-PDF special ignored!
+<special> color gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push
+Non-PDF special ignored!
+<special> color gray 0
+Non-PDF special ignored!
+<special> color pop
 Non-PDF special ignored!
 <special> color push
 Non-PDF special ignored!
@@ -605,20 +608,20 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 2193 strings out of 481775
- 25479 string characters out of 5932103
- 265830 words of memory out of 5000000
- 17280 multiletter control sequences out of 15000+600000
+ 2681 strings out of 481775
+ 33697 string characters out of 5932103
+ 276181 words of memory out of 5000000
+ 17760 multiletter control sequences out of 15000+600000
  556854 words of font info for 76 fonts, out of 8000000 for 9000
  893 hyphenation exceptions out of 8191
- 39i,11n,32p,1398b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,35p,1398b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
-mr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (3 pages, 79081 bytes).
+-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on document.pdf (3 pages, 78872 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream

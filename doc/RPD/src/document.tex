@@ -9,8 +9,8 @@
 \def\copyrightyear{2004}%
 
 \title[short Title]{Measuring Regener-Pfotzer maximum using different types of ionizing radiation detectors and a new telemetry system}
-\author[Sample \textit{et~al}]{Author\,$^{\rm a}$, Author\,$^{\rm b}$\footnote{to whom correspondence should be addressed}}
-\address{$^{\rm a}$Address followed, $^{\rm b}$Address followed}
+\author[Sample \textit{et~al}]{Author\,$^{ a}$, Author\,$^{ b}$\footnote{to whom correspondence should be addressed}}
+\address{$^{ a}$Address followed, $^{ b}$Address followed}
 
 \date{Received on April 2, 2003, revised on November 19, 2003,
   accepted on December 22, 2003}
@@ -28,31 +28,31 @@ The proposed TF-ATMON system is very variable and thus it can be used in other a
 
 \section{Introduction}
 
-Particles of primary cosmic radiation with sufficient energy interact in the upper part of the atmosphere and generate showers of secondary cosmic radiation. With increasing depth of the atmosphere the intensity of primary radiation decreases whereas the secondary component increases. At an altitude of about 20 km the intensity of secondary cosmic radiation reaches its maximum, called the Pfotzer maximum [Pfotzer, 1936; Regener, 1933; Regener and Pfotzer, 1935]. The Pfotzer maximum varies with geomagnetic vertical cutoff rigidity and with solar cycle and it is generally located at 15-27 km [Bazilevskaya and Svirzhevskaya, 1998]. 
-In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the word, mainly using radiosondes consistinged of Geiger tubes [Bazilevskaya and Svirzhevskaya, 1998; Yaniv et al., 2016; Harrison et al., 2014; Sarkar et al., 2017; Li et al., 2007;...], or to characterize instruments? response used for space-based missions [Lawrence et al., 2018; Mukherjee et al., 2016; Urbar et al., 2011; ...]. 
-To investigate cosmic radiation at high altitudes (around and above Regener-Pfotzer maximum region) and to test new detectors for cosmic radiation measurements, stratospheric balloons are very useful. 
-However, the radiation measurement instruments need to be supplemented also by other sensors measuring temperature, pressure, humidity, altitude, acceleration, etc.  All these sensors should be continuously monitored during the launch and the flight of the balloon to verify their proper function and theirthe values have to be recorded for further processing of all obtained data. 
-Platform developed for experiments at different altitudes consisting of a balloon tracking system and different measuring instruments will be presented. The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an IoT LoRa transmitter, enables it to monitor and record data during the flight and to trace the balloon. The application is demonstrated on stratospheric balloon flight FIK-6. Various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOSSpacedos, and scintillation detectors AIRDOSAirdos-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere. 
+Particles of primary cosmic radiation with sufficient energy interact in the upper part of the atmosphere and generate showers of secondary cosmic radiation. With increasing depth of the atmosphere the intensity of primary radiation decreases whereas the secondary component increases. At an altitude of about 20 km the intensity of secondary cosmic radiation reaches its maximum, called the Pfotzer maximum [Pfotzer, 1936; Regener, 1933; Regener and Pfotzer, 1935]. The Pfotzer maximum varies with geomagnetic vertical cutoff rigidity and with solar cycle and it is generally located at 15-27 km [Bazilevskaya and Svirzhevskaya, 1998].
+In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the word, mainly using radiosondes consistinged of Geiger tubes [Bazilevskaya and Svirzhevskaya, 1998; Yaniv et al., 2016; Harrison et al., 2014; Sarkar et al., 2017; Li et al., 2007;...], or to characterize instruments? response used for space-based missions [Lawrence et al., 2018; Mukherjee et al., 2016; Urbar et al., 2011; ...].
+To investigate cosmic radiation at high altitudes (around and above Regener-Pfotzer maximum region) and to test new detectors for cosmic radiation measurements, stratospheric balloons are very useful.
+However, the radiation measurement instruments need to be supplemented also by other sensors measuring temperature, pressure, humidity, altitude, acceleration, etc.  All these sensors should be continuously monitored during the launch and the flight of the balloon to verify their proper function and theirthe values have to be recorded for further processing of all obtained data.
+Platform developed for experiments at different altitudes consisting of a balloon tracking system and different measuring instruments will be presented. The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an IoT LoRa transmitter, enables it to monitor and record data during the flight and to trace the balloon. The application is demonstrated on stratospheric balloon flight FIK-6. Various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOSSpacedos, and scintillation detectors AIRDOSAirdos-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere.
 
 
 
 \section{Materials and methods}
 
 During the first measurements, the construction of balloon gondola was always designed for the use of specific detectors. Balloon avionics was therefore built around the chosen detectors.
-This concept led to a situation when every new flight meant a significant amount of work despite the fact that a number of components was recycled every year and used the next one. The reason was the need to adapt the avionics to the innovated version of detectors.
-
-Due to a relatively high value of payload it was necessary to ensure the return of the gondola every flight. The main construction criteria were as follows:
+This concept led to a situation when every new flight meant a significant amount of work despite the fact that a number of components was recycled every year and used the next one. The reason was the need to adapt the avionics to the innovated version of detectors. Due to a relatively high value of payload it was necessary to ensure the return of the gondola every flight. The main construction criteria were as follows.
 
 \begin{itemize}
-\item Reliable transmission of information about the geographical location of the gondola 
+\item Reliable transmission of information about the geographical location of the gondola
 \item Good resistance to impact
 \item Ensuring the function in freezing conditions
 \end{itemize}
 
+
+
 Due to the fact that since the first flight there were various partial shortcomings and despite the generally successful nature of all fights and the fact that the gondola was always found, we tried different technologies to eliminate the complications, which have emerged. During the last experimental flights these included the way the data is recorded.
- 
+
 An overall overview of the success of the used technologies is summarized in the following table, with colours representing a degree of reliability:
- 
+
 
 
 Apart from technologies used in gondolas a number of supplementary tools have undergone intensive development. For example, in order to find the balloon it was necessary to have an accurate real-time map of its position together with a prediction of the subsequent flight and the site of impact. In the case of the last two flights, FIK-5 and FIK-6, the problem is solved by tracker.habhub.org .
@@ -97,15 +97,14 @@ In the case of FIK-5 and FIK-6 flights that served as the test flights for our n
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     please remove the " % " symbol from \centerline{\includegraphics{fig01.eps}}
-%     as it may ignore the figures.   
+%     as it may ignore the figures.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{figure}%figure2
-\centerline
-\includegraphics{fig02.eps}
-\caption{Caption, caption.}\label{fig:02}
+\includegraphics[width=50mm]{avionics_block_schematics.png}
+\caption{Caption, caption \label{fig:02}.}
 \end{figure}
 
 
@@ -135,16 +134,10 @@ $^b$This a table footnote}
 \section*{Acknowledgement}
 The project was supported from  SGS20/181/OHK3/3T/13.
 
-
-
 \begin{thebibliography}{99.}%%the highest numbers has to be given
-\bibitem{Boffelli03} Bofelli,F., Name2, Name3 (2003) Article title, {\it Journal Name}, {\bf 199}, 133-154.
+\bibitem{Boffelli03} Bofelli,F., Name2, Name3 (2003) Article title, { Journal Name}, { 199}, 133-154.
 
-\bibitem{Bag01} Bag,M., Name2, Name3 (2001) Article title, {\it Journal Name}, {\bf 99}, 33-54.
+\bibitem{Bag01} Bag,M., Name2, Name3 (2001) Article title, { Journal Name}, { 99}, 33-54.
 
 \end{thebibliography}
 \end{document}
-
-
-
-
