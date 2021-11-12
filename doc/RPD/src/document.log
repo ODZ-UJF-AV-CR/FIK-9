@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  12 NOV 2021 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  12 NOV 2021 19:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -607,15 +607,15 @@ Underfull \hbox (badness 2012) in paragraph at lines 131--132
  []
 
 
-Underfull \hbox (badness 3396) in paragraph at lines 133--134
-\OT1/ptm/m/n/9 crystal. The detector has been described in [2].
+Underfull \hbox (badness 2181) in paragraph at lines 133--134
+\OT1/ptm/m/n/9 crystal. The detector has been described in [[]].
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-<img/FIK-6_RAW_data.png, id=99, 892.33376pt x 1283.79625pt>
+<img/FIK-6_RAW_data.png, id=103, 892.33376pt x 1283.79625pt>
 File: img/FIK-6_RAW_data.png Graphic file (type png)
 <use img/FIK-6_RAW_data.png>
 Package pdftex.def Info: img/FIK-6_RAW_data.png  used on input line 144.
@@ -638,7 +638,7 @@ Underfull \hbox (badness 2469) in paragraph at lines 150--151
 \OT1/ptm/m/n/9 100km. During the flight the balloon passed the
  []
 
-<img/FIK-6_flight_path.png, id=101, 962.59625pt x 628.3475pt>
+<img/FIK-6_flight_path.png, id=105, 962.59625pt x 628.3475pt>
 File: img/FIK-6_flight_path.png Graphic file (type png)
 <use img/FIK-6_flight_path.png>
 Package pdftex.def Info: img/FIK-6_flight_path.png  used on input line 155.
@@ -647,7 +647,7 @@ Package pdftex.def Info: img/FIK-6_flight_path.png  used on input line 155.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <./img/FIK-6_RAW_data.png> <./img/FIK-6_flight_path.png>]
-<img/FIK-6_balloon_burst.png, id=110, 823.075pt x 668.4975pt>
+<img/FIK-6_balloon_burst.png, id=114, 823.075pt x 668.4975pt>
 File: img/FIK-6_balloon_burst.png Graphic file (type png)
 <use img/FIK-6_balloon_burst.png>
 Package pdftex.def Info: img/FIK-6_balloon_burst.png  used on input line 162.
@@ -839,10 +839,10 @@ rr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/wasy-type1/wasy9.pfb>
-Output written on document.pdf (6 pages, 778323 bytes).
+Output written on document.pdf (6 pages, 778434 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
+ 187 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  37 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
