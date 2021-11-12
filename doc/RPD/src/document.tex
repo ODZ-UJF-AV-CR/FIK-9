@@ -1,19 +1,20 @@
 \documentclass{Rpd}
 
+\usepackage[table]{xcolor}
+\usepackage{array}
 
 \begin{document}
 
 \def\Sectitle{Section Title}%%This line can be removed if there is no
 						%%section title
 
-\def\copyrightyear{2004}%
+\def\copyrightyear{2021}%
 
 \title[short Title]{Measuring Regener-Pfotzer maximum using different types of ionizing radiation detectors and a new telemetry system}
 \author[Sample \textit{et~al}]{Author\,$^{ a}$, Author\,$^{ b}$\footnote{to whom correspondence should be addressed}}
 \address{$^{ a}$Address followed, $^{ b}$Address followed}
 
-\date{Received on April 2, 2003, revised on November 19, 2003,
-  accepted on December 22, 2003}
+\date{Received on April 2, 2003, revised on November 19, 2003, accepted on December 22, 2003}
 
 \begin{abstract}
 Regener-Pfotzer maximum is located at the altitude where the intensity of cosmic radiation is greatest, usually around 20 km. However, its exact location depends on many parameters such as atmospheric conditions, geographical locations, solar activity and also the type of detected particles. During experimental flights of stratospheric balloons we use different types of ionizing radiation detectors: Geiger-Muller tubes, SPACEDOS silicon detectors and AIRDOS-C scintillation detectors with NaI(Tl) crystal.
@@ -60,11 +61,27 @@ Due to a relatively high value of payload it was necessary to ensure the return 
 
 
 
-Due to the fact that since the first flight there were various partial shortcomings and despite the generally successful nature of all fights and the fact that the gondola was always found, we tried different technologies to eliminate the complications, which have emerged. During the last experimental flights these included the way the data is recorded.
-
-An overall overview of the success of the used technologies is summarized in the following table, with colours representing a degree of reliability:
+Due to the fact that since the first flight there were various partial shortcomings and despite the generally successful nature of all fights and the fact that the gondola was always found, we tried different technologies to eliminate the complications, which have emerged. During the last experimental flights these included the way the data is recorded. An overall overview of the success of the used technologies is summarized in the table \ref{Flight_reliability}.
 
 
+\begin{table*}[t]
+\processtable{Table summarising sucess of used technologies, with colours representing a degree of reliability: \newline \colorbox{red}{Failure} \colorbox{orange}{Partial failure} \colorbox{green}{Perfect function}.\label{Flight_reliability}}
+{\begin{tabular}{p{0.1\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth}}\toprule
+Flight & FIK-1 & FIK-2 & FIK-3 & FIK-4 & FIK-5 & FIK-6 \\\midrule
+Location & CZ (2015) & CZ (2017) & CZ (2018) & SE (2019) & CZ (2019) & CZ (2020) \\
+Payload & \cellcolor{green} Candy detector, Web camera & \cellcolor{yellow} Candy detector, Web camera & \cellcolor{green} AIRDOS,
+360 deg camera & \cellcolor{green} AIRDOS-C CRY19, SPACEDOS, G-M, Socrat-R & \cellcolor{green} AIRDOS-C
+CRY19,SPACEDOS, G-M, 360 deg camera & \cellcolor{green} AIRDOS-C NaI(Tl), SPACEDOS, G-M, Ionmeter, 360 deg camera \\
+Landing site & \cellcolor{yellow} vineyard Austria & \cellcolor{green} rapeseed field & \cellcolor{red} Poland & \cellcolor{yellow} swamp (Finland) & \cellcolor{green} forest & \cellcolor{red} railway corridor\\
+Power source & \cellcolor{green} Li-ion 18650 accu & \cellcolor{yellow} Li-ion 18650 and li-pol accu & \cellcolor{yellow} Lithium primary cells and li-pol accu & \cellcolor{green} Lithium primary cells & \cellcolor{yellow} Lithium primary cells & \cellcolor{green} Li-ion 18650
+accu \\
+Telemetry system & \cellcolor{red} GSM & \cellcolor{yellow} GSM, 868 MHz Proprietary Modem & \cellcolor{yellow} SigFox, 
+868 MHz Proprietary Modem &  Outsourced & \cellcolor{green} LoRa, SigFox, SiK 433 MHz & \cellcolor{green} 2x LoRa, SiK 433 MHz \\
+Rescue beacon & \cellcolor{green} 433 MHz CW & \cellcolor{green} 433 MHz CW & \cellcolor{green} 433 MHz CW &  Outsourced & \cellcolor{green} 433 MHz CW & \cellcolor{green} 433 MHz CW \\
+Flight control computer & \cellcolor{yellow} Odroid-U2 & \cellcolor{yellow} Odroid-U2 & Not used & Not used/outsourced & \cellcolor{green} PX4, FMU v5 & \cellcolor{green} PX4, FMU v5 \\
+\botrule
+\end{tabular}}{}
+\end{table*}
 
 
 Apart from technologies used in gondolas a number of supplementary tools have undergone intensive development. For example, in order to find the balloon it was necessary to have an accurate real-time map of its position together with a prediction of the subsequent flight and the site of impact. In the case of the last two flights, FIK-5 and FIK-6, the problem is solved by \cite{habhub_tracker}.
@@ -162,19 +179,6 @@ Zaroven je videt, ze behem klesani dochazi ke značným vibracim, skokovym zmena
 
 A telemetric system TF-ATMON has been developed. It enables data recording, pre-flight instruments control and their monitoring during flight. Thanks to the availability of different communication interfaces on the basic avionics, the use of various alternative detectors is simplified. The technology at the same time improves the possibilities of a quick location of a balloon gondola after its landing. It is therefore possible to carry out even experiments requiring a very short period till recovering the balloon after the flight. The system was successfully tested during FIK-6 flight.
 
-
-
-\begin{table}[t]
-\processtable{This is table caption\label{Tab:01}}
-{\begin{tabular}{llll}\toprule
-head1 & head2 & head3 & head4\\\midrule
-row1 & row1 & row1 & row1\\
-row2 & row2 & row2 & row2\\
-row3 & row3 & row3 & row3\\
-row4 & row4 & row4 & row4\\\botrule
-\end{tabular}}{$^a$This is a table footnote\newline
-$^b$This a table footnote}
-\end{table}
 
 
 \section*{Acknowledgement}
