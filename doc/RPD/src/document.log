@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  12 NOV 2021 00:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  12 NOV 2021 19:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -173,46 +173,214 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \tempdime=\dimen152
 \temptbox=\box54
 )
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen153
+\ar@mcellbox=\box55
+\extrarowheight=\dimen154
+\NC@list=\toks28
+\extratabsurround=\skip61
+\backup@length=\skip62
+\ar@cellbox=\box56
+)
+\everycr=\toks29
+\minrowclearance=\skip63
+)
+LaTeX Info: Redefining \color on input line 709.
+\rownum=\count190
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen155
+\Hy@linkcounter=\count191
+\Hy@pagecounter=\count192
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count193
+\pdfmajorversion=\count194
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count195
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen156
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count196
+\Field@Width=\dimen157
+\Fld@charsize=\dimen158
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+Package atbegshi Info: Package `crop' patched.
+)
+\Hy@abspage=\count197
+\c@Item=\count198
+\c@Hfootnote=\count199
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count266
+\c@bookmark@seq@number=\count267
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip64
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count190
-\l__pdf_internal_box=\box55
+\l__kernel_color_stack_int=\count268
+\l__pdf_internal_box=\box57
 )
 (./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 9
 .
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count191
-\scratchdimen=\dimen153
-\scratchbox=\box56
-\nofMPsegments=\count192
-\nofMParguments=\count193
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count194
-\MPscratchDim=\dimen154
-\MPnumerator=\count195
-\makeMPintoPDFobject=\count196
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count269
+\scratchdimen=\dimen159
+\scratchbox=\box58
+\nofMPsegments=\count270
+\nofMParguments=\count271
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count272
+\MPscratchDim=\dimen160
+\MPnumerator=\count273
+\makeMPintoPDFobject=\count274
+\everyMPtoPDFconversion=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -222,105 +390,161 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package crop Info: requested driver: `' on input line 4.
-Package crop Info: detected driver: `pdftex' on input line 4.
-Package crop Info: using `pdftex' graphics driver on input line 4.
+Package crop Info: requested driver: `' on input line 9.
+Package crop Info: detected driver: `pdftex' on input line 9.
+Package crop Info: using `pdftex' graphics driver on input line 9.
+\AtBeginShipoutBox=\box59
+Package hyperref Info: Link coloring OFF on input line 9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count275
+)
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+LaTeX Info: Redefining \nameref on input line 9.
+
+(./document.out) (./document.out)
+\@outlinefile=\write3
+\openout3 = `document.out'.
+
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 26.
+(Font)              size <6> substituted on input line 31.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 26.
+(Font)              size <6> substituted on input line 31.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 26.
+(Font)              size <6> substituted on input line 31.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-6.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 31
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+
+LaTeX Font Warning: Font shape `U/wasy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 31.
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 35--40
+\OT1/ptm/m/n/9 flight FIK-6. Various radiation detectors - Geiger-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<img/FIK-6_experiment_setup.png, id=55, 500.87125pt x 738.76pt>
+File: img/FIK-6_experiment_setup.png Graphic file (type png)
+<use img/FIK-6_experiment_setup.png>
+Package pdftex.def Info: img/FIK-6_experiment_setup.png  used on input line 45.
+
+(pdftex.def)             Requested size: 170.71652pt x 251.79506pt.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
+2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Underfull \hbox (badness 3396) in paragraph at lines 31--36
-\OT1/ptm/m/n/9 maximum varies with geomagnetic vertical cutoff
- []
-
-
-Underfull \hbox (badness 4805) in paragraph at lines 31--36
-\OT1/ptm/m/n/9 at various locations in the word, mainly using
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 31--36
-\OT1/ptm/m/n/9 sensors measuring temperature, pressure, humidity,
- []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 31--36
-\OT1/ptm/m/n/9 project PX4 and supplemented with an IoT LoRa
- []
-
-
-Underfull \hbox (badness 2582) in paragraph at lines 31--36
-\OT1/ptm/m/n/9 Si-diode based detector SPACEDOSSpacedos, and
- []
-
-
-Overfull \vbox (3.94676pt too high) has occurred while \output is active []
-
-<img/FIK-6_experiment_setup.png, id=1, 500.87125pt x 738.76pt>
-File: img/FIK-6_experiment_setup.png Graphic file (type png)
-<use img/FIK-6_experiment_setup.png>
-Package pdftex.def Info: img/FIK-6_experiment_setup.png  used on input line 44.
-
-(pdftex.def)             Requested size: 170.71652pt x 251.79506pt.
-
-[1
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 2452) in paragraph at lines 56--57
+Underfull \hbox (badness 2452) in paragraph at lines 57--58
 []\OT1/ptm/m/n/9 Reliable transmission of information about the
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 63--64
+Underfull \hbox (badness 1675) in paragraph at lines 64--65
 []\OT1/ptm/m/n/9 Due to the fact that since the first flight there
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 63--64
+Underfull \hbox (badness 2213) in paragraph at lines 64--65
 \OT1/ptm/m/n/9 were various partial shortcomings and despite the
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 65--66
-[]\OT1/ptm/m/n/9 An overall overview of the success of the used
+Overfull \hbox (5.67026pt too wide) in paragraph at lines 83--83
+ \OT1/ptm/m/n/8 CRY19,SPACEDOS, 
  []
 
 
-Underfull \hbox (badness 5147) in paragraph at lines 70--72
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]|\OT1/ptm/m/n/8 Power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]|\OT1/ptm/m/n/8 Telemetry
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]|\OT1/ptm/m/n/8 Rescue
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]|\OT1/ptm/m/n/8 Flight
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+\OT1/ptm/m/n/8 control
+ []
+
+
+Overfull \hbox (1.54866pt too wide) in paragraph at lines 83--83
+ \OT1/ptm/m/n/8 CRY19,SPACEDOS, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]|\OT1/ptm/m/n/8 Telemetry
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]|\OT1/ptm/m/n/8 Rescue
+ []
+
+
+Overfull \hbox (25.00461pt too wide) in paragraph at lines 83--83
+[][] 
+ []
+
+
+Underfull \hbox (badness 5147) in paragraph at lines 87--89
 \OT1/ptm/m/n/9 of supplementary tools have undergone intensive
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 78--79
+Underfull \hbox (badness 2443) in paragraph at lines 95--96
 []\OT1/ptm/m/n/9 The schematic diagram of the new avionics is
  []
 
@@ -333,158 +557,295 @@ d-to.pdf>
 (epstopdf)                    size: 35278 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/avionics_block_schemat
 ics-eps-converted-to.pdf img/avionics_block_schematics.eps>
-(epstopdf)             \includegraphics on input line 83.
+(epstopdf)             \includegraphics on input line 100.
 Package epstopdf Info: Output file is already uptodate.
-<img/avionics_block_schematics-eps-converted-to.pdf, id=11, 938.50626pt x 684.5
+<img/avionics_block_schematics-eps-converted-to.pdf, id=78, 938.50626pt x 684.5
 575pt>
 File: img/avionics_block_schematics-eps-converted-to.pdf Graphic file (type pdf
 )
 <use img/avionics_block_schematics-eps-converted-to.pdf>
 Package pdftex.def Info: img/avionics_block_schematics-eps-converted-to.pdf  us
-ed on input line 83.
+ed on input line 100.
 (pdftex.def)             Requested size: 170.71652pt x 124.5207pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./img/FIK-6_experiment_setup.png> <./img/avionics_block_schematics-eps-con
 verted-to.pdf>]
-Underfull \hbox (badness 1173) in paragraph at lines 88--89
+Underfull \hbox (badness 1173) in paragraph at lines 105--106
 \OT1/ptm/m/n/9 parts of avionics are completely separate from the
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 88--89
+Underfull \hbox (badness 3158) in paragraph at lines 105--106
 \OT1/ptm/m/n/9 system of detectors, simplified the realization of
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 88--89
+Underfull \hbox (badness 1552) in paragraph at lines 105--106
 \OT1/ptm/m/n/9 next balloon flights. It reduced the complexity of
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 88--89
+Underfull \hbox (badness 1968) in paragraph at lines 105--106
 \OT1/ptm/m/n/9 connecting different types of detectors and at the
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 112--113
+Underfull \hbox (badness 2020) in paragraph at lines 129--130
 \OT1/ptm/m/n/9 The payload of FIK-5 and FIK-6 flights contains
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 114--115
+Underfull \hbox (badness 1953) in paragraph at lines 131--132
 []\OT1/ptm/m/n/9 SPACEDOS is a lightweight dosimeter intended
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 114--115
+Underfull \hbox (badness 2012) in paragraph at lines 131--132
 \OT1/ptm/m/n/9 for space applications for measurements on board
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 116--117
-\OT1/ptm/m/n/9 10 mm x 20 mm = 1.6 cm3 and SIPM (Silicon
+Underfull \hbox (badness 2181) in paragraph at lines 133--134
+\OT1/ptm/m/n/9 crystal. The detector has been described in [[]].
  []
 
-<img/FIK-6_RAW_data.png, id=18, 892.33376pt x 1283.79625pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+<img/FIK-6_RAW_data.png, id=103, 892.33376pt x 1283.79625pt>
 File: img/FIK-6_RAW_data.png Graphic file (type png)
 <use img/FIK-6_RAW_data.png>
-Package pdftex.def Info: img/FIK-6_RAW_data.png  used on input line 127.
+Package pdftex.def Info: img/FIK-6_RAW_data.png  used on input line 144.
 (pdftex.def)             Requested size: 170.71652pt x 245.60849pt.
 
-Underfull \hbox (badness 1019) in paragraph at lines 128--128
+Underfull \hbox (badness 1019) in paragraph at lines 145--145
  \OT1/ptm/m/n/8 Temperature near scintillation crystal, Air Pressure inside 
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 128--128
+Underfull \hbox (badness 1354) in paragraph at lines 145--145
  \OT1/ptm/m/n/8 counted by scintillator, Radiation Events per 10 seconds 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <./img/FIK-6_RAW_data.png>]
-Underfull \hbox (badness 2469) in paragraph at lines 133--134
+
+Underfull \hbox (badness 2469) in paragraph at lines 150--151
 \OT1/ptm/m/n/9 100km. During the flight the balloon passed the
  []
 
-<img/FIK-6_flight_path.png, id=24, 962.59625pt x 628.3475pt>
+<img/FIK-6_flight_path.png, id=105, 962.59625pt x 628.3475pt>
 File: img/FIK-6_flight_path.png Graphic file (type png)
 <use img/FIK-6_flight_path.png>
-Package pdftex.def Info: img/FIK-6_flight_path.png  used on input line 138.
+Package pdftex.def Info: img/FIK-6_flight_path.png  used on input line 155.
 (pdftex.def)             Requested size: 170.71652pt x 111.42938pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<img/FIK-6_balloon_burst.png, id=25, 823.075pt x 668.4975pt>
+ [4 <./img/FIK-6_RAW_data.png> <./img/FIK-6_flight_path.png>]
+<img/FIK-6_balloon_burst.png, id=114, 823.075pt x 668.4975pt>
 File: img/FIK-6_balloon_burst.png Graphic file (type png)
 <use img/FIK-6_balloon_burst.png>
-Package pdftex.def Info: img/FIK-6_balloon_burst.png  used on input line 145.
+Package pdftex.def Info: img/FIK-6_balloon_burst.png  used on input line 162.
 (pdftex.def)             Requested size: 170.71652pt x 138.65454pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./img/FIK-6_flight_path.png> <./img/FIK-6_balloon_burst.png>]
-Underfull \hbox (badness 2495) in paragraph at lines 155--156
+
+Underfull \hbox (badness 2495) in paragraph at lines 172--173
 \OT1/ptm/m/n/9 dat ve sm[]eru vzh[]uru a p[]ri kles[]an[]^^P. Tento rozd[]^^Pl
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 157--158
+Underfull \hbox (badness 1622) in paragraph at lines 174--175
 []\OT1/ptm/m/n/9 Zaroven je videt, ze behem klesani dochazi ke
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 157--158
+Underfull \hbox (badness 1389) in paragraph at lines 174--175
 \OT1/ptm/m/n/9 zna[]cn[]ym vibracim, skokovym zmenam zrychlen[]^^P a
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 163--164
+Underfull \hbox (badness 1789) in paragraph at lines 180--181
 \OT1/ptm/m/n/9 and their monitoring during flight. Thanks to the
  []
 
 
-Overfull \hbox (7.69041pt too wide) in paragraph at lines 181--182
+Overfull \hbox (7.69041pt too wide) in paragraph at lines 185--186
 \OT1/ptm/m/n/9 The project was supported from SGS20/181/OHK3/3T/13. 
  []
 
 
-Underfull \hbox (badness 2521) in paragraph at lines 186--187
-[]\OT1/ptm/m/n/9 Bag,M., Name2, Name3 (2001) Article title,
+Underfull \hbox (badness 3049) in paragraph at lines 189--190
+[]\OT1/ptm/m/n/9 Pfotzer, G. (1936). Dreifachkoinzidenzen der
  []
 
+
+Underfull \hbox (badness 3780) in paragraph at lines 189--190
+\OT1/ptm/m/n/9 Ultrastrahlung aus vertikaler Richtung in der
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+91.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 1546) in paragraph at lines 191--192
+\OT1/ptm/m/n/9 905, 2018, 33-46. []$\OT1/pcr/m/n/9 https : / / doi . org / 10 .
+
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 193--194
+\OT1/ptm/m/n/9 (1998), On the stratospheric measurements of
+ []
+
+[5 <./img/FIK-6_balloon_burst.png>]
+Underfull \hbox (badness 3407) in paragraph at lines 194--195
+\OT1/ptm/m/n/9 in Australian outback using a balloon borne
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 196--197
+\OT1/ptm/m/n/9 cosmic ray tracking on BEXUS stratospheric
+ []
+
+
+Overfull \hbox (10.64978pt too wide) in paragraph at lines 196--197
+[]$\OT1/pcr/m/n/9 https : / / doi . org / 10 . 1016 / j . nima . 2010 .
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 198--199
+[]\OT1/ptm/m/n/9 R. Sarkar, S. K. Chakrabarti, P. Sarathi Pal,
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 200--201
+[]\OT1/ptm/m/n/9 S.W. Li, Y.S. Li, K.C. Tsui. Radioactivity in
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 200--201
+\OT1/ptm/m/n/9 the atmosphere over Hong Kong, Journal of
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 200--201
+\OT1/ptm/m/n/9 Environmental Radioactivity 94 (2007) 98-106.
+ []
+
+
+Overfull \hbox (26.84976pt too wide) in paragraph at lines 200--201
+[]$\OT1/pcr/m/n/9 https : / / doi . org / 10 . 1016 / j . jenvrad . 2007 .
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 202--203
+\OT1/ptm/m/n/9 of the vertical ionization profile over southern
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 202--203
+\OT1/ptm/m/n/9 Journal of Atmospheric and Solar{Terrestrial
+ []
+
+
+Overfull \hbox (7.79494pt too wide) in paragraph at lines 204--205
+\OT1/ptm/m/n/9 profile measurements of lower troposphere ionisation,
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 204--205
+\OT1/ptm/m/n/9 Journal of Atmospheric and Solar-Terrestrial
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 204--205
+\OT1/ptm/m/n/9 Physics 119 (2014), 203{210. []$\OT1/pcr/m/n/9 http : / / dx .
+ []
+
+
+Overfull \hbox (5.24979pt too wide) in paragraph at lines 204--205
+\OT1/pcr/m/n/9 doi . org / 10 . 1016 / j . jastp . 2014 . 08 . 006$[] 
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 210--211
+[]\OT1/ptm/m/n/9 K[]akona, M., Ambro[]zov[]a, I., Inozemtsev, K.
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 - LAST -
-Extra skip:30.64587pt
-Left:319.651pt/1.94843pt
-Right:289.68463pt/1.26892pt
-Output:315.66782pt
-[5] (./document.aux)
+Extra skip:44.20699pt
+Left:318.0pt/1.26892pt
+Right:273.64899pt/1.41295pt
+Output:318.3245pt
+ [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+
+(./document.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
+Package rerunfilecheck Info: File `document.out' has not changed.
+(rerunfilecheck)             Checksum: 6212C83E42140E59AE2224A2CDB3405D;526.
+
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3138 strings out of 481775
- 41033 string characters out of 5932103
- 292902 words of memory out of 5000000
- 18195 multiletter control sequences out of 15000+600000
- 557168 words of font info for 77 fonts, out of 8000000 for 9000
+ 7938 strings out of 481775
+ 113158 string characters out of 5932103
+ 396333 words of memory out of 5000000
+ 22825 multiletter control sequences out of 15000+600000
+ 554981 words of font info for 78 fonts, out of 8000000 for 9000
  893 hyphenation exceptions out of 8191
- 46i,11n,39p,1398b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (5 pages, 741705 bytes).
+ 50i,13n,43p,1398b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section*.11} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.9} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.8} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.7} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/uc
+rr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/wasy-type1/wasy9.pfb>
+Output written on document.pdf (6 pages, 778426 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
