@@ -11,8 +11,8 @@
 \def\copyrightyear{2021}%
 
 \title[short Title]{Measuring Regener-Pfotzer maximum using different types of ionizing radiation detectors and a new telemetry system}
-\author[Sample \textit{et~al}]{Author\,$^{ a}$, Author\,$^{ b}$\footnote{to whom correspondence should be addressed}}
-\address{$^{ a}$Address followed, $^{ b}$Address followed}
+\author[\textit{et~al}]{Jakub Kákona\,$^{ a}$,  Martina Lužová \,$^{ b}$, Martin Kákona \,$^{ b}$, Marek Sommer \,$^{ b}$, Martin Povišer \,$^{ b}$, Ondřej Ploc \,$^{ b}$, Roman Dvořák \,$^{ b}$, Iva Ambrožová\,$^{ a}$}
+\address{$^{ a}$CTU - Faculty of Electrical Engineering, $^{ b}$Ústav jaderné fyziky AV ČR, v. v. i.}
 
 \date{Received on April 2, 2003, revised on November 19, 2003, accepted on December 22, 2003}
 
@@ -29,16 +29,13 @@ The proposed TF-ATMON system is very variable and thus it can be used in other a
 
 \section{Introduction}
 
-Particles of primary cosmic radiation with sufficient energy interact in the upper part of the atmosphere and generate showers of secondary cosmic radiation. With increasing depth of the atmosphere the intensity of primary radiation decreases whereas the secondary component increases. At an altitude of about 20 km the intensity of secondary cosmic radiation reaches its maximum, called the Pfotzer maximum [Pfotzer, 1936; Regener, 1933; Regener and Pfotzer, 1935]. The Pfotzer maximum varies with geomagnetic vertical cutoff rigidity and with solar cycle and it is generally located at 15-27 km [Bazilevskaya and Svirzhevskaya, 1998].
-In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the word, mainly using radiosondes consistinged of Geiger tubes [Bazilevskaya and Svirzhevskaya, 1998; Yaniv et al., 2016; Harrison et al., 2014; Sarkar et al., 2017; Li et al., 2007;...], or to characterize instruments’ response used for space-based missions [Lawrence et al., 2018; Mukherjee et al., 2016; Urbar et al., 2011; ...].
+Particles of primary cosmic radiation with sufficient energy interact in the upper part of the atmosphere and generate showers of secondary cosmic radiation. With increasing depth of the atmosphere the intensity of primary radiation decreases whereas the secondary component increases. At an altitude of about 20 km the intensity of secondary cosmic radiation reaches its maximum, called the Pfotzer maximum \cite{Regener}, \cite{Pfotzer}. The Pfotzer maximum varies with geomagnetic vertical cutoff rigidity and with solar cycle and it is generally located at 15-27 km \cite{Bazilevskaya}.
+In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the word, mainly using radiosondes consistinged of Geiger tubes \cite{Bazilevskaya}, \cite{ionization_profile},\cite{Vertical_profile_measurements}, \cite{cosmic_ray_intensity}, \cite{Radioactivity_atmosphere}, or to characterize instruments’ response used for space-based missions \cite{Lawrence} \cite{Mukherjee} \cite{Timepix}.
 To investigate cosmic radiation at high altitudes (around and above Regener-Pfotzer maximum region) and to test new detectors for cosmic radiation measurements, stratospheric balloons are very useful.
 However, the radiation measurement instruments need to be supplemented also by other sensors measuring temperature, pressure, humidity, altitude, acceleration, etc.  All these sensors should be continuously monitored during the launch and the flight of the balloon to verify their proper function and theirthe values have to be recorded for further processing of all obtained data.
-Platform developed for experiments at different altitudes consisting of a balloon tracking system and different measuring instruments will be presented. The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an IoT LoRa transmitter, enables it to monitor and record data during the flight and to trace the balloon. The application is demonstrated on stratospheric balloon flight FIK-6. Various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOSSpacedos, and scintillation detectors AIRDOSAirdos-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere.
-
-
+Platform developed for experiments at different altitudes consisting of a balloon tracking system and different measuring instruments will be presented. The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an IoT LoRa transmitter, enables it to monitor and record data during the flight and to trace the balloon. The application is demonstrated on stratospheric balloon flight FIK-6. Various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOS, and scintillation detectors AIRDOS-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere.
 
 \section{Materials and methods}
-
 
 \begin{center}
 \begin{figure}%avionic
@@ -75,7 +72,7 @@ CRY19,SPACEDOS, G-M, 360 deg camera & \cellcolor{green} AIRDOS-C NaI(Tl), SPACED
 Landing site & \cellcolor{yellow} vineyard Austria & \cellcolor{green} rapeseed field & \cellcolor{red} Poland & \cellcolor{yellow} swamp (Finland) & \cellcolor{green} forest & \cellcolor{red} railway corridor\\
 Power source & \cellcolor{green} Li-ion 18650 accu & \cellcolor{yellow} Li-ion 18650 and li-pol accu & \cellcolor{yellow} Lithium primary cells and li-pol accu & \cellcolor{green} Lithium primary cells & \cellcolor{yellow} Lithium primary cells & \cellcolor{green} Li-ion 18650
 accu \\
-Telemetry system & \cellcolor{red} GSM & \cellcolor{yellow} GSM, 868 MHz Proprietary Modem & \cellcolor{yellow} SigFox, 
+Telemetry system & \cellcolor{red} GSM & \cellcolor{yellow} GSM, 868 MHz Proprietary Modem & \cellcolor{yellow} SigFox,
 868 MHz Proprietary Modem &  Outsourced & \cellcolor{green} LoRa, SigFox, SiK 433 MHz & \cellcolor{green} 2x LoRa, SiK 433 MHz \\
 Rescue beacon & \cellcolor{green} 433 MHz CW & \cellcolor{green} 433 MHz CW & \cellcolor{green} 433 MHz CW &  Outsourced & \cellcolor{green} 433 MHz CW & \cellcolor{green} 433 MHz CW \\
 Flight control computer & \cellcolor{yellow} Odroid-U2 & \cellcolor{yellow} Odroid-U2 & Not used & Not used/outsourced & \cellcolor{green} PX4, FMU v5 & \cellcolor{green} PX4, FMU v5 \\
@@ -118,7 +115,7 @@ Transition to the concept, where the balloon specific parts of avionics are comp
 \subsection{Further improvements}
 
 As can be seen from the table, the last unsolved problem with the balloon flights is the landing site. Therefore, in the future flights we are planning to use the autopilot for a controlled descent as well.
-The descent will be carried out using an unmanned autogyro carrying a payload. The purpose of this solution is in using the autogyro’s rotor instead of the original parachute as it has the advantage of good controllability. Thus it would be possible to choose the landing site and reduce the possible risk of creating dangerous situations. 
+The descent will be carried out using an unmanned autogyro carrying a payload. The purpose of this solution is in using the autogyro’s rotor instead of the original parachute as it has the advantage of good controllability. Thus it would be possible to choose the landing site and reduce the possible risk of creating dangerous situations.
 
 \subsection{Payload}
 In the case of FIK-5 and FIK-6 flights that served as the test flights for our novel approach the payload was not fully optimized for this use. All the detectors thus have their own SD card for data recording and some even have their own power supply.
@@ -164,12 +161,12 @@ The graphs show that the maximum reached altitude was approximately 33km above s
 \end{figure}
 \end{center}
 
-By processing the data a graph of detected altitude fig. X can be obtained. It shows that the measured altitude of the Regener-Pfotzer maximum was for all detector types around 19km above sea level. 
+By processing the data a graph of detected altitude fig. X can be obtained. It shows that the measured altitude of the Regener-Pfotzer maximum was for all detector types around 19km above sea level.
 
 \section{Discussion}
 
 
-Z naměřených dat je patrné, že během letu je velmi znatelný rozdíl mezi počtem bodů kvalitou měřených dat ve směru vzhůru a při klesání. Tento rozdíl je dán kromě odlišných tepelných podmínek hlavně rozdílnou hodnotou vertikální rychlosti.  Tuto záležitost se v následujících balonových letech chystáme vyřešit kontrolovaným sestupem, kde by bylo možné rychlost klesání v některých fázích letu snížit. Tak aby byla více srovnatelná s rychlostí výstupu. 
+Z naměřených dat je patrné, že během letu je velmi znatelný rozdíl mezi počtem bodů kvalitou měřených dat ve směru vzhůru a při klesání. Tento rozdíl je dán kromě odlišných tepelných podmínek hlavně rozdílnou hodnotou vertikální rychlosti.  Tuto záležitost se v následujících balonových letech chystáme vyřešit kontrolovaným sestupem, kde by bylo možné rychlost klesání v některých fázích letu snížit. Tak aby byla více srovnatelná s rychlostí výstupu.
 
 Zaroven je videt, ze behem klesani dochazi ke značným vibracim, skokovym zmenam zrychlení a také dochází k rotaci gondoly. Vsechny tyto parametry mohou mit vliv na mereni atmosferickych velicin a pro nektere druhy pristroju musi byt kompenzovany. Zaroven je videt pri klesani narust vlhkosti, ktera muze v urcitych castech letu i namrzat na přístroje.
 
@@ -187,7 +184,31 @@ The project was supported from  SGS20/181/OHK3/3T/13.
 \begin{thebibliography}{99.}%%the highest numbers has to be given
 \bibitem{habhub_tracker} https://tracker.habhub.org/ .
 
-\bibitem{Bag01} Bag,M., Name2, Name3 (2001) Article title, { Journal Name}, { 99}, 33-54.
+\bibitem{Pfotzer} Pfotzer, G. (1936). Dreifachkoinzidenzen der Ultrastrahlung aus vertikaler Richtung in der Stratosphäre. Zeitschrift für Physik, 102(1-2), 41-58.
+
+\bibitem{Lawrence} Lawrence et al., 2018. Near-space operation of compact CsI, CLYC, and CeBr sensors: Results from two high-altitude balloon flights, Nuclear Instruments and Methods in Physics Research A 905, 2018, 33-46. https://doi.org/10.1016/j.nima.2018.07.026
+
+\bibitem{Bazilevskaya} Bazilevskaya, G. A., and A. K. Svirzhevskaya (1998), On the stratospheric measurements of cosmic rays, Space Sci. Rev., 85, 431–521.
+\bibitem{Mukherjee} B. Mukherjee, X. Wu, T. Maczka, T. Kwan, Y. Huang, V. Mares. Near space radiation dosimetry in Australian outback using a balloon borne energy compensated PIN diode detector, Radiation Measurements 94, 2016, 65-72. https://doi.org/10.1016/j.radmeas.2016.09.007
+
+\bibitem{Timepix} J. Urbar, J.Scheirich, J.Jakubek. Medipix/Timepix cosmic ray tracking on BEXUS stratospheric balloon flights, Nuclear Instruments and Methods in Physics Research A 633 (2011), S206–S209. doi:10.1016/j.nima.2010.06.168
+
+\bibitem{cosmic_ray_intensity} R. Sarkar, S. K. Chakrabarti, P. Sarathi Pal, D. Bhowmick, A. Bhattacharya. Measurement of secondary cosmic ray intensity at Regener-Pfotzer height using low-cost weather balloons and its correlation with solar activity, Advances in Space Research 60 (2017) 991–998. http://dx.doi.org/10.1016/j.asr.2017.05.014
+
+\bibitem{Radioactivity_atmosphere} S.W. Li, Y.S. Li, K.C. Tsui. Radioactivity in the atmosphere over Hong Kong, Journal of Environmental Radioactivity 94 (2007) 98-106. doi:10.1016/j.jenvrad.2007.01.006
+
+\bibitem{ionization_profile} R. Yaniv, Y. Yair, C. Price, K. Nicoll, G. Harrison, A. Artamonov, I. Usoskin. Balloon measurements of the vertical ionization profile over southern Israel and comparison to mid-latitude observations, Journal of Atmospheric and Solar–Terrestrial Physics 149 (2016) 87–92. http://dx.doi.org/10.1016/j.jastp.2016.10.003
+
+\bibitem{Vertical_profile_measurements} R.G. Harrison, K.A. Nicoll, K.L. Aplin. Vertical profile measurements of lower troposphere ionisation, Journal of Atmospheric and Solar-Terrestrial Physics 119 (2014), 203–210. http://dx.doi.org/10.1016/j.jastp.2014.08.006
+
+\bibitem{Regener} Regener, E., 1933. New results in cosmic ray measurements. Nature 132, 696–698.
+
+\bibitem{cosmic_ultra-radiation} Regener, E., Pfotzer, G., 1935. Intensity of the cosmic ultra-radiation in the stratosphere with the tube-counter. Nature 134, 325.
+
+\bibitem{SPACEDOS} Kákona, M., Ambrožová, I., Inozemtsev, K. O., Ploc, O., Tolochek, R. V., Sihver, L., … Shurshakov, V. A. (2021). SPACEDOS – an open-source PIN diode dosimeter for applications in Space.
+
+\bibitem{AIRDOS-C} Velychko, O., Kákona, M., Ambrožová, I., and Ploc, O. (2021). Characterization of AIRDOS-C detector for measurement of high-energy events in the atmosphere.
+
 
 \end{thebibliography}
 \end{document}
