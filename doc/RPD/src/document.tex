@@ -33,7 +33,7 @@ The proposed TF-ATMON system is very variable and thus it can be used in other a
 \section{Introduction}
 
 Particles of primary cosmic radiation with sufficient energy interact in the upper part of the atmosphere and generate showers of secondary cosmic radiation. With increasing depth of the atmosphere the intensity of primary radiation decreases whereas the secondary component increases. At an altitude of about 20 km the intensity of secondary cosmic radiation reaches its maximum, called the Pfotzer maximum \cite{Regener}, \cite{Pfotzer}. The Pfotzer maximum varies with geomagnetic vertical cutoff rigidity and with solar cycle and it is generally located at 15-27 km \cite{Bazilevskaya}.
-In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the word, mainly using radiosondes consistinged of Geiger tubes \cite{Bazilevskaya}, \cite{ionization_profile},\cite{Vertical_profile_measurements}, \cite{cosmic_ray_intensity}, \cite{Radioactivity_atmosphere}, or to characterize instruments’ response used for space-based missions \cite{Lawrence} \cite{Mukherjee} \cite{Timepix}.
+In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the word, mainly using radiosondes consisting of Geiger tubes \cite{Bazilevskaya}, \cite{ionization_profile},\cite{Vertical_profile_measurements}, \cite{cosmic_ray_intensity}, \cite{Radioactivity_atmosphere}, or to characterize instruments’ response used for space-based missions \cite{Lawrence} \cite{Mukherjee} \cite{Timepix}.
 To investigate cosmic radiation at high altitudes (around and above Regener-Pfotzer maximum region) and to test new detectors for cosmic radiation measurements, stratospheric balloons are very useful.
 However, the radiation measurement instruments need to be supplemented also by other sensors measuring temperature, pressure, humidity, altitude, acceleration, etc.  All these sensors should be continuously monitored during the launch and the flight of the balloon to verify their proper function and theirthe values have to be recorded for further processing of all obtained data.
 Platform developed for experiments at different altitudes consisting of a balloon tracking system and different measuring instruments will be presented. The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an IoT LoRa transmitter, enables it to monitor and record data during the flight and to trace the balloon. The application is demonstrated on stratospheric balloon flight FIK-6. Various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOS, and scintillation detectors AIRDOS-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere.
@@ -140,19 +140,25 @@ The G-M tube STS-5 was used in the Geiger–Müller counter. The volume of the t
 
 \section{Results}
 
-During 1 hour and 40 minutes of flight Dec 18th, 2020 FIK-6 recorded temperature, air pressure, humidity and radiation characteristics as histograms of deposited energy of radiation events. Recorded data are shown in Figure \ref{FIK-6_RAW_data}.
+During 1 hour and 40 minutes of flight Dec 18th, 2020 FIK-6 recorded temperature, air pressure, humidity and radiation characteristics as histograms of deposited energy of radiation events. Recorded data are shown in Figure \ref{FIK-6_RAW_data}. The barometric altitude is calculated by the International Standard Atmosphere model 1976 \cite{standard_atmosphere}. 
 
 
 \begin{center}
 \begin{figure}%avionic
 	\centerline{\includegraphics[width=60mm]{img/FIK-6_RAW_data.png}}
-	\caption{Raw data measured during preparation on flight and during the whole flight up tu rescue. From top to down Temperature near scintillation crystal, Air Pressure inside the box of crystal, Temperature inside the gondola, Relative Humidity inside the gondola, Radiation Events per 10 seconds counted by scintillator, Radiation Events per 10 seconds counted by silicon detector, Radiation Events per 10 seconds counted by G-M counter, Barometric altitude, GPS altitude, Horizontal Speed relative to ground. \label{FIK-6_RAW_data}}
+	\caption{Raw data measured during the whole flight. From top to down Temperature near scintillation crystal, Air Pressure inside the box of crystal, Temperature inside the gondola, Relative Humidity inside the gondola, Radiation Events per 10 seconds counted by scintillator, Radiation Events per 10 seconds counted by silicon detector, Radiation Events per 10 seconds counted by G-M counter, Barometric altitude, altitude from GNSS, Horizontal Speed relative to ground. \label{FIK-6_RAW_data}}
 \end{figure}
 \end{center}
 
 
-The graphs show that the maximum reached altitude was approximately 33km above sea level. The length of the flight trajectory in this case was approximately 100km. During the flight the balloon passed the Regener-Pfotzer maximum twice. The gondola was successfully rescued within 20 minutes after touchdown.
+The graphs show that the maximum reached altitude was approximately 33km above sea level. The length of the flight trajectory in this case was approximately 100km. During the flight the balloon passed the Regener-Pfotzer maximum twice. The rescue team follows the balloon along the whole flight trajectory. The precision of tracking allows some participants of the rescue team to actually see the gondola touchdown visually. Therefore the gondola was successfully rescued within few minutes after touchdown.
 
+\begin{center}
+\begin{figure}%avionic
+	\centerline{\includegraphics[width=60mm]{img/FIK-6_rescue_team.png}}
+	\caption{Chasing cars with telemetry receivers at the landing site short after touchdown. \label{FIK-6_rescue_team}}
+\end{figure}
+\end{center}
 
 \begin{center}
 \begin{figure}%avionic
@@ -214,6 +220,8 @@ The project was supported from  SGS20/181/OHK3/3T/13.
 \bibitem{SPACEDOS} Kákona, M., Ambrožová, I., Inozemtsev, K. O., Ploc, O., Tolochek, R. V., Sihver, L., … Shurshakov, V. A. (2021). SPACEDOS – an open-source PIN diode dosimeter for applications in Space.
 
 \bibitem{AIRDOS-C} Velychko, O., Kákona, M., Ambrožová, I., and Ploc, O. (2021). Characterization of AIRDOS-C detector for measurement of high-energy events in the atmosphere.
+
+\bibitem{standard_atmosphere} National Oceanic and Atmospheric Administration, National Aeronautics and Space Administration, United States Air Force. (1976). U.S. Standard Atmosphere. Washington, DC.
 
 \bibitem{habhub_tracker} \url{https://tracker.habhub.org/}
 
