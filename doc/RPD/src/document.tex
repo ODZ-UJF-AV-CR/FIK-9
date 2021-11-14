@@ -56,7 +56,7 @@ Due to a relatively high value of payload it was necessary to ensure the return 
 \begin{itemize}
 \item Reliable transmission of information about the geographical location of the gondola
 \item Good resistance to impact
-\item Ensuring the function in temperatures far below below zero
+\item Ensuring the function in temperatures far below zero
 \end{itemize}
 
 
@@ -107,18 +107,20 @@ Transition to the concept, where the balloon specific parts of avionics are comp
 \begin{itemize}
 \item Easy implementation of different payloads
 \item Redundant telemetry links
-\item Gondola orientation tracking and logging
+\item Gondola orientation and spatial position tracking and logging
 \item Reliable IMU sensor processing and calibration
-\item Possible use of relative high-power payloads
+\item Possible use of relative high-power consumption payloads
 \item Pre-flight continuous charging as an option
 \item Power monitoring and maximum uptime calculation relevant to actual temperature
+\item Real-time pre-flight payload diagnostic
 \end{itemize}
 
 
 \subsection{Further improvements}
 
 As can be seen from the table, the last unsolved problem with the balloon flights is the landing site. Therefore, in the future flights we are planning to use the autopilot for a controlled descent as well.
-The descent will be carried out using an unmanned autogyro carrying a payload. The purpose of this solution is in using the autogyro’s rotor instead of the original parachute as it has the advantage of good controllability. Thus it would be possible to choose the landing site and reduce the possible risk of creating dangerous situations.
+The descent will be carried out using an unmanned autogyro carrying a payload. The purpose of this solution is in using the autogyro’s rotor instead of the original parachute as it has the advantage of good controllability. Thus it would be possible to choose the landing site and reduce the possible risk of creating dangerous situations. And at the same time it is able to control the descent rate. 
+
 
 \subsection{Payload}
 In the case of FIK-5 and FIK-6 flights that served as the test flights for our novel approach the payload was not fully optimized for this use. All the detectors thus have their own SD card for data recording and some even have their own power supply.
