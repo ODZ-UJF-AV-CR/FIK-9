@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  14 NOV 2021 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  14 NOV 2021 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -549,8 +549,8 @@ Underfull \hbox (badness 2443) in paragraph at lines 95--96
  []
 
 Package epstopdf Info: Source file: <img/avionics_block_schematics.eps>
-(epstopdf)                    date: 2021-11-14 14:41:11
-(epstopdf)                    size: 126014 bytes
+(epstopdf)                    date: 2021-11-14 14:46:00
+(epstopdf)                    size: 124052 bytes
 (epstopdf)             Output file: <img/avionics_block_schematics-eps-converte
 d-to.pdf>
 (epstopdf)                    date: 2021-11-14 14:41:15
@@ -558,7 +558,13 @@ d-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=img/avionics_block_schemat
 ics-eps-converted-to.pdf img/avionics_block_schematics.eps>
 (epstopdf)             \includegraphics on input line 100.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=img/avionics_block_schematics-eps-converted-to.pd
+f img/avionics_block_schematics.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <img/avionics_block_schematics-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2021-11-14 14:46:08
+(epstopdf)                    size: 53046 bytes.
 <img/avionics_block_schematics-eps-converted-to.pdf, id=78, 959.585pt x 684.557
 5pt>
 File: img/avionics_block_schematics-eps-converted-to.pdf Graphic file (type pdf
@@ -836,7 +842,7 @@ rr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/wasy-type1/wasy9.pfb>
-Output written on document.pdf (6 pages, 797425 bytes).
+Output written on document.pdf (6 pages, 796348 bytes).
 PDF statistics:
  187 PDF objects out of 1000 (max. 8388607)
  160 compressed objects within 2 object streams
