@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  14 NOV 2021 23:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.17)  15 NOV 2021 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -36,9 +36,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
 \CROP@offset=\count168
-Package crop Info: Local config file crop.cfg used on input line 605.
-
-(/usr/share/texlive/texmf-dist/tex/xelatex/xetexconfig/crop.cfg))
+)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -549,11 +547,11 @@ Underfull \hbox (badness 2443) in paragraph at lines 95--96
  []
 
 Package epstopdf Info: Source file: <img/avionics_block_schematics.eps>
-(epstopdf)                    date: 2021-11-14 14:46:00
+(epstopdf)                    date: 2021-11-15 15:57:52
 (epstopdf)                    size: 124052 bytes
 (epstopdf)             Output file: <img/avionics_block_schematics-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2021-11-14 14:46:08
+(epstopdf)                    date: 2021-11-15 16:00:09
 (epstopdf)                    size: 53046 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/avionics_block_schemat
 ics-eps-converted-to.pdf img/avionics_block_schematics.eps>
@@ -828,12 +826,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 7959 strings out of 481775
- 113516 string characters out of 5932103
- 396591 words of memory out of 5000000
- 22837 multiletter control sequences out of 15000+600000
+ 7956 strings out of 482368
+ 113338 string characters out of 5941918
+ 395397 words of memory out of 5000000
+ 22819 multiletter control sequences out of 15000+600000
  554981 words of font info for 78 fonts, out of 8000000 for 9000
- 893 hyphenation exceptions out of 8191
+ 432 hyphenation exceptions out of 8191
  39i,13n,37p,1398b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{section*.11} has been referenced but does not exi
 st, replaced by a fixed one
@@ -863,7 +861,7 @@ rr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/wasy-type1/wasy9.pfb>
-Output written on document.pdf (7 pages, 2879645 bytes).
+Output written on document.pdf (7 pages, 2879644 bytes).
 PDF statistics:
  213 PDF objects out of 1000 (max. 8388607)
  184 compressed objects within 2 object streams
