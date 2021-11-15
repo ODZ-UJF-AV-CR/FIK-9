@@ -90,7 +90,7 @@ As can be seen from the table, during the last flights the avionics was implemen
 
 
 \subsection{Universal avionics}
-Based on our experience we have used a universal concept of avionics called TF-ATMON that makes it possible to connect different types of payloads and carry out various atmospheric measurements. Furthermore, it provides the detectors with basic services such as power supply, time and position information and provides a possibility to record data in a common log. Therefore it is extremely useful for testing high-altitude cosmic radiation detectors and dosimeters.
+Based on our experience we have used a universal concept of avionics called TF-ATMON that makes it possible to connect different types of payloads and carry out various atmospheric measurements. Furthermore, it provides the detectors with basic services such as power supply, time, position and orientation information. Basic quantities that affect many types of measurements are also recorded. Such quantities are temperature, pressure, humidity, magnetic field and acceleration. Flight computer provide a possibility to record data from carried experiments in a common log file. Therefore it is extremely useful for testing high-altitude cosmic radiation detectors and dosimeters. And it reduces the number of modifications in experiments (dosimeters) required for balloon flight.
 
 The schematic diagram of the new avionics is summarized in the figure \ref{avionics_schematics}.
 
@@ -140,18 +140,22 @@ The G-M tube STS-5 was used in the Geiger–Müller counter. The volume of the t
 
 \section{Results}
 
-During 1 hour and 40 minutes of flight Dec 18th, 2020 FIK-6 recorded temperature, air pressure, humidity and radiation characteristics as histograms of deposited energy of radiation events. Recorded data are shown in Figure \ref{FIK-6_RAW_data}. The barometric altitude is calculated by the International Standard Atmosphere model 1976 \cite{standard_atmosphere}. 
+The flight FIK-6 took place on December 18th, 2020 and lasted 1 hour and 40 minutes \ref{FIK-6_flight_path}. The system TF-ATMON recorded temperature, air pressure, humidity and radiation characteristics as histograms of deposited energy of radiation events from all three radiation sensors in the gondola: gamma spectrometer AIRDOS-C with a scintillation crystal NaI(Tl), Spacedos with a PIN diode detector, and Geiger-Müller counter  (see Figure \ref{FIK-6_RAW_data}. The barometric altitude was calculated using the International Standard Atmosphere model 1976 \cite{standard_atmosphere}. 
 
 
 \begin{center}
 \begin{figure}%avionic
-	\centerline{\includegraphics[width=60mm]{img/FIK-6_RAW_data.png}}
-	\caption{Raw data measured during the whole flight. From top to down Temperature near scintillation crystal, Air Pressure inside the box of crystal, Temperature inside the gondola, Relative Humidity inside the gondola, Radiation Events per 10 seconds counted by scintillator, Radiation Events per 10 seconds counted by silicon detector, Radiation Events per 10 seconds counted by G-M counter, Barometric altitude, altitude from GNSS, Horizontal Speed relative to ground. \label{FIK-6_RAW_data}}
+	\centerline{\includegraphics[width=60mm]{img/FIK-6_flight_path.png}}
+	\caption{FIK-6 flight path \label{FIK-6_flight_path}}
 \end{figure}
 \end{center}
 
-
-The graphs show that the maximum reached altitude was approximately 33km above sea level. The length of the flight trajectory in this case was approximately 100km. During the flight the balloon passed the Regener-Pfotzer maximum twice. The rescue team follows the balloon along the whole flight trajectory. The precision of tracking allows some participants of the rescue team to actually see the gondola touchdown visually. Therefore the gondola was successfully rescued within few minutes after touchdown.
+\begin{center}
+\begin{figure}%avionic
+	\centerline{\includegraphics[width=60mm]{img/FIK-6_RAW_data.png}}
+	\caption{Raw data measured during the whole flight. From top to bottom: temperature near scintillation crystal, air pressure inside the box of crystal, temperature inside the gondola, relative humidity inside the gondola, counts of radiation events per 10 seconds counted by scintillator, silicon detector, and  G-M counter, barometric altitude, and altitude from GNSS.\label{FIK-6_RAW_data}}
+\end{figure}
+\end{center}
 
 \begin{center}
 \begin{figure}%avionic
@@ -160,12 +164,8 @@ The graphs show that the maximum reached altitude was approximately 33km above s
 \end{figure}
 \end{center}
 
-\begin{center}
-\begin{figure}%avionic
-	\centerline{\includegraphics[width=60mm]{img/FIK-6_flight_path.png}}
-	\caption{FIK-6 flight path \label{FIK-6_flight_path}}
-\end{figure}
-\end{center}
+The graphs show that the maximum reached altitude was approximately 33km above sea level. The length of the flight trajectory in this case was approximately 100km. During the flight the balloon passed the Regener-Pfotzer maximum twice. The rescue team follows the balloon along the whole flight trajectory. The precision of tracking allows some participants of the rescue team to actually see the gondola touchdown visually. Therefore the gondola was successfully rescued within few minutes after touchdown.
+
 
 \begin{center}
 \begin{figure}%avionic
@@ -187,12 +187,15 @@ Zaroven je videt, ze behem klesani dochazi ke značným vibracim, skokovym zmena
 
 \section{Conclusion}
 
+Flight FIK-6 was unique due to radiation measurements of the Regener-Pfotzer maximum using three different types of radiation detectors. Altitude of the Regener-Pfotzer maximum was about 19 km and slightly differ based on the detector type: GM counter measured the highest value (19270 m), silicon PIN diode measured lower value (18802 m), and scintillation detectors the lowest value (18668 m).
+
 A telemetric system TF-ATMON has been developed. It enables data recording, pre-flight instruments control and their monitoring during flight. Thanks to the availability of different communication interfaces on the basic avionics, the use of various alternative detectors is simplified. The technology at the same time improves the possibilities of a quick location of a balloon gondola after its landing. It is therefore possible to carry out even experiments requiring a very short period till recovering the balloon after the flight. The system was successfully tested during FIK-6 flight.
 
 
 
 \section*{Acknowledgement}
-The project was supported from  SGS20/181/OHK3/3T/13.
+The work was supported in the frame of the Operational Program EU Project CRREAT 
+\newline No. CZ.02.1.01/0.0/0.0/15\_003/0000481. The project was supported from  SGS20/181/OHK3/3T/13.
 
 \begin{thebibliography}{99.}%%the highest numbers has to be given
 
