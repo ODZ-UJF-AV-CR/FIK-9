@@ -16,3 +16,6 @@
 [submodule "fw/SiK"]
 	path = fw/SiK
 	url = https://github.com/ThunderFly-aerospace/SiK.git
+[submodule "notebooks/flight_review"]
+	path = notebooks/flight_review
+	url = git@github.com:PX4/flight_review.git
