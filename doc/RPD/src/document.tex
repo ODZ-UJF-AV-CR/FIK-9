@@ -13,7 +13,7 @@
 
 \def\copyrightyear{2021}%
 
-\title[short Title]{Measuring Regener-Pfotzer maximum using different types of ionizing radiation detectors and a new telemetry system}
+\title[short Title]{Measuring Regener-Pfotzer maximum using different types of ionizing radiation detectors and a new telemetry system TF-ATMON}
 \author[\textit{et~al}]{Jakub Kákona\,$^{ a}$,  Martina Lužová \,$^{ b}$, Martin Kákona \,$^{ b}$, Marek Sommer \,$^{ b}$, Martin Povišer \,$^{ b}$, Ondřej Ploc \,$^{ b}$, Roman Dvořák \,$^{ b}$, Iva Ambrožová\,$^{ a}$}
 \address{$^{ a}$CTU - Faculty of Electrical Engineering, $^{ b}$Ústav jaderné fyziky AV ČR, v. v. i.}
 
@@ -33,10 +33,10 @@ The proposed TF-ATMON system is very variable and thus it can be used in other a
 \section{Introduction}
 
 Particles of primary cosmic radiation with sufficient energy interact in the upper part of the atmosphere and generate showers of secondary cosmic radiation. With increasing depth of the atmosphere the intensity of primary radiation decreases whereas the secondary component increases. At an altitude of about 20 km the intensity of secondary cosmic radiation reaches its maximum, called the Pfotzer maximum \cite{Regener}, \cite{Pfotzer}. The Pfotzer maximum varies with geomagnetic vertical cutoff rigidity and with solar cycle and it is generally located at 15-27 km \cite{Bazilevskaya}.
-In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the word, mainly using radiosondes consistinged of Geiger tubes \cite{Bazilevskaya}, \cite{ionization_profile},\cite{Vertical_profile_measurements}, \cite{cosmic_ray_intensity}, \cite{Radioactivity_atmosphere}, or to characterize instruments’ response used for space-based missions \cite{Lawrence} \cite{Mukherjee} \cite{Timepix}.
+In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the word, mainly using radiosondes consisting of Geiger tubes \cite{Bazilevskaya}, \cite{ionization_profile},\cite{Vertical_profile_measurements}, \cite{cosmic_ray_intensity}, \cite{Radioactivity_atmosphere}, or to characterize instruments’ response used for space-based missions \cite{Lawrence} \cite{Mukherjee} \cite{Timepix}.
 To investigate cosmic radiation at high altitudes (around and above Regener-Pfotzer maximum region) and to test new detectors for cosmic radiation measurements, stratospheric balloons are very useful.
 However, the radiation measurement instruments need to be supplemented also by other sensors measuring temperature, pressure, humidity, altitude, acceleration, etc.  All these sensors should be continuously monitored during the launch and the flight of the balloon to verify their proper function and theirthe values have to be recorded for further processing of all obtained data.
-Platform developed for experiments at different altitudes consisting of a balloon tracking system and different measuring instruments will be presented. The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an IoT LoRa transmitter, enables it to monitor and record data during the flight and to trace the balloon. The application is demonstrated on stratospheric balloon flight FIK-6. Various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOS, and scintillation detectors AIRDOS-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere.
+Platform developed for experiments at different altitudes consisting of a balloon tracking system and different measuring instruments will be presented. The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an IoT LoRa transmitter, enables it to monitor and record data during the flight and to trace the balloon. The application is demonstrated on stratospheric balloon flight FIK-6 Fig. \ref{FIK-6_setup}. Various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOS, and scintillation detectors AIRDOS-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere.
 
 \section{Materials and methods}
 
@@ -56,7 +56,7 @@ Due to a relatively high value of payload it was necessary to ensure the return 
 \begin{itemize}
 \item Reliable transmission of information about the geographical location of the gondola
 \item Good resistance to impact
-\item Ensuring the function in temperatures far below below zero
+\item Ensuring the function in temperatures far below zero
 \end{itemize}
 
 
@@ -65,7 +65,7 @@ Due to the fact that since the first flight there were various partial shortcomi
 
 
 \begin{table*}[t]
-\processtable{Table summarising sucess of used technologies, with colours representing a degree of reliability: \newline \colorbox{red}{Failure} \colorbox{yellow}{Partial failure} \colorbox{green}{Perfect function}.\label{Flight_reliability}}
+\processtable{Table summarising success of used technologies, with colours representing a degree of reliability: \newline \colorbox{red}{Failure} \colorbox{yellow}{Partial failure} \colorbox{green}{Perfect function}.\label{Flight_reliability}}
 {\begin{tabular}{p{0.1\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth}}\toprule
 Flight & FIK-1 & FIK-2 & FIK-3 & FIK-4 & FIK-5 & FIK-6 \\\midrule
 Location & CZ (2015) & CZ (2017) & CZ (2018) & SE (2019) & CZ (2019) & CZ (2020) \\
@@ -90,7 +90,7 @@ As can be seen from the table, during the last flights the avionics was implemen
 
 
 \subsection{Universal avionics}
-Based on our experience we have used a universal concept of avionics called TF-ATMON that makes it possible to connect different types of payloads and carry out various atmospheric measurements. Furthermore, it provides the detectors with basic services such as power supply, time and position information and provides a possibility to record data in a common log. Therefore it is extremely useful for testing high-altitude cosmic radiation detectors and dosimeters.
+Based on our experience we have used a universal concept of avionics called TF-ATMON that makes it possible to connect different types of payloads and carry out various atmospheric measurements. Furthermore, it provides the detectors with basic services such as power supply, time, position and orientation information. Basic quantities that affect many types of measurements are also recorded. Such quantities are temperature, pressure, humidity, magnetic field and acceleration. Flight computer provide a possibility to record data from carried experiments in a common log file. Therefore it is extremely useful for testing high-altitude cosmic radiation detectors and dosimeters. And it reduces the number of modifications in experiments (dosimeters) required for balloon flight.
 
 The schematic diagram of the new avionics is summarized in the figure \ref{avionics_schematics}.
 
@@ -107,18 +107,22 @@ Transition to the concept, where the balloon specific parts of avionics are comp
 \begin{itemize}
 \item Easy implementation of different payloads
 \item Redundant telemetry links
-\item Gondola orientation tracking and logging
+\item Gondola orientation and spatial position tracking and logging
 \item Reliable IMU sensor processing and calibration
-\item Possible use of relative high-power payloads
+\item Possible use of relative high-power consumption payloads
 \item Pre-flight continuous charging as an option
 \item Power monitoring and maximum uptime calculation relevant to actual temperature
+\item Real-time pre-flight payload diagnostic
 \end{itemize}
+
+The documentation of used blocks could be found in the following sources TFGPS01 \cite{TFGPS01}, TFSIK01 \cite{TFSIK01}, TFHT01 \cite{TFHT01}, TFLORA01 \cite{TFLORA01}, \cite{LION2CELL01D}.
 
 
 \subsection{Further improvements}
 
 As can be seen from the table, the last unsolved problem with the balloon flights is the landing site. Therefore, in the future flights we are planning to use the autopilot for a controlled descent as well.
-The descent will be carried out using an unmanned autogyro carrying a payload. The purpose of this solution is in using the autogyro’s rotor instead of the original parachute as it has the advantage of good controllability. Thus it would be possible to choose the landing site and reduce the possible risk of creating dangerous situations.
+The descent will be carried out using an unmanned autogyro carrying a payload. The purpose of this solution is in using the autogyro’s rotor instead of the original parachute as it has the advantage of good controllability. Thus it would be possible to choose the landing site and reduce the possible risk of creating dangerous situations. And at the same time it is able to control the descent rate. 
+
 
 \subsection{Payload}
 In the case of FIK-5 and FIK-6 flights that served as the test flights for our novel approach the payload was not fully optimized for this use. All the detectors thus have their own SD card for data recording and some even have their own power supply.
@@ -136,18 +140,7 @@ The G-M tube STS-5 was used in the Geiger–Müller counter. The volume of the t
 
 \section{Results}
 
-During 1 hour and 40 minutes of flight Dec 18th, 2020 FIK-6 recorded temperature, air pressure, humidity and radiation characteristics as histograms of deposited energy of radiation events. Recorded data are shown in Figure \ref{FIK-6_RAW_data}.
-
-
-\begin{center}
-\begin{figure}%avionic
-	\centerline{\includegraphics[width=60mm]{img/FIK-6_RAW_data.png}}
-	\caption{Raw data measured during preparation on flight and during the whole flight up tu rescue. From top to down Temperature near scintillation crystal, Air Pressure inside the box of crystal, Temperature inside the gondola, Relative Humidity inside the gondola, Radiation Events per 10 seconds counted by scintillator, Radiation Events per 10 seconds counted by silicon detector, Radiation Events per 10 seconds counted by G-M counter, Barometric altitude, GPS altitude, Horizontal Speed relative to ground. \label{FIK-6_RAW_data}}
-\end{figure}
-\end{center}
-
-
-The graphs show that the maximum reached altitude was approximately 33km above sea level. The length of the flight trajectory in this case was approximately 100km. During the flight the balloon passed the Regener-Pfotzer maximum twice. The gondola was successfully rescued within 20 minutes after touchdown.
+The flight FIK-6 took place on December 18th, 2020 and lasted 1 hour and 40 minutes \ref{FIK-6_flight_path}. The system TF-ATMON recorded temperature, air pressure, humidity and radiation characteristics as histograms of deposited energy of radiation events from all three radiation sensors in the gondola: gamma spectrometer AIRDOS-C with a scintillation crystal NaI(Tl), Spacedos with a PIN diode detector, and Geiger-Müller counter  (see Figure \ref{FIK-6_RAW_data}. The barometric altitude was calculated using the International Standard Atmosphere model 1976 \cite{standard_atmosphere}. 
 
 
 \begin{center}
@@ -156,6 +149,23 @@ The graphs show that the maximum reached altitude was approximately 33km above s
 	\caption{FIK-6 flight path \label{FIK-6_flight_path}}
 \end{figure}
 \end{center}
+
+\begin{center}
+\begin{figure}%avionic
+	\centerline{\includegraphics[width=60mm]{img/FIK-6_RAW_data.png}}
+	\caption{Raw data measured during the whole flight. From top to bottom: temperature near scintillation crystal, air pressure inside the box of crystal, temperature inside the gondola, relative humidity inside the gondola, counts of radiation events per 10 seconds counted by scintillator, silicon detector, and  G-M counter, barometric altitude, and altitude from GNSS.\label{FIK-6_RAW_data}}
+\end{figure}
+\end{center}
+
+\begin{center}
+\begin{figure}%avionic
+	\centerline{\includegraphics[width=60mm]{img/FIK-6_rescue_team.png}}
+	\caption{Chasing cars with telemetry receivers at the landing site short after touchdown. \label{FIK-6_rescue_team}}
+\end{figure}
+\end{center}
+
+The graphs show that the maximum reached altitude was approximately 33km above sea level. The length of the flight trajectory in this case was approximately 100km. During the flight the balloon passed the Regener-Pfotzer maximum twice. The rescue team follows the balloon along the whole flight trajectory. The precision of tracking allows some participants of the rescue team to actually see the gondola touchdown visually. Therefore the gondola was successfully rescued within few minutes after touchdown.
+
 
 \begin{center}
 \begin{figure}%avionic
@@ -177,12 +187,15 @@ Zaroven je videt, ze behem klesani dochazi ke značným vibracim, skokovym zmena
 
 \section{Conclusion}
 
+Flight FIK-6 was unique due to radiation measurements of the Regener-Pfotzer maximum using three different types of radiation detectors. Altitude of the Regener-Pfotzer maximum was about 19 km and slightly differ based on the detector type: GM counter measured the highest value (19270 m), silicon PIN diode measured lower value (18802 m), and scintillation detectors the lowest value (18668 m).
+
 A telemetric system TF-ATMON has been developed. It enables data recording, pre-flight instruments control and their monitoring during flight. Thanks to the availability of different communication interfaces on the basic avionics, the use of various alternative detectors is simplified. The technology at the same time improves the possibilities of a quick location of a balloon gondola after its landing. It is therefore possible to carry out even experiments requiring a very short period till recovering the balloon after the flight. The system was successfully tested during FIK-6 flight.
 
 
 
 \section*{Acknowledgement}
-The project was supported from  SGS20/181/OHK3/3T/13.
+The work was supported in the frame of the Operational Program EU Project CRREAT 
+\newline No. CZ.02.1.01/0.0/0.0/15\_003/0000481. The work was supported from  SGS20/181/OHK3/3T/13.
 
 \begin{thebibliography}{99.}%%the highest numbers has to be given
 
@@ -211,7 +224,20 @@ The project was supported from  SGS20/181/OHK3/3T/13.
 
 \bibitem{AIRDOS-C} Velychko, O., Kákona, M., Ambrožová, I., and Ploc, O. (2021). Characterization of AIRDOS-C detector for measurement of high-energy events in the atmosphere.
 
+\bibitem{standard_atmosphere} National Oceanic and Atmospheric Administration, National Aeronautics and Space Administration, United States Air Force. (1976). U.S. Standard Atmosphere. Washington, DC.
+
 \bibitem{habhub_tracker} \url{https://tracker.habhub.org/}
+
+\bibitem{TFGPS01} \url{http://www.thunderfly.cz/pl/TFGPS01}
+
+\bibitem{TFSIK01} \url{http://www.thunderfly.cz/pl/TFSIK01}
+
+\bibitem{TFHT01} \url{http://www.thunderfly.cz/pl/TFHT01}
+
+\bibitem{TFLORA01} \url{http://www.thunderfly.cz/pl/TFLORA01}
+
+\bibitem{LION2CELL01D} \url{https://www.mlab.cz/PermaLink/LION2CELL01D}
+
 
 
 \end{thebibliography}

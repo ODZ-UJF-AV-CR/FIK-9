@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  12 NOV 2021 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.17)  17 NOV 2021 20:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -36,9 +36,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
 \CROP@offset=\count168
-Package crop Info: Local config file crop.cfg used on input line 605.
-
-(/usr/share/texlive/texmf-dist/tex/xelatex/xetexconfig/crop.cfg))
+)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -450,19 +448,14 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 31.
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 35--40
-\OT1/ptm/m/n/9 flight FIK-6. Various radiation detectors - Geiger-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<img/FIK-6_experiment_setup.png, id=55, 500.87125pt x 738.76pt>
+<img/FIK-6_experiment_setup.png, id=56, 480.79625pt x 722.7pt>
 File: img/FIK-6_experiment_setup.png Graphic file (type png)
 <use img/FIK-6_experiment_setup.png>
 Package pdftex.def Info: img/FIK-6_experiment_setup.png  used on input line 45.
 
-(pdftex.def)             Requested size: 170.71652pt x 251.79506pt.
+(pdftex.def)             Requested size: 170.71652pt x 256.60991pt.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
 2.
 
@@ -544,29 +537,39 @@ Underfull \hbox (badness 5147) in paragraph at lines 87--89
  []
 
 
+Underfull \hbox (badness 1521) in paragraph at lines 93--94
+\OT1/ptm/m/n/9 supply, time, position and orientation information.
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 93--94
+\OT1/ptm/m/n/9 are also recorded. Such quantities are temperature,
+ []
+
+
 Underfull \hbox (badness 2443) in paragraph at lines 95--96
 []\OT1/ptm/m/n/9 The schematic diagram of the new avionics is
  []
 
 Package epstopdf Info: Source file: <img/avionics_block_schematics.eps>
-(epstopdf)                    date: 2021-11-10 23:56:35
-(epstopdf)                    size: 83960 bytes
+(epstopdf)                    date: 2021-11-15 15:57:52
+(epstopdf)                    size: 124052 bytes
 (epstopdf)             Output file: <img/avionics_block_schematics-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2021-11-12 00:22:29
-(epstopdf)                    size: 35278 bytes
+(epstopdf)                    date: 2021-11-15 16:00:09
+(epstopdf)                    size: 53046 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/avionics_block_schemat
 ics-eps-converted-to.pdf img/avionics_block_schematics.eps>
 (epstopdf)             \includegraphics on input line 100.
 Package epstopdf Info: Output file is already uptodate.
-<img/avionics_block_schematics-eps-converted-to.pdf, id=78, 938.50626pt x 684.5
-575pt>
+<img/avionics_block_schematics-eps-converted-to.pdf, id=81, 959.585pt x 684.557
+5pt>
 File: img/avionics_block_schematics-eps-converted-to.pdf Graphic file (type pdf
 )
 <use img/avionics_block_schematics-eps-converted-to.pdf>
 Package pdftex.def Info: img/avionics_block_schematics-eps-converted-to.pdf  us
 ed on input line 100.
-(pdftex.def)             Requested size: 170.71652pt x 124.5207pt.
+(pdftex.def)             Requested size: 170.71652pt x 121.784pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -592,209 +595,232 @@ Underfull \hbox (badness 1968) in paragraph at lines 105--106
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 129--130
+Underfull \hbox (badness 2020) in paragraph at lines 133--134
 \OT1/ptm/m/n/9 The payload of FIK-5 and FIK-6 flights contains
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 131--132
+Underfull \hbox (badness 1953) in paragraph at lines 135--136
 []\OT1/ptm/m/n/9 SPACEDOS is a lightweight dosimeter intended
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 131--132
+Underfull \hbox (badness 2012) in paragraph at lines 135--136
 \OT1/ptm/m/n/9 for space applications for measurements on board
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 133--134
+Underfull \hbox (badness 2181) in paragraph at lines 137--138
 \OT1/ptm/m/n/9 crystal. The detector has been described in [[]].
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-<img/FIK-6_RAW_data.png, id=103, 892.33376pt x 1283.79625pt>
-File: img/FIK-6_RAW_data.png Graphic file (type png)
-<use img/FIK-6_RAW_data.png>
-Package pdftex.def Info: img/FIK-6_RAW_data.png  used on input line 144.
-(pdftex.def)             Requested size: 170.71652pt x 245.60849pt.
-
-Underfull \hbox (badness 1019) in paragraph at lines 145--145
- \OT1/ptm/m/n/8 Temperature near scintillation crystal, Air Pressure inside 
+[3]
+Underfull \hbox (badness 1314) in paragraph at lines 143--144
+\OT1/ptm/m/n/9 energy of radiation events from all three radiation
  []
 
-
-Underfull \hbox (badness 1354) in paragraph at lines 145--145
- \OT1/ptm/m/n/8 counted by scintillator, Radiation Events per 10 seconds 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 2469) in paragraph at lines 150--151
-\OT1/ptm/m/n/9 100km. During the flight the balloon passed the
- []
-
-<img/FIK-6_flight_path.png, id=105, 962.59625pt x 628.3475pt>
+<img/FIK-6_flight_path.png, id=116, 962.59625pt x 628.3475pt>
 File: img/FIK-6_flight_path.png Graphic file (type png)
 <use img/FIK-6_flight_path.png>
-Package pdftex.def Info: img/FIK-6_flight_path.png  used on input line 155.
+Package pdftex.def Info: img/FIK-6_flight_path.png  used on input line 148.
 (pdftex.def)             Requested size: 170.71652pt x 111.42938pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./img/FIK-6_RAW_data.png> <./img/FIK-6_flight_path.png>]
-<img/FIK-6_balloon_burst.png, id=114, 823.075pt x 668.4975pt>
-File: img/FIK-6_balloon_burst.png Graphic file (type png)
-<use img/FIK-6_balloon_burst.png>
-Package pdftex.def Info: img/FIK-6_balloon_burst.png  used on input line 162.
-(pdftex.def)             Requested size: 170.71652pt x 138.65454pt.
+<img/FIK-6_RAW_data.png, id=117, 984.67876pt x 1433.355pt>
+File: img/FIK-6_RAW_data.png Graphic file (type png)
+<use img/FIK-6_RAW_data.png>
+Package pdftex.def Info: img/FIK-6_RAW_data.png  used on input line 155.
+(pdftex.def)             Requested size: 170.71652pt x 248.50066pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./img/FIK-6_flight_path.png> <./img/FIK-6_RAW_data.png>]
+<img/FIK-6_rescue_team.png, id=129, 593.21625pt x 1251.67625pt>
+File: img/FIK-6_rescue_team.png Graphic file (type png)
+<use img/FIK-6_rescue_team.png>
+Package pdftex.def Info: img/FIK-6_rescue_team.png  used on input line 162.
+(pdftex.def)             Requested size: 170.71652pt x 360.20746pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 172--173
+Underfull \hbox (badness 2469) in paragraph at lines 167--168
+\OT1/ptm/m/n/9 100km. During the flight the balloon passed the
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 167--168
+\OT1/ptm/m/n/9 Regener-Pfotzer maximum twice. The rescue team
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 167--168
+\OT1/ptm/m/n/9 visually. Therefore the gondola was successfully
+ []
+
+<img/FIK-6_balloon_burst.png, id=130, 823.075pt x 668.4975pt>
+File: img/FIK-6_balloon_burst.png Graphic file (type png)
+<use img/FIK-6_balloon_burst.png>
+Package pdftex.def Info: img/FIK-6_balloon_burst.png  used on input line 172.
+(pdftex.def)             Requested size: 170.71652pt x 138.65454pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./img/FIK-6_rescue_team.png> <./img/FIK-6_balloon_burst.png>]
+Underfull \hbox (badness 2495) in paragraph at lines 182--183
 \OT1/ptm/m/n/9 dat ve sm[]eru vzh[]uru a p[]ri kles[]an[]^^P. Tento rozd[]^^Pl
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 174--175
+Underfull \hbox (badness 1622) in paragraph at lines 184--185
 []\OT1/ptm/m/n/9 Zaroven je videt, ze behem klesani dochazi ke
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 174--175
+Underfull \hbox (badness 1389) in paragraph at lines 184--185
 \OT1/ptm/m/n/9 zna[]cn[]ym vibracim, skokovym zmenam zrychlen[]^^P a
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 180--181
+Underfull \hbox (badness 1789) in paragraph at lines 192--193
 \OT1/ptm/m/n/9 and their monitoring during flight. Thanks to the
  []
 
 
-Overfull \hbox (7.69041pt too wide) in paragraph at lines 185--186
-\OT1/ptm/m/n/9 The project was supported from SGS20/181/OHK3/3T/13. 
- []
-
-
-Underfull \hbox (badness 3049) in paragraph at lines 189--190
+Underfull \hbox (badness 3049) in paragraph at lines 202--203
 []\OT1/ptm/m/n/9 Pfotzer, G. (1936). Dreifachkoinzidenzen der
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 189--190
+Underfull \hbox (badness 3780) in paragraph at lines 202--203
 \OT1/ptm/m/n/9 Ultrastrahlung aus vertikaler Richtung in der
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-91.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+04.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1546) in paragraph at lines 191--192
+Underfull \hbox (badness 1546) in paragraph at lines 204--205
 \OT1/ptm/m/n/9 905, 2018, 33-46. []$\OT1/pcr/m/n/9 https : / / doi . org / 10 .
 
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 193--194
+Underfull \hbox (badness 1748) in paragraph at lines 206--207
 \OT1/ptm/m/n/9 (1998), On the stratospheric measurements of
  []
 
-[5 <./img/FIK-6_balloon_burst.png>]
-Underfull \hbox (badness 3407) in paragraph at lines 194--195
+
+Underfull \hbox (badness 3407) in paragraph at lines 207--208
 \OT1/ptm/m/n/9 in Australian outback using a balloon borne
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 196--197
+Underfull \hbox (badness 3240) in paragraph at lines 209--210
 \OT1/ptm/m/n/9 cosmic ray tracking on BEXUS stratospheric
  []
 
 
-Overfull \hbox (10.64978pt too wide) in paragraph at lines 196--197
+Overfull \hbox (10.64978pt too wide) in paragraph at lines 209--210
 []$\OT1/pcr/m/n/9 https : / / doi . org / 10 . 1016 / j . nima . 2010 .
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 198--199
+Underfull \hbox (badness 1789) in paragraph at lines 211--212
 []\OT1/ptm/m/n/9 R. Sarkar, S. K. Chakrabarti, P. Sarathi Pal,
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 200--201
+Underfull \hbox (badness 1024) in paragraph at lines 213--214
 []\OT1/ptm/m/n/9 S.W. Li, Y.S. Li, K.C. Tsui. Radioactivity in
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 200--201
+Underfull \hbox (badness 2626) in paragraph at lines 213--214
 \OT1/ptm/m/n/9 the atmosphere over Hong Kong, Journal of
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 200--201
+Underfull \hbox (badness 1264) in paragraph at lines 213--214
 \OT1/ptm/m/n/9 Environmental Radioactivity 94 (2007) 98-106.
  []
 
 
-Overfull \hbox (26.84976pt too wide) in paragraph at lines 200--201
+Overfull \hbox (26.84976pt too wide) in paragraph at lines 213--214
 []$\OT1/pcr/m/n/9 https : / / doi . org / 10 . 1016 / j . jenvrad . 2007 .
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 202--203
+Underfull \hbox (badness 1226) in paragraph at lines 215--216
 \OT1/ptm/m/n/9 of the vertical ionization profile over southern
  []
 
 
-Underfull \hbox (badness 5802) in paragraph at lines 202--203
+Underfull \hbox (badness 5802) in paragraph at lines 215--216
 \OT1/ptm/m/n/9 Journal of Atmospheric and Solar{Terrestrial
  []
 
 
-Overfull \hbox (7.79494pt too wide) in paragraph at lines 204--205
+Overfull \hbox (7.79494pt too wide) in paragraph at lines 217--218
 \OT1/ptm/m/n/9 profile measurements of lower troposphere ionisation,
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 204--205
+Underfull \hbox (badness 7308) in paragraph at lines 217--218
 \OT1/ptm/m/n/9 Journal of Atmospheric and Solar-Terrestrial
  []
 
 
-Underfull \hbox (badness 2521) in paragraph at lines 204--205
+Underfull \hbox (badness 2521) in paragraph at lines 217--218
 \OT1/ptm/m/n/9 Physics 119 (2014), 203{210. []$\OT1/pcr/m/n/9 http : / / dx .
  []
 
 
-Overfull \hbox (5.24979pt too wide) in paragraph at lines 204--205
+Overfull \hbox (5.24979pt too wide) in paragraph at lines 217--218
 \OT1/pcr/m/n/9 doi . org / 10 . 1016 / j . jastp . 2014 . 08 . 006$[] 
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 210--211
-[]\OT1/ptm/m/n/9 K[]akona, M., Ambro[]zov[]a, I., Inozemtsev, K.
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-- LAST -
-Extra skip:44.20699pt
-Left:318.0pt/1.26892pt
-Right:273.64899pt/1.41295pt
-Output:318.3245pt
  [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+Underfull \hbox (badness 1701) in paragraph at lines 223--224
+[]\OT1/ptm/m/n/9 K[]akona, M., Ambro[]zov[]a, I., Inozemtsev, K.
+ []
 
-(./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
+
+Overfull \hbox (5.24979pt too wide) in paragraph at lines 231--232
+[][]$\OT1/pcr/m/n/9 http : / / www . thunderfly . cz / pl / TFGPS01$[] 
+ []
+
+
+Overfull \hbox (5.24979pt too wide) in paragraph at lines 233--234
+[][]$\OT1/pcr/m/n/9 http : / / www . thunderfly . cz / pl / TFSIK01$[] 
+ []
+
+
+Overfull \hbox (10.64978pt too wide) in paragraph at lines 237--238
+[][]$\OT1/pcr/m/n/9 http : / / www . thunderfly . cz / pl / TFLORA01$[] 
+ []
+
+
+Overfull \hbox (43.04974pt too wide) in paragraph at lines 239--240
+[][]$\OT1/pcr/m/n/9 https : / / www . mlab . cz / PermaLink / LION2CELL01D$[] 
+ []
+
+- LAST -
+Extra skip:22.53548pt
+Left:131.0pt/1.94843pt
+Right:109.0pt/1.41295pt
+Output:131.5pt
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
+ (./document.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: 6212C83E42140E59AE2224A2CDB3405D;526.
 
@@ -802,18 +828,15 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 7938 strings out of 481775
- 113158 string characters out of 5932103
- 396333 words of memory out of 5000000
- 22825 multiletter control sequences out of 15000+600000
+ 7957 strings out of 482368
+ 113356 string characters out of 5941918
+ 395296 words of memory out of 5000000
+ 22820 multiletter control sequences out of 15000+600000
  554981 words of font info for 78 fonts, out of 8000000 for 9000
- 893 hyphenation exceptions out of 8191
- 50i,13n,43p,1398b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 432 hyphenation exceptions out of 8191
+ 39i,13n,37p,1398b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{section*.11} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -842,10 +865,10 @@ rr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/wasy-type1/wasy9.pfb>
-Output written on document.pdf (6 pages, 778426 bytes).
+Output written on document.pdf (7 pages, 1600758 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
