@@ -14,8 +14,8 @@
 \def\copyrightyear{2021}%
 
 \title[short Title]{Measuring Regener-Pfotzer maximum using different types of ionizing radiation detectors and a new telemetry system TF-ATMON}
-\author[\textit{et~al}]{Jakub Kákona\,$^{ a}$,  Martina Lužová \,$^{ b}$, Martin Kákona \,$^{ b}$, Marek Sommer \,$^{ b}$, Martin Povišer \,$^{ b}$, Ondřej Ploc \,$^{ b}$, Roman Dvořák \,$^{ b}$, Iva Ambrožová\,$^{ a}$}
-\address{$^{ a}$CTU - Faculty of Electrical Engineering, $^{ b}$Ústav jaderné fyziky AV ČR, v. v. i.}
+\author[\textit{et~al}]{Jakub Kákona\,$^{ a}$,  Martina Lužová \,$^{ b}$, Martin Kákona \,$^{ b}$, Marek Sommer \,$^{ b}$, Martin Povišer \,$^{ b}$, Ondřej Ploc \,$^{ b}$, Roman Dvořák \,$^{ c}$, Iva Ambrožová\,$^{ b}$}
+\address{$^{ a}$Czech Technical University in Prague, Faculty of Electrical Engineering, Prague, Czech Republic, $^{ b}$Department of Radiation Dosimetry, Nuclear Physics Institute of the CAS, Na Truhlářce 39/64, 180 00, Prague 8, Czech Republic, $^{ c}$ ThunderFly s.r.o., U Jatek 19, Soběslav  392 01, Czech Republic}
 
 \date{Received on April 2, 2003, revised on November 19, 2003, accepted on December 22, 2003}
 
@@ -36,13 +36,6 @@ However, the radiation measurement instruments need to be supplemented also by o
 Platform developed for experiments at different altitudes consisting of a balloon tracking system and different measuring instruments will be presented. The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an telemetry transmitter, enables it to monitor and record data during the flight and to trace the balloon. The application is demonstrated on stratospheric balloon flight FIK-6 Fig. \ref{FIK-6_setup}. Various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOS, and scintillation detectors AIRDOS-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere.
 
 \section{Materials and methods}
-
-\begin{center}
-\begin{figure}%avionic
-	\centerline{\includegraphics[width=60mm]{img/FIK-6_experiment_setup.png}}
-	\caption{FIK-6 experiment setup using the Hwoyee Weather Balloon 1600. \label{FIK-6_setup}}
-\end{figure}
-\end{center}
 
 Since 2015 we launched several stratospheric balloons, the overview of flights is summarized in Table \ref{Flight_reliability}.
 During the first measurements, the construction of balloon gondola was always designed for the use of specific detectors. Balloon avionics was therefore built around the chosen detectors.
@@ -135,6 +128,13 @@ AIRDOS-C is a scintillation detector with a small crystal. The detector has been
 
 The G-M tube STS-5 was used in the Geiger–Müller counter. The volume of the tube is $\diameter 10$ mm$ \times 76$ mm $= 6$ cm$^3$. This detector is capable of registering only the flux. All detectors, together with other sensors and TF-ATMON system were put inside a polystyrene box. 
 
+\begin{center}
+\begin{figure}%avionic
+	\centerline{\includegraphics[width=60mm]{img/FIK-6_experiment_setup.png}}
+	\caption{FIK-6 experiment setup using the Hwoyee Weather Balloon 1600. \label{FIK-6_setup}}
+\end{figure}
+\end{center}
+
 
 \section{Results}
 
@@ -172,7 +172,7 @@ The graphs show that the maximum reached altitude was approximately 33km above s
 \end{figure}
 \end{center}
 
-By processing the data a graph of detected altitude fig. X can be obtained. It shows that the measured altitude of the Regener-Pfotzer maximum was for all detector types around 19km above sea level.
+By processing the data a graph of detected altitude Figure \ref{R-P_maximum} can be obtained. It shows that the measured altitude of the Regener-Pfotzer maximum was for all detector types around 19km above sea level.
 
 
 Pro urceni R-P maxima jsme pouzili Log-norm distribution fit na namerena data normovany na maximalni pocet castic pro dany detektor.
@@ -210,11 +210,9 @@ Flight FIK-6 was unique due to radiation measurements of the Regener-Pfotzer max
 
 A telemetric system TF-ATMON has been developed. It enables data recording, pre-flight instruments control and their monitoring during flight. Thanks to the availability of different communication interfaces on the basic avionics, the use of various alternative detectors is simplified. The technology at the same time improves the possibilities of a quick location of a balloon gondola after its landing. It is therefore possible to carry out even experiments requiring a very short period till recovering the balloon after the flight. The system was successfully tested during FIK-6 flight.
 
-
-
 \section*{Acknowledgement}
-The work was supported in the frame of the Operational Program EU Project CRREAT 
-\newline No. CZ.02.1.01/0.0/0.0/15\_003/0000481. The work was supported from  SGS20/181/OHK3/3T/13.
+
+This work was supported by Open Programme Research Development Education, MEYS, under the project CRREAT, \newline Reg. No. CZ.02.1.01/0.0/0.0/15\_003/0000481 and CTU internal project SGS, Reg. No. SGS20/181/OHK3/3T/13
 
 \begin{thebibliography}{99.}%%the highest numbers has to be given
 
