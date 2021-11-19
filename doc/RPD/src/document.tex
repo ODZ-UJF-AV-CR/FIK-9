@@ -188,15 +188,37 @@ Note that the absolute number of measured particles corresponds to the active vo
 \end{figure*}
 \end{center}
 
+Altitudes of maxima of all three data sets were found using the log-normal fit (see Figure \ref{R-P_maximum}) described by mean value ($\mu_1$, $\mu_2$, $\mu_3$), variance ($\sigma_1$, $\sigma_2$, $\sigma_3$), and extent ($n_1$, $n_2$, $n_3$) where indexes 1, 2, and 3 refer to G-M counter, NaI(Tl) scintillator, and silicon PIN diode, respectively. We can see that altitudes of maxima differ. Statistical significance of this difference was evaluated using the two-selective testing of three hypotheses ($\mu_1 = \mu_2$, $\mu_1 = \mu_3$, and $\mu_2 = \mu_3$) about the equality of the mean values. We applied a two-selective T-test, see Table \ref{}, which is correct also in case of a log-normal distribution according to \cite{confidence_intervals}.
 
-Z naměřených dat je patrné, že během letu je velmi znatelný rozdíl mezi počtem bodů kvalitou měřených dat ve směru vzhůru a při klesání. Tento rozdíl je dán kromě odlišných tepelných podmínek hlavně rozdílnou hodnotou vertikální rychlosti.  Tuto záležitost se v následujících balonových letech chystáme vyřešit kontrolovaným sestupem, kde by bylo možné rychlost klesání v některých fázích letu snížit. Tak aby byla více srovnatelná s rychlostí výstupu.
+Table 2 Statistical testing of the hypotheses about the equality of the mean values of the log-normal distributions used in Figure \ref{R-P_maximum}. 
 
-Zaroven je videt, ze behem klesani dochazi ke značným vibracim, skokovym zmenam zrychlení a také dochází k rotaci gondoly. Vsechny tyto parametry mohou mit vliv na mereni atmosferickych velicin a pro nektere druhy pristroju musi byt kompenzovany. Zaroven je videt pri klesani narust vlhkosti, ktera muze v urcitych castech letu i namrzat na přístroje.
+
+According to the results of the statistical analysis in Table \ref{}, statistical criterion empirical values defined as \ref{Texp}
+
+\begin{equation}
+\begin{gathered}
+t_{exp} =  \frac{\mu_1 - \mu_2}{\sqrt{(n_1 - 1)\sigma_1 ^2 + (n_2 - 1)\sigma_2 ^2}} \\
+ \sqrt{\frac{n_1 n_2 (n_1 + n_2 -2)}{n_1 + n_2}}
+\end{gathered}
+\end{equation}\label{Texp}
+
+were not the element of the critical domains W defined as \ref{W} 
+
+\begin{equation}W = (- \infty ; -t_{n_1 + n_2 -2} (\alpha / 2) \rangle \cup \langle t_{n_1 + n_2 -2} (\alpha / 2); \infty)  \end{equation}\label{W}
+
+The $H_0$ hypothesis was therefore accepted in all cases, which means that the difference between the altitude is statistically unimportant for both significance levels.
+
+As the measured data show in \ref{FIK-6_RAW_data}, there is a very noticeable difference between a number of data points measured during the flight upwards and during the descent. This difference is mainly caused by the  different value of vertical speed. In the following balloon flights we are planning to overcome this problem by a controlled descent, during which its rate can be decreased in some phases of flight so that it can be more comparable with the speed of the ascent.
+
+At the same time, it can be seen \ref{FIK-6_telemetry} that there are considerable vibrations, rapid changes in acceleration and gondola rotation during the balloon descent. All of them may affect the measurement of atmospheric quantities and for some types of instruments they have to be compensated. During the descent the increase in humidity is also observable, which can even freeze on the instruments during some parts of the flight.
+
+It should be noted that the radiation measurements presented in Figure \ref{FIK-6_RAW_data} are raw data. The correction on temperature should be applied for a correct interpretation of the measured R-P maximum altitude. Time course of the temperature is also available thanks to the records of the TF-ATMON system. The temperature dependencies of the detectors  will be subject of further studies.
+
 
 \subsection{Further plans}
 
 As can be seen from the table \ref{Flight_reliability}, the last unsolved problem with the balloon flights is the landing site. Therefore, in the future flights we are planning to use the autopilot for a controlled descent as well.
-The descent will be carried out using an unmanned autogyro carrying a payload. Thus it would be possible to choose the landing site and reduce the possible risk of creating dangerous situations andat the same time it would be possibleto control the descent rate. 
+The descent will be carried out using an unmanned autogyro carrying a payload. Thus it would be possible to choose the landing site and reduce the possible risk of creating dangerous situations and at the same time it would be possible to control the descent rate. 
 
 \section{Conclusion}
 

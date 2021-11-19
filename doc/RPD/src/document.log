@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  19 NOV 2021 22:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  19 NOV 2021 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -697,177 +697,230 @@ Package pdftex.def Info: img/FIK-6_R-P_maximum.png  used on input line 186.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5 <./img/FIK-6_rescue_team.png>]
-Underfull \hbox (badness 2495) in paragraph at lines 192--193
-\OT1/ptm/m/n/9 dat ve sm[]eru vzh[]uru a p[]ri kles[]an[]^^P. Tento rozd[]^^Pl
+
+LaTeX Warning: Reference `' on page 6 undefined on input line 191.
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 191--192
+\OT1/ptm/m/n/9 mean value ($\OML/cmm/m/it/9 ^^V[]$\OT1/ptm/m/n/9 , $\OML/cmm/m/
+it/9 ^^V[]$\OT1/ptm/m/n/9 , $\OML/cmm/m/it/9 ^^V[]$\OT1/ptm/m/n/9 ), variance (
+$\OML/cmm/m/it/9 ^^[[]$\OT1/ptm/m/n/9 , $\OML/cmm/m/it/9 ^^[[]$\OT1/ptm/m/n/9 ,
+ $\OML/cmm/m/it/9 ^^[[]$\OT1/ptm/m/n/9 ),
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 194--195
-[]\OT1/ptm/m/n/9 Zaroven je videt, ze behem klesani dochazi ke
+Underfull \hbox (badness 1062) in paragraph at lines 193--194
+\OT1/ptm/m/n/9 the equality of the mean values of the log-normal
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 194--195
-\OT1/ptm/m/n/9 zna[]cn[]ym vibracim, skokovym zmenam zrychlen[]^^P a
+LaTeX Warning: Reference `' on page 6 undefined on input line 196.
+
+
+Package hyperref Warning: Suppressing empty link on input line 196.
+
+
+Package hyperref Warning: Suppressing empty link on input line 205.
+
+
+Overfull \hbox (8.65236pt too wide) detected at line 207
+ $\OML/cmm/m/it/9 W \OT1/cmr/m/n/9 = (\OMS/cmsy/m/n/9 ^^@1\OT1/cmr/m/n/9 ; \OMS
+/cmsy/m/n/9 ^^@\OML/cmm/m/it/9 t[]\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 =\OT1/cmr/m/
+n/9 2)\OMS/cmsy/m/n/9 i [ h\OML/cmm/m/it/9 t[]\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 
+=\OT1/cmr/m/n/9 2); \OMS/cmsy/m/n/9 1\OT1/cmr/m/n/9 )$  
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 203--205
+Underfull \hbox (badness 2173) in paragraph at lines 211--212
+\OT1/ptm/m/n/9 descent. This difference is mainly caused by the
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 211--212
+\OT1/ptm/m/n/9 different value of vertical speed. In the following
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 211--212
+\OT1/ptm/m/n/9 balloon flights we are planning to overcome this
+ []
+
+
+Underfull \hbox (badness 4981) in paragraph at lines 215--216
+\OT1/ptm/m/n/9 on temperature should be applied for a correct
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 215--216
+\OT1/ptm/m/n/9 Time course of the temperature is also available
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 215--216
+\OT1/ptm/m/n/9 thanks to the records of the TF-ATMON system.
+ []
+
+[6 <./img/FIK-6_R-P_maximum.png>]
+Underfull \hbox (badness 1622) in paragraph at lines 225--227
 \OT1/ptm/m/n/9 lower value (18802 m), and scintillation detectors
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 208--209
+Underfull \hbox (badness 1708) in paragraph at lines 230--231
 \OT1/ptm/m/n/9 Development Education, MEYS, under the project
  []
 
 
-Overfull \hbox (1.02145pt too wide) in paragraph at lines 208--209
+Overfull \hbox (1.02145pt too wide) in paragraph at lines 230--231
 \OT1/ptm/m/n/9 internal project SGS, Reg. No. SGS20/181/OHK3/3T/13 
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 234--235
+[]\OT1/ptm/m/n/9 Pfotzer, G. (1936). Dreifachkoinzidenzen der
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 234--235
+\OT1/ptm/m/n/9 Ultrastrahlung aus vertikaler Richtung in der
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./img/FIK-6_R-P_maximum.png>]
-Underfull \hbox (badness 3049) in paragraph at lines 212--213
-[]\OT1/ptm/m/n/9 Pfotzer, G. (1936). Dreifachkoinzidenzen der
- []
-
-
-Underfull \hbox (badness 3780) in paragraph at lines 212--213
-\OT1/ptm/m/n/9 Ultrastrahlung aus vertikaler Richtung in der
- []
-
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-14.
+36.
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1546) in paragraph at lines 214--215
+Underfull \hbox (badness 1546) in paragraph at lines 236--237
 \OT1/ptm/m/n/9 905, 2018, 33-46. []$\OT1/pcr/m/n/9 https : / / doi . org / 10 .
 
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 216--217
+Underfull \hbox (badness 1748) in paragraph at lines 238--239
 \OT1/ptm/m/n/9 (1998), On the stratospheric measurements of
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 217--218
+Underfull \hbox (badness 3407) in paragraph at lines 239--240
 \OT1/ptm/m/n/9 in Australian outback using a balloon borne
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 219--220
+Underfull \hbox (badness 3240) in paragraph at lines 241--242
 \OT1/ptm/m/n/9 cosmic ray tracking on BEXUS stratospheric
  []
 
 
-Overfull \hbox (10.64978pt too wide) in paragraph at lines 219--220
+Overfull \hbox (10.64978pt too wide) in paragraph at lines 241--242
 []$\OT1/pcr/m/n/9 https : / / doi . org / 10 . 1016 / j . nima . 2010 .
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 221--222
+Underfull \hbox (badness 1789) in paragraph at lines 243--244
 []\OT1/ptm/m/n/9 R. Sarkar, S. K. Chakrabarti, P. Sarathi Pal,
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 223--224
+Underfull \hbox (badness 1024) in paragraph at lines 245--246
 []\OT1/ptm/m/n/9 S.W. Li, Y.S. Li, K.C. Tsui. Radioactivity in
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 223--224
+Underfull \hbox (badness 2626) in paragraph at lines 245--246
 \OT1/ptm/m/n/9 the atmosphere over Hong Kong, Journal of
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 223--224
+Underfull \hbox (badness 1264) in paragraph at lines 245--246
 \OT1/ptm/m/n/9 Environmental Radioactivity 94 (2007) 98-106.
  []
 
 
-Overfull \hbox (26.84976pt too wide) in paragraph at lines 223--224
+Overfull \hbox (26.84976pt too wide) in paragraph at lines 245--246
 []$\OT1/pcr/m/n/9 https : / / doi . org / 10 . 1016 / j . jenvrad . 2007 .
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 225--226
+Underfull \hbox (badness 1226) in paragraph at lines 247--248
 \OT1/ptm/m/n/9 of the vertical ionization profile over southern
  []
 
 
-Underfull \hbox (badness 5802) in paragraph at lines 225--226
+Underfull \hbox (badness 5802) in paragraph at lines 247--248
 \OT1/ptm/m/n/9 Journal of Atmospheric and Solar{Terrestrial
  []
 
 
-Overfull \hbox (7.79494pt too wide) in paragraph at lines 227--228
+Overfull \hbox (7.79494pt too wide) in paragraph at lines 249--250
 \OT1/ptm/m/n/9 profile measurements of lower troposphere ionisation,
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 227--228
+Underfull \hbox (badness 7308) in paragraph at lines 249--250
 \OT1/ptm/m/n/9 Journal of Atmospheric and Solar-Terrestrial
  []
 
 
-Underfull \hbox (badness 2521) in paragraph at lines 227--228
+Underfull \hbox (badness 2521) in paragraph at lines 249--250
 \OT1/ptm/m/n/9 Physics 119 (2014), 203{210. []$\OT1/pcr/m/n/9 http : / / dx .
  []
 
 
-Overfull \hbox (5.24979pt too wide) in paragraph at lines 227--228
+Overfull \hbox (5.24979pt too wide) in paragraph at lines 249--250
 \OT1/pcr/m/n/9 doi . org / 10 . 1016 / j . jastp . 2014 . 08 . 006$[] 
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 233--234
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \hbox (badness 1701) in paragraph at lines 255--256
 []\OT1/ptm/m/n/9 K[]akona, M., Ambro[]zov[]a, I., Inozemtsev, K.
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 239--240
+Underfull \hbox (badness 1509) in paragraph at lines 261--262
 \OT1/ptm/m/n/9 mean of a log-normal distribution. Journal of
  []
 
 
-Overfull \hbox (5.24979pt too wide) in paragraph at lines 243--244
+Overfull \hbox (5.24979pt too wide) in paragraph at lines 265--266
 [][]$\OT1/pcr/m/n/9 http : / / www . thunderfly . cz / pl / TFGPS01$[] 
  []
 
 
-Overfull \hbox (5.24979pt too wide) in paragraph at lines 245--246
+Overfull \hbox (5.24979pt too wide) in paragraph at lines 267--268
 [][]$\OT1/pcr/m/n/9 http : / / www . thunderfly . cz / pl / TFSIK01$[] 
  []
 
 
-Overfull \hbox (10.64978pt too wide) in paragraph at lines 249--250
+Overfull \hbox (10.64978pt too wide) in paragraph at lines 271--272
 [][]$\OT1/pcr/m/n/9 http : / / www . thunderfly . cz / pl / TFLORA01$[] 
  []
 
 
-Overfull \hbox (43.04974pt too wide) in paragraph at lines 251--252
+Overfull \hbox (43.04974pt too wide) in paragraph at lines 273--274
 [][]$\OT1/pcr/m/n/9 https : / / www . mlab . cz / PermaLink / LION2CELL01D$[] 
  []
 
 - LAST -
-Extra skip:8.90001pt
-Left:469.0pt/1.94843pt
-Right:460.63547pt/1.41295pt
-Output:469.31773pt
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+Extra skip:33.53548pt
+Left:153.0pt/1.94843pt
+Right:120.0pt/1.41295pt
+Output:153.0pt
+[8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: B36802B8BB6E20C83E8EE01586A1B75C;487.
 
@@ -875,15 +928,18 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 7960 strings out of 481775
- 113523 string characters out of 5932103
- 403934 words of memory out of 5000000
- 22837 multiletter control sequences out of 15000+600000
+ 7962 strings out of 481775
+ 113531 string characters out of 5932103
+ 396028 words of memory out of 5000000
+ 22836 multiletter control sequences out of 15000+600000
  554981 words of font info for 78 fonts, out of 8000000 for 9000
  893 hyphenation exceptions out of 8191
- 55i,13n,48p,1339b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,13n,37p,1339b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{section*.10} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -904,18 +960,19 @@ texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/w
-asy-type1/wasy9.pfb>
-Output written on document.pdf (7 pages, 1574999 bytes).
+public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/times/utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy-type
+1/wasy9.pfb>
+Output written on document.pdf (8 pages, 1589343 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
