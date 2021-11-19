@@ -4,6 +4,7 @@
 \usepackage{array}
 \usepackage{wasysym}
 \usepackage{hyperref}
+\usepackage{multirow}
 %\usepackage{csquotes}
 
 \begin{document}
@@ -13,7 +14,7 @@
 
 \def\copyrightyear{2021}%
 
-\title[short Title]{Measuring Regener-Pfotzer maximum using different types of ionizing radiation detectors and a new telemetry system TF-ATMON}
+\title[short Title]{Measurement of the Regener-Pfotzer maximum using different types of ionizing radiation detectors and a new telemetry system TF-ATMON}
 \author[\textit{et~al}]{Jakub Kákona\,$^{ a}$,  Martina Lužová \,$^{ b}$, Martin Kákona \,$^{ b}$, Marek Sommer \,$^{ b}$, Martin Povišer \,$^{ b}$, Ondřej Ploc \,$^{ b}$, Roman Dvořák \,$^{ c}$, Iva Ambrožová\,$^{ b}$}
 \address{$^{ a}$Czech Technical University in Prague, Faculty of Electrical Engineering, Prague, Czech Republic, $^{ b}$Department of Radiation Dosimetry, Nuclear Physics Institute of the CAS, Na Truhlářce 39/64, 180 00, Prague 8, Czech Republic, $^{ c}$ ThunderFly s.r.o., U Jatek 19, Soběslav  392 01, Czech Republic}
 
@@ -188,25 +189,39 @@ Note that the absolute number of measured particles corresponds to the active vo
 \end{figure*}
 \end{center}
 
-Altitudes of maxima of all three data sets were found using the log-normal fit (see Figure \ref{R-P_maximum}) described by mean value ($\mu_1$, $\mu_2$, $\mu_3$), variance ($\sigma_1$, $\sigma_2$, $\sigma_3$), and extent ($n_1$, $n_2$, $n_3$) where indexes 1, 2, and 3 refer to G-M counter, NaI(Tl) scintillator, and silicon PIN diode, respectively. We can see that altitudes of maxima differ. Statistical significance of this difference was evaluated using the two-selective testing of three hypotheses ($\mu_1 = \mu_2$, $\mu_1 = \mu_3$, and $\mu_2 = \mu_3$) about the equality of the mean values. We applied a two-selective T-test, see Table \ref{}, which is correct also in case of a log-normal distribution according to \cite{confidence_intervals}.
+Altitudes of maxima of all three data sets were found using the log-normal fit (see Figure \ref{R-P_maximum}) described by mean value ($\mu_1$, $\mu_2$, $\mu_3$), variance ($\sigma_1$, $\sigma_2$, $\sigma_3$), and extent ($n_1$, $n_2$, $n_3$) where indexes 1, 2, and 3 refer to G-M counter, NaI(Tl) scintillator, and silicon PIN diode, respectively. We can see that altitudes of maxima differ. Statistical significance of this difference was evaluated using the two-selective testing of three hypotheses ($\mu_1 = \mu_2$, $\mu_1 = \mu_3$, and $\mu_2 = \mu_3$) about the equality of the mean values. We applied a two-selective T-test, see Table \ref{statistics}, which is correct also in case of a log-normal distribution according to \cite{confidence_intervals}.
 
 Table 2 Statistical testing of the hypotheses about the equality of the mean values of the log-normal distributions used in Figure \ref{R-P_maximum}. 
 
+\begin{table*}[t]
+\processtable{Statistical testing of the hypotheses about the equality of the mean values of the log-normal distributions used in Figure \ref{R-P_maximum}.\label{statistics}}
+{\begin{tabular}{p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth}  >{\centering\arraybackslash}p{0.15\textwidth}}
+Hypothesis & Empirical value of statistical criterion $t_{exp}$ & Statistical significance level $\alpha$& Critical value of statistical criterion $t_{n_1 + n_2 -2} (\alpha / 2)$ & Decision \\
+\multirow{2}{*}{$H_0: \mu_1 = \mu_2$} & \multirow{2}{*}{0.614} & 0.01 & 2.594 & accept \\
+                  &                        & 0.3  & 1.038 & accept \\
+\multirow{2}{*}{$H_0: \mu_1 = \mu_3$} & \multirow{2}{*}{1,097} & 0.01 & 2.594 & accept \\
+                  &                        & 0.3  & 1.038 & reject \\
+\multirow{2}{*}{$H_0: \mu_2 = \mu_3$} & \multirow{2}{*}{0.469} & 0.01 & 2.594 & accept \\
+                  &                        & 0.3  & 1.038 & accept
+\end{tabular}}{}
+\end{table*}
 
-According to the results of the statistical analysis in Table \ref{}, statistical criterion empirical values defined as \ref{Texp}
+
+According to the results of the statistical analysis in Table \ref{statistics}, statistical criterion empirical values defined as \ref{Texp}
 
 \begin{equation}
 \begin{gathered}
 t_{exp} =  \frac{\mu_1 - \mu_2}{\sqrt{(n_1 - 1)\sigma_1 ^2 + (n_2 - 1)\sigma_2 ^2}} \\
  \sqrt{\frac{n_1 n_2 (n_1 + n_2 -2)}{n_1 + n_2}}
 \end{gathered}
-\end{equation}\label{Texp}
+\label{Texp}
+\end{equation}
 
 were not the element of the critical domains W defined as \ref{W} 
 
-\begin{equation}W = (- \infty ; -t_{n_1 + n_2 -2} (\alpha / 2) \rangle \cup \langle t_{n_1 + n_2 -2} (\alpha / 2); \infty)  \end{equation}\label{W}
+\begin{equation}W = (- \infty ; -t_{n_1 + n_2 -2} (\alpha / 2) \rangle \cup \langle t_{n_1 + n_2 -2} (\alpha / 2); \infty)  \label{W} \end{equation}
 
-The $H_0$ hypothesis was therefore accepted in all cases, which means that the difference between the altitude is statistically unimportant for both significance levels.
+The $H_0$ hypothesis was therefore accepted in all tested cases, except for the case of P-F maxima measured with G-M counter and silicon PIN diode, where the difference is statistically significant for significance level $\alpha=30\%$.
 
 As the measured data show in \ref{FIK-6_RAW_data}, there is a very noticeable difference between a number of data points measured during the flight upwards and during the descent. This difference is mainly caused by the  different value of vertical speed. In the following balloon flights we are planning to overcome this problem by a controlled descent, during which its rate can be decreased in some phases of flight so that it can be more comparable with the speed of the ascent.
 
@@ -222,7 +237,7 @@ The descent will be carried out using an unmanned autogyro carrying a payload. T
 
 \section{Conclusion}
 
-Flight FIK-6 was unique due to radiation measurements of the Regener-Pfotzer maximum using three different types of radiation detectors. Altitude of the Regener-Pfotzer maximum was about 19 km and slightly differed based on the detector type: GM counter measured the highest value (19270 m), silicon PIN diode measured lower value (18802 m), and scintillation detectors the lowest value (18668 m). It was shown that this difference is statistically unimportant. An increased accuracy in evaluation of the altitude of Regener-Pfotzer maximum is expected when the temperature corrections will be applied.
+Flight FIK-6 was unique due to radiation measurements of the Regener-Pfotzer maximum using three different types of radiation detectors. Altitude of the Regener-Pfotzer maximum was about 19 km and slightly differed based on the detector type: GM counter measured the highest value (19270 m), silicon PIN diode measured lower value (18802 m), and scintillation detectors the lowest value (18668 m). It was shown that this difference is statistically unimportant except for one case with high significance level 30\%. An increased accuracy in evaluation of the altitude of Regener-Pfotzer maximum is expected when the temperature corrections will be applied.
 A telemetric system TF-ATMON has been developed. It enables data recording, pre-flight instruments control and their monitoring during flight. Thanks to the availability of different communication interfaces on the basic avionics, the use of various alternative detectors is simplified. The technology at the same time improves the possibilities of a quick location of a balloon gondola after its landing. It is therefore possible to carry out even experiments requiring a very short period till recovering the balloon after the flight. The system was successfully tested during FIK-6 flight.
 
 \section*{Acknowledgement}

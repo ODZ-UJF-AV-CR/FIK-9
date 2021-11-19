@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  19 NOV 2021 23:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  19 NOV 2021 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -339,47 +339,54 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip64
 )
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip65
+\multirow@cntb=\count268
+\multirow@dima=\skip66
+\bigstrutjot=\dimen159
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count268
+\l__kernel_color_stack_int=\count269
 \l__pdf_internal_box=\box57
 )
 (./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 9
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+0.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count269
-\scratchdimen=\dimen159
+\scratchcounter=\count270
+\scratchdimen=\dimen160
 \scratchbox=\box58
-\nofMPsegments=\count270
-\nofMParguments=\count271
+\nofMPsegments=\count271
+\nofMParguments=\count272
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count272
-\MPscratchDim=\dimen160
-\MPnumerator=\count273
-\makeMPintoPDFobject=\count274
+\MPscratchCnt=\count273
+\MPscratchDim=\dimen161
+\MPnumerator=\count274
+\makeMPintoPDFobject=\count275
 \everyMPtoPDFconversion=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -390,11 +397,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package crop Info: requested driver: `' on input line 9.
-Package crop Info: detected driver: `pdftex' on input line 9.
-Package crop Info: using `pdftex' graphics driver on input line 9.
+Package crop Info: requested driver: `' on input line 10.
+Package crop Info: detected driver: `pdftex' on input line 10.
+Package crop Info: using `pdftex' graphics driver on input line 10.
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 9.
+Package hyperref Info: Link coloring OFF on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -405,11 +412,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count275
+\c@section@level=\count276
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
 
 (./document.out) (./document.out)
 \@outlinefile=\write3
@@ -418,28 +425,28 @@ LaTeX Info: Redefining \nameref on input line 9.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 28.
+(Font)              size <6> substituted on input line 29.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 28.
+(Font)              size <6> substituted on input line 29.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 28.
+(Font)              size <6> substituted on input line 29.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 28
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 29
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
@@ -447,25 +454,25 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 28.
+(Font)              size <6> substituted on input line 29.
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 32--37
+Underfull \hbox (badness 1584) in paragraph at lines 33--38
 \OT1/ptm/m/n/9 [[]], [[]]. The maximum varies with geomagnetic
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 32--37
+Underfull \hbox (badness 1242) in paragraph at lines 33--38
 \OT1/ptm/m/n/9 vertical cutoff rigidity and with solar cycle and it
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 32--37
+Underfull \hbox (badness 1067) in paragraph at lines 33--38
 \OT1/ptm/m/n/9 is generally located at 15-27 km [[]]. In the past,
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 32--37
+Underfull \hbox (badness 1939) in paragraph at lines 33--38
 \OT1/ptm/m/n/9 vertical profile of ionization in the atmosphere at
  []
 
@@ -473,12 +480,12 @@ Underfull \hbox (badness 1939) in paragraph at lines 32--37
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 48--49
+Underfull \hbox (badness 2452) in paragraph at lines 49--50
 []\OT1/ptm/m/n/9 Reliable transmission of information about the
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-0.
+1.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1
@@ -487,97 +494,97 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 
 ]
-Underfull \hbox (badness 1675) in paragraph at lines 54--55
+Underfull \hbox (badness 1675) in paragraph at lines 55--56
 []\OT1/ptm/m/n/9 Due to the fact that since the first flight there
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 54--55
+Underfull \hbox (badness 2213) in paragraph at lines 55--56
 \OT1/ptm/m/n/9 were various partial shortcomings and despite the
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 59--60
+Underfull \hbox (badness 1173) in paragraph at lines 60--61
 []\OT1/ptm/m/n/9 An overall overview of the success of the used
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 []|\OT1/ptm/m/n/8 Location
  []
 
 
-Overfull \hbox (5.67026pt too wide) in paragraph at lines 78--78
+Overfull \hbox (5.67026pt too wide) in paragraph at lines 79--79
  \OT1/ptm/m/n/8 CRY19,SPACEDOS, 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 []|\OT1/ptm/m/n/8 Power
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 []|\OT1/ptm/m/n/8 Telemetry
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 []|\OT1/ptm/m/n/8 Rescue
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 []|\OT1/ptm/m/n/8 Flight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 \OT1/ptm/m/n/8 control
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 []|\OT1/ptm/m/n/8 Location
  []
 
 
-Overfull \hbox (1.54866pt too wide) in paragraph at lines 78--78
+Overfull \hbox (1.54866pt too wide) in paragraph at lines 79--79
  \OT1/ptm/m/n/8 CRY19,SPACEDOS, 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 []|\OT1/ptm/m/n/8 Telemetry
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 []|\OT1/ptm/m/n/8 Rescue
  []
 
 
-Overfull \hbox (25.00461pt too wide) in paragraph at lines 78--78
+Overfull \hbox (25.00461pt too wide) in paragraph at lines 79--79
 [][] 
  []
 
 
-Underfull \hbox (badness 5147) in paragraph at lines 82--84
+Underfull \hbox (badness 5147) in paragraph at lines 83--85
 \OT1/ptm/m/n/9 of supplementary tools have undergone intensive
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 88--89
+Underfull \hbox (badness 2057) in paragraph at lines 89--90
 \OT1/ptm/m/n/9 it provides the detectors with basic services such
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 88--89
+Underfull \hbox (badness 4181) in paragraph at lines 89--90
 \OT1/ptm/m/n/9 as power supply, time, position and orientation
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 90--91
+Underfull \hbox (badness 2443) in paragraph at lines 91--92
 []\OT1/ptm/m/n/9 The schematic diagram of the new avionics is
  []
 
@@ -590,7 +597,7 @@ d-to.pdf>
 (epstopdf)                    size: 53046 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/avionics_block_schemat
 ics-eps-converted-to.pdf img/avionics_block_schematics.eps>
-(epstopdf)             \includegraphics on input line 95.
+(epstopdf)             \includegraphics on input line 96.
 Package epstopdf Info: Output file is already uptodate.
 <img/avionics_block_schematics-eps-converted-to.pdf, id=79, 959.585pt x 684.557
 5pt>
@@ -598,59 +605,59 @@ File: img/avionics_block_schematics-eps-converted-to.pdf Graphic file (type pdf
 )
 <use img/avionics_block_schematics-eps-converted-to.pdf>
 Package pdftex.def Info: img/avionics_block_schematics-eps-converted-to.pdf  us
-ed on input line 95.
+ed on input line 96.
 (pdftex.def)             Requested size: 170.71652pt x 121.784pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 100--101
+Underfull \hbox (badness 1173) in paragraph at lines 101--102
 \OT1/ptm/m/n/9 parts of avionics are completely separate from the
  []
 
 
-Underfull \hbox (badness 5077) in paragraph at lines 100--101
+Underfull \hbox (badness 5077) in paragraph at lines 101--102
 \OT1/ptm/m/n/9 system of detectors simplified the realization of
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 100--101
+Underfull \hbox (badness 1552) in paragraph at lines 101--102
 \OT1/ptm/m/n/9 next balloon flights. It reduced the complexity of
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 100--101
+Underfull \hbox (badness 1968) in paragraph at lines 101--102
 \OT1/ptm/m/n/9 connecting different types of detectors and at the
  []
 
 [2 <./img/avionics_block_schematics-eps-converted-to.pdf>]
-Underfull \hbox (badness 1953) in paragraph at lines 124--125
+Underfull \hbox (badness 1953) in paragraph at lines 125--126
 []\OT1/ptm/m/n/9 SPACEDOS is a lightweight dosimeter intended
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 124--125
+Underfull \hbox (badness 1400) in paragraph at lines 125--126
 \OT1/ptm/m/n/9 for space applications and measurements on board
  []
 
 <img/FIK-6_experiment_setup.png, id=100, 480.79625pt x 722.7pt>
 File: img/FIK-6_experiment_setup.png Graphic file (type png)
 <use img/FIK-6_experiment_setup.png>
-Package pdftex.def Info: img/FIK-6_experiment_setup.png  used on input line 134
+Package pdftex.def Info: img/FIK-6_experiment_setup.png  used on input line 135
 .
 (pdftex.def)             Requested size: 170.71652pt x 256.60991pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 144--145
+Underfull \hbox (badness 2269) in paragraph at lines 145--146
 \OT1/ptm/m/n/9 pressure, humidity and radiation characteristics as
  []
 
 <img/FIK-6_RAW_data.png, id=104, 984.67876pt x 1433.355pt>
 File: img/FIK-6_RAW_data.png Graphic file (type png)
 <use img/FIK-6_RAW_data.png>
-Package pdftex.def Info: img/FIK-6_RAW_data.png  used on input line 149.
+Package pdftex.def Info: img/FIK-6_RAW_data.png  used on input line 150.
 (pdftex.def)             Requested size: 170.71652pt x 248.50066pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -659,10 +666,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <img/FIK-6_metadada.png, id=118, 967.615pt x 664.4825pt>
 File: img/FIK-6_metadada.png Graphic file (type png)
 <use img/FIK-6_metadada.png>
-Package pdftex.def Info: img/FIK-6_metadada.png  used on input line 157.
+Package pdftex.def Info: img/FIK-6_metadada.png  used on input line 158.
 (pdftex.def)             Requested size: 170.71652pt x 117.22911pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
  []\OT1/ptm/m/n/8 Figure 4. []Acceleration and Angular Speed in axis 
  []
 
@@ -670,38 +677,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--158
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 162--163
+Underfull \hbox (badness 4254) in paragraph at lines 163--164
 []\OT1/ptm/m/n/9 The picture []4[] demonstrates the importance of
  []
 
 [4 <./img/FIK-6_experiment_setup.png> <./img/FIK-6_RAW_data.png> <./img/FIK-6_m
 etadada.png>]
-Underfull \hbox (badness 1112) in paragraph at lines 165--166
+Underfull \hbox (badness 1112) in paragraph at lines 166--167
 \OT1/ptm/m/n/9 see the gondola touchdown visually. Therefore the
  []
 
 <img/FIK-6_rescue_team.png, id=128, 593.21625pt x 947.54pt>
 File: img/FIK-6_rescue_team.png Graphic file (type png)
 <use img/FIK-6_rescue_team.png>
-Package pdftex.def Info: img/FIK-6_rescue_team.png  used on input line 169.
+Package pdftex.def Info: img/FIK-6_rescue_team.png  used on input line 170.
 (pdftex.def)             Requested size: 113.81102pt x 181.78392pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<img/FIK-6_R-P_maximum.png, id=131, 895.345pt x 491.8375pt>
+<img/FIK-6_R-P_maximum.png, id=131, 904.37875pt x 491.8375pt>
 File: img/FIK-6_R-P_maximum.png Graphic file (type png)
 <use img/FIK-6_R-P_maximum.png>
-Package pdftex.def Info: img/FIK-6_R-P_maximum.png  used on input line 186.
-(pdftex.def)             Requested size: 426.79134pt x 234.45076pt.
+Package pdftex.def Info: img/FIK-6_R-P_maximum.png  used on input line 187.
+(pdftex.def)             Requested size: 426.79134pt x 232.10175pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5 <./img/FIK-6_rescue_team.png>]
-
-LaTeX Warning: Reference `' on page 6 undefined on input line 191.
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 191--192
+Underfull \hbox (badness 1033) in paragraph at lines 192--193
 \OT1/ptm/m/n/9 mean value ($\OML/cmm/m/it/9 ^^V[]$\OT1/ptm/m/n/9 , $\OML/cmm/m/
 it/9 ^^V[]$\OT1/ptm/m/n/9 , $\OML/cmm/m/it/9 ^^V[]$\OT1/ptm/m/n/9 ), variance (
 $\OML/cmm/m/it/9 ^^[[]$\OT1/ptm/m/n/9 , $\OML/cmm/m/it/9 ^^[[]$\OT1/ptm/m/n/9 ,
@@ -709,21 +712,17 @@ $\OML/cmm/m/it/9 ^^[[]$\OT1/ptm/m/n/9 , $\OML/cmm/m/it/9 ^^[[]$\OT1/ptm/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 193--194
+Underfull \hbox (badness 1062) in paragraph at lines 194--195
 \OT1/ptm/m/n/9 the equality of the mean values of the log-normal
  []
 
 
-LaTeX Warning: Reference `' on page 6 undefined on input line 196.
+Overfull \hbox (2.72888pt too wide) in paragraph at lines 206--206
+ \OML/cmm/m/it/8 t[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 =\OT1/cmr/m/n/8 2)$| 
+ []
 
 
-Package hyperref Warning: Suppressing empty link on input line 196.
-
-
-Package hyperref Warning: Suppressing empty link on input line 205.
-
-
-Overfull \hbox (8.65236pt too wide) detected at line 207
+Overfull \hbox (8.65236pt too wide) detected at line 222
  $\OML/cmm/m/it/9 W \OT1/cmr/m/n/9 = (\OMS/cmsy/m/n/9 ^^@1\OT1/cmr/m/n/9 ; \OMS
 /cmsy/m/n/9 ^^@\OML/cmm/m/it/9 t[]\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 =\OT1/cmr/m/
 n/9 2)\OMS/cmsy/m/n/9 i [ h\OML/cmm/m/it/9 t[]\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 
@@ -734,193 +733,196 @@ n/9 2)\OMS/cmsy/m/n/9 i [ h\OML/cmm/m/it/9 t[]\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 211--212
+Underfull \hbox (badness 1953) in paragraph at lines 224--225
+\OT1/ptm/m/n/9 tested cases, except for the case of P-F maxima
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 224--225
+\OT1/ptm/m/n/9 where the difference is statistically significant for
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 226--227
 \OT1/ptm/m/n/9 descent. This difference is mainly caused by the
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 211--212
+Underfull \hbox (badness 1478) in paragraph at lines 226--227
 \OT1/ptm/m/n/9 different value of vertical speed. In the following
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 211--212
+Underfull \hbox (badness 2469) in paragraph at lines 226--227
 \OT1/ptm/m/n/9 balloon flights we are planning to overcome this
  []
 
 
-Underfull \hbox (badness 4981) in paragraph at lines 215--216
+Underfull \hbox (badness 4981) in paragraph at lines 230--231
 \OT1/ptm/m/n/9 on temperature should be applied for a correct
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 215--216
+Underfull \hbox (badness 2884) in paragraph at lines 230--231
 \OT1/ptm/m/n/9 Time course of the temperature is also available
  []
 
 
-Underfull \hbox (badness 2088) in paragraph at lines 215--216
+Underfull \hbox (badness 2088) in paragraph at lines 230--231
 \OT1/ptm/m/n/9 thanks to the records of the TF-ATMON system.
  []
 
 [6 <./img/FIK-6_R-P_maximum.png>]
-Underfull \hbox (badness 1622) in paragraph at lines 225--227
+Underfull \hbox (badness 1622) in paragraph at lines 240--242
 \OT1/ptm/m/n/9 lower value (18802 m), and scintillation detectors
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 230--231
+Underfull \hbox (badness 1708) in paragraph at lines 245--246
 \OT1/ptm/m/n/9 Development Education, MEYS, under the project
  []
 
 
-Overfull \hbox (1.02145pt too wide) in paragraph at lines 230--231
+Overfull \hbox (1.02145pt too wide) in paragraph at lines 245--246
 \OT1/ptm/m/n/9 internal project SGS, Reg. No. SGS20/181/OHK3/3T/13 
  []
 
 
-Underfull \hbox (badness 3049) in paragraph at lines 234--235
+Underfull \hbox (badness 3049) in paragraph at lines 249--250
 []\OT1/ptm/m/n/9 Pfotzer, G. (1936). Dreifachkoinzidenzen der
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 234--235
+Underfull \hbox (badness 3780) in paragraph at lines 249--250
 \OT1/ptm/m/n/9 Ultrastrahlung aus vertikaler Richtung in der
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-36.
-
+51.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1546) in paragraph at lines 236--237
+Underfull \hbox (badness 1546) in paragraph at lines 251--252
 \OT1/ptm/m/n/9 905, 2018, 33-46. []$\OT1/pcr/m/n/9 https : / / doi . org / 10 .
 
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 238--239
+Underfull \hbox (badness 1748) in paragraph at lines 253--254
 \OT1/ptm/m/n/9 (1998), On the stratospheric measurements of
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 239--240
+Underfull \hbox (badness 3407) in paragraph at lines 254--255
 \OT1/ptm/m/n/9 in Australian outback using a balloon borne
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 241--242
+Underfull \hbox (badness 3240) in paragraph at lines 256--257
 \OT1/ptm/m/n/9 cosmic ray tracking on BEXUS stratospheric
  []
 
 
-Overfull \hbox (10.64978pt too wide) in paragraph at lines 241--242
+Overfull \hbox (10.64978pt too wide) in paragraph at lines 256--257
 []$\OT1/pcr/m/n/9 https : / / doi . org / 10 . 1016 / j . nima . 2010 .
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 243--244
+Underfull \hbox (badness 1789) in paragraph at lines 258--259
 []\OT1/ptm/m/n/9 R. Sarkar, S. K. Chakrabarti, P. Sarathi Pal,
  []
 
-
-Underfull \hbox (badness 1024) in paragraph at lines 245--246
+[7]
+Underfull \hbox (badness 1024) in paragraph at lines 260--261
 []\OT1/ptm/m/n/9 S.W. Li, Y.S. Li, K.C. Tsui. Radioactivity in
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 245--246
+Underfull \hbox (badness 2626) in paragraph at lines 260--261
 \OT1/ptm/m/n/9 the atmosphere over Hong Kong, Journal of
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 245--246
+Underfull \hbox (badness 1264) in paragraph at lines 260--261
 \OT1/ptm/m/n/9 Environmental Radioactivity 94 (2007) 98-106.
  []
 
 
-Overfull \hbox (26.84976pt too wide) in paragraph at lines 245--246
+Overfull \hbox (26.84976pt too wide) in paragraph at lines 260--261
 []$\OT1/pcr/m/n/9 https : / / doi . org / 10 . 1016 / j . jenvrad . 2007 .
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 247--248
+Underfull \hbox (badness 1226) in paragraph at lines 262--263
 \OT1/ptm/m/n/9 of the vertical ionization profile over southern
  []
 
 
-Underfull \hbox (badness 5802) in paragraph at lines 247--248
+Underfull \hbox (badness 5802) in paragraph at lines 262--263
 \OT1/ptm/m/n/9 Journal of Atmospheric and Solar{Terrestrial
  []
 
 
-Overfull \hbox (7.79494pt too wide) in paragraph at lines 249--250
+Overfull \hbox (7.79494pt too wide) in paragraph at lines 264--265
 \OT1/ptm/m/n/9 profile measurements of lower troposphere ionisation,
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 249--250
+Underfull \hbox (badness 7308) in paragraph at lines 264--265
 \OT1/ptm/m/n/9 Journal of Atmospheric and Solar-Terrestrial
  []
 
 
-Underfull \hbox (badness 2521) in paragraph at lines 249--250
+Underfull \hbox (badness 2521) in paragraph at lines 264--265
 \OT1/ptm/m/n/9 Physics 119 (2014), 203{210. []$\OT1/pcr/m/n/9 http : / / dx .
  []
 
 
-Overfull \hbox (5.24979pt too wide) in paragraph at lines 249--250
+Overfull \hbox (5.24979pt too wide) in paragraph at lines 264--265
 \OT1/pcr/m/n/9 doi . org / 10 . 1016 / j . jastp . 2014 . 08 . 006$[] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Underfull \hbox (badness 1701) in paragraph at lines 255--256
+Underfull \hbox (badness 1701) in paragraph at lines 270--271
 []\OT1/ptm/m/n/9 K[]akona, M., Ambro[]zov[]a, I., Inozemtsev, K.
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 261--262
+Underfull \hbox (badness 1509) in paragraph at lines 276--277
 \OT1/ptm/m/n/9 mean of a log-normal distribution. Journal of
  []
 
 
-Overfull \hbox (5.24979pt too wide) in paragraph at lines 265--266
+Overfull \hbox (5.24979pt too wide) in paragraph at lines 280--281
 [][]$\OT1/pcr/m/n/9 http : / / www . thunderfly . cz / pl / TFGPS01$[] 
  []
 
 
-Overfull \hbox (5.24979pt too wide) in paragraph at lines 267--268
+Overfull \hbox (5.24979pt too wide) in paragraph at lines 282--283
 [][]$\OT1/pcr/m/n/9 http : / / www . thunderfly . cz / pl / TFSIK01$[] 
  []
 
 
-Overfull \hbox (10.64978pt too wide) in paragraph at lines 271--272
+Overfull \hbox (10.64978pt too wide) in paragraph at lines 286--287
 [][]$\OT1/pcr/m/n/9 http : / / www . thunderfly . cz / pl / TFLORA01$[] 
  []
 
 
-Overfull \hbox (43.04974pt too wide) in paragraph at lines 273--274
+Overfull \hbox (43.04974pt too wide) in paragraph at lines 288--289
 [][]$\OT1/pcr/m/n/9 https : / / www . mlab . cz / PermaLink / LION2CELL01D$[] 
  []
 
 - LAST -
-Extra skip:33.53548pt
-Left:153.0pt/1.94843pt
-Right:120.0pt/1.41295pt
-Output:153.0pt
+Extra skip:10.85597pt
+Left:285.0pt/1.26892pt
+Right:274.0pt/1.41295pt
+Output:285.0pt
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: B36802B8BB6E20C83E8EE01586A1B75C;487.
 
@@ -928,18 +930,15 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 7962 strings out of 481775
- 113531 string characters out of 5932103
- 396028 words of memory out of 5000000
- 22836 multiletter control sequences out of 15000+600000
+ 8016 strings out of 481775
+ 114369 string characters out of 5932103
+ 396943 words of memory out of 5000000
+ 22885 multiletter control sequences out of 15000+600000
  554981 words of font info for 78 fonts, out of 8000000 for 9000
  893 hyphenation exceptions out of 8191
- 39i,13n,37p,1339b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,15n,44p,1339b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{section*.10} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -962,17 +961,18 @@ t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy-type
-1/wasy9.pfb>
-Output written on document.pdf (8 pages, 1589343 bytes).
+cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy-type1/wasy9.
+pfb>
+Output written on document.pdf (8 pages, 1614085 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
