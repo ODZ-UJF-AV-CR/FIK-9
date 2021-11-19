@@ -20,10 +20,7 @@
 \date{Received on April 2, 2003, revised on November 19, 2003, accepted on December 22, 2003}
 
 \begin{abstract}
-Regener-Pfotzer maximum is located at the altitude where the intensity of cosmic radiation is greatest, usually around 20 km. However, its exact location depends on many parameters such as atmospheric conditions, geographical locations, solar activity and also the type of detected particles. During experimental flights of stratospheric balloons we use different types of ionizing radiation detectors: Geiger-Muller tubes, SPACEDOS silicon detectors and AIRDOS-C scintillation detectors with NaI(Tl) crystal.
-
-Due to necessary data processing of data measured by instruments, the balloon gondolaradiation measurements carriescarry a number of additional supplementary sensors measuring humidity, temperature, location and orientation, altitude, atmospheric pressure, acceleration, etc. All of these sensors have to be monitored during the launch of the stratospheric balloon in order to verify their correct function and furthermore, it is necessary to record their data during the flight for future processing. This was the reason why a new universal system TF-ATMON was gradually developed during the flights of FIK-5 to FIK-6 that is able to solve the above mentioned problems. The system is based on using already existing tools of the PX4 open-source project that makes it possible, apart from data recording and monitoring, to solve other related issues - the possibility to trace the balloon gondola after the flight. For this reason, the originally used telemetry system was made significantly more robust and an IoT LoRa transmitter was added to the system, making it possible to transmit the data necessary for tracing the gondola to the TheThingsNetwork. In this way, a high reliability of finding the gondola and recording the data is ensured. In case of active detectors, it is also necessary that the flight trajectory is recorded synchronously with the supplementary quantities.
-The proposed TF-ATMON system is very variable and thus it can be used in other applications than just balloon measurements. However, its application will be demonstrated on stratospheric balloon flights measuring parameters of Regener-Pfotzer maximum.
+Exact location of the Regener-Pfotzer maximum depends on many parameters such as atmospheric conditions, geographical locations, solar activity, and also the type of detected particles. To investigate cosmic radiation at high altitudes and to test new detectors for cosmic radiation measurements, stratospheric balloons are useful. Due to necessary data processing of data measured by instruments, the balloon gondola needs to carry, together with radiation detectors,  a number of additional supplementary sensors measuring humidity, temperature, location and orientation, altitude, atmospheric pressure, acceleration etc. This was the reason why a new universal system TF-ATMON was developed. The system is based on using already existing tools of the PX4 open-source project that makes it possible, apart from data recording and monitoring, to solve other related issues - the possibility to trace the balloon gondola after the flight. The application will be demonstrated on stratospheric balloon flight FIK 6. This flight  was unique because three different types of radiation detectors were used at one flight. It enables us to compare the altitude of the Regener-Pfotzer maximum measured with a different type of sensor sensitive to a different type of secondary cosmic radiation generated in the atmosphere.
 
 \end{abstract}
 
@@ -32,18 +29,18 @@ The proposed TF-ATMON system is very variable and thus it can be used in other a
 
 \section{Introduction}
 
-Particles of primary cosmic radiation with sufficient energy interact in the upper part of the atmosphere and generate showers of secondary cosmic radiation. With increasing depth of the atmosphere the intensity of primary radiation decreases whereas the secondary component increases. At an altitude of about 20 km the intensity of secondary cosmic radiation reaches its maximum, called the Pfotzer maximum \cite{Regener}, \cite{Pfotzer}. The Pfotzer maximum varies with geomagnetic vertical cutoff rigidity and with solar cycle and it is generally located at 15-27 km \cite{Bazilevskaya}.
+Particles of primary cosmic radiation with sufficient energy interact in the upper part of the atmosphere and generate showers of secondary cosmic radiation. With increasing depth of the atmosphere the intensity of primary radiation decreases whereas the secondary component increases. At an altitude of about 20 km the intensity of secondary cosmic radiation reaches its maximum, called the Pfotzer-Regener maximum \cite{Regener}, \cite{Pfotzer}. The maximum varies with geomagnetic vertical cutoff rigidity and with solar cycle and it is generally located at 15-27 km \cite{Bazilevskaya}.
 In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the word, mainly using radiosondes consisting of Geiger tubes \cite{Bazilevskaya}, \cite{ionization_profile},\cite{Vertical_profile_measurements}, \cite{cosmic_ray_intensity}, \cite{Radioactivity_atmosphere}, or to characterize instruments’ response used for space-based missions \cite{Lawrence} \cite{Mukherjee} \cite{Timepix}.
 To investigate cosmic radiation at high altitudes (around and above Regener-Pfotzer maximum region) and to test new detectors for cosmic radiation measurements, stratospheric balloons are very useful.
 However, the radiation measurement instruments need to be supplemented also by other sensors measuring temperature, pressure, humidity, altitude, acceleration, etc.  All these sensors should be continuously monitored during the launch and the flight of the balloon to verify their proper function and theirthe values have to be recorded for further processing of all obtained data.
-Platform developed for experiments at different altitudes consisting of a balloon tracking system and different measuring instruments will be presented. The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an IoT LoRa transmitter, enables it to monitor and record data during the flight and to trace the balloon. The application is demonstrated on stratospheric balloon flight FIK-6 Fig. \ref{FIK-6_setup}. Various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOS, and scintillation detectors AIRDOS-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere.
+Platform developed for experiments at different altitudes consisting of a balloon tracking system and different measuring instruments will be presented. The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an telemetry transmitter, enables it to monitor and record data during the flight and to trace the balloon. The application is demonstrated on stratospheric balloon flight FIK-6 Fig. \ref{FIK-6_setup}. Various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOS, and scintillation detectors AIRDOS-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere.
 
 \section{Materials and methods}
 
 \begin{center}
 \begin{figure}%avionic
 	\centerline{\includegraphics[width=60mm]{img/FIK-6_experiment_setup.png}}
-	\caption{FIK-6 experiment setup usig the Hwoyee Weather Balloon, 1600. \label{FIK-6_setup}}
+	\caption{FIK-6 experiment setup using the Hwoyee Weather Balloon 1600. \label{FIK-6_setup}}
 \end{figure}
 \end{center}
 
@@ -61,15 +58,19 @@ Due to a relatively high value of payload it was necessary to ensure the return 
 \end{itemize}
 
 
+Due to the fact that since the first flight there were various partial shortcomings and despite the generally successful nature of all fights and the fact that the gondola was always found, we tried different technologies to eliminate the complications, which have emerged. During the last experimental flights these included the way the data is recorded.
 
-Due to the fact that since the first flight there were various partial shortcomings and despite the generally successful nature of all fights and the fact that the gondola was always found, we tried different technologies to eliminate the complications, which have emerged. During the last experimental flights these included the way the data is recorded. An overall overview of the success of the used technologies is summarized in the table \ref{Flight_reliability}.
+For this reason, the originally used telemetry system was made significantly more robust and an IoT LoRa transmitter was added to the system, making it possible to transmit the data necessary for tracing the gondola to the TheThingsNetwork. In this way, a high reliability of finding the gondola and recording the data is ensured. In case of active detectors, it is also necessary that the flight trajectory is recorded synchronously with the supplementary quantities.
+
+
+An overall overview of the success of the used technologies is summarized in the table \ref{Flight_reliability}.
 
 
 \begin{table*}[t]
 \processtable{Table summarising success of used technologies, with colours representing a degree of reliability: \newline \colorbox{red}{Failure} \colorbox{yellow}{Partial failure} \colorbox{green}{Perfect function}.\label{Flight_reliability}}
 {\begin{tabular}{p{0.1\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth}}\toprule
 Flight & FIK-1 & FIK-2 & FIK-3 & FIK-4 & FIK-5 & FIK-6 \\\midrule
-Location & CZ (2015) & CZ (2017) & CZ (2018) & SE (2019) & CZ (2019) & CZ (2020) \\
+Location (year) & CZ (2015) & CZ (2017) & CZ (2018) & SE (2019) & CZ (2019) & CZ (2020) \\
 Payload & \cellcolor{green} Candy detector, Web camera & \cellcolor{yellow} Candy detector, Web camera & \cellcolor{green} AIRDOS,
 360 deg camera & \cellcolor{green} AIRDOS-C CRY19, SPACEDOS, G-M, Socrat-R & \cellcolor{green} AIRDOS-C
 CRY19,SPACEDOS, G-M, 360 deg camera & \cellcolor{green} AIRDOS-C NaI(Tl), SPACEDOS, G-M, Ionmeter, 360 deg camera \\
@@ -119,14 +120,8 @@ Transition to the concept, where the balloon specific parts of avionics are comp
 The documentation of used blocks could be found in the following sources TFGPS01 \cite{TFGPS01}, TFSIK01 \cite{TFSIK01}, TFHT01 \cite{TFHT01}, TFLORA01 \cite{TFLORA01}, \cite{LION2CELL01D}.
 
 
-\subsection{Further improvements}
-
-As can be seen from the table, the last unsolved problem with the balloon flights is the landing site. Therefore, in the future flights we are planning to use the autopilot for a controlled descent as well.
-The descent will be carried out using an unmanned autogyro carrying a payload. The purpose of this solution is in using the autogyro’s rotor instead of the original parachute as it has the advantage of good controllability. Thus it would be possible to choose the landing site and reduce the possible risk of creating dangerous situations. And at the same time it is able to control the descent rate. 
-
-
 \subsection{Payload}
-In the case of FIK-5 and FIK-6 flights that served as the test flights for our novel approach of using TF-ATMON technology. The payload was not fully optimized for this use yet. All the detectors thus have their own SD cards for data recording and some even have their own power supply, therefore the payload weight was higher than theoretically required and some lift was wasted. This situation originates in conservative flight plan, which required successful log and function of payload even in failure of the new TF-ATMON system. Results from flight FIK-6 will be presented.
+The payload of FIK-6 flight contained TF-ATMON and three different types of ionizing radiation detectors. The payload was not fully optimized for this use yet. All the detectors thus have their own SD cards for data recording and some even have their own power supply, therefore the payload weight was higher than theoretically required and some lift was wasted. This situation originates in conservative flight plan, which required successful log and function of payload even in failure of the new TF-ATMON system. Results from flight FIK-6 will be presented.
 
 
 
@@ -162,7 +157,7 @@ The flight FIK-6 took place on December 18th, 2020 and lasted 1 hour and 40 minu
 
 \begin{center}
 \begin{figure}%avionic
-	\centerline{\includegraphics[width=60mm]{img/FIK-6_rescue_team.png}}
+	\centerline{\includegraphics[width=40mm]{img/FIK-6_rescue_team.png}}
 	\caption{Chasing cars with telemetry receivers at the landing site. \label{FIK-6_rescue_team}}
 \end{figure}
 \end{center}
@@ -172,7 +167,7 @@ The graphs show that the maximum reached altitude was approximately 33km above s
 
 \begin{center}
 \begin{figure}%avionic
-	\centerline{\includegraphics[width=60mm]{img/FIK-6_balloon_burst.png}}
+	\centerline{\includegraphics[width=40mm]{img/FIK-6_balloon_burst.png}}
 	\caption{FIK-6 balloon burst \label{FIK-6_balloon_burst}}
 \end{figure}
 \end{center}
@@ -204,7 +199,10 @@ Z naměřených dat je patrné, že během letu je velmi znatelný rozdíl mezi 
 
 Zaroven je videt, ze behem klesani dochazi ke značným vibracim, skokovym zmenam zrychlení a také dochází k rotaci gondoly. Vsechny tyto parametry mohou mit vliv na mereni atmosferickych velicin a pro nektere druhy pristroju musi byt kompenzovany. Zaroven je videt pri klesani narust vlhkosti, ktera muze v urcitych castech letu i namrzat na přístroje.
 
+\subsubsection{Further plans}
 
+As can be seen from the table, the last unsolved problem with the balloon flights is the landing site. Therefore, in the future flights we are planning to use the autopilot for a controlled descent as well.
+The descent will be carried out using an unmanned autogyro carrying a payload. The purpose of this solution is in using the autogyro’s rotor instead of the original parachute as it has the advantage of good controllability. Thus it would be possible to choose the landing site and reduce the possible risk of creating dangerous situations. And at the same time it is able to control the descent rate. 
 
 \section{Conclusion}
 
@@ -243,9 +241,11 @@ The work was supported in the frame of the Operational Program EU Project CRREAT
 
 \bibitem{SPACEDOS} Kákona, M., Ambrožová, I., Inozemtsev, K. O., Ploc, O., Tolochek, R. V., Sihver, L., … Shurshakov, V. A. (2021). SPACEDOS – an open-source PIN diode dosimeter for applications in Space.
 
-\bibitem{AIRDOS-C} Velychko, O., Kákona, M., Ambrožová, I., and Ploc, O. (2021). Characterization of AIRDOS-C detector for measurement of high-energy events in the atmosphere.
+\bibitem{AIRDOS-C} Velychko, O., Kákona, M., Ambrožová, I., and Ploc, O. (2021). Characterisation of AIRDOS-C detector for measurement of high-energy events in the atmosphere.
 
 \bibitem{standard_atmosphere} National Oceanic and Atmospheric Administration, National Aeronautics and Space Administration, United States Air Force. (1976). U.S. Standard Atmosphere. Washington, DC.
+
+\bibitem{confidence_intervals} Olsson, U. (2005). Confidence intervals for the mean of a log-normal distribution. Journal of Statistics Education, 13(1).
 
 \bibitem{habhub_tracker} \url{https://tracker.habhub.org/}
 
