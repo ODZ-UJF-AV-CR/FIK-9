@@ -80,13 +80,13 @@ Flight control computer & \cellcolor{yellow} Odroid-U2 & \cellcolor{yellow} Odro
 \end{table*}
 
 
-Apart from technologies used in gondolas a number of supplementary tools have undergone intensive development. For example, in order to find the balloon it was necessary to have an accurate real-time map of its position together with a prediction of the subsequent flight and the site of impact. In the case of the last two flights, FIK-5 and FIK-6, the problem was solved by using \cite{habhub_tracker}.
+Apart from technologies used in gondolas a number of supplementary tools have undergone intensive development. For example, in order to find the balloon it was necessary to have an accurate real-time map of its position together with a prediction of the subsequent flight and the site of impact. In the case of the last two flights, FIK-5 and FIK-6, the habhub \cite{habhub_tracker} was used to track and predict the movement of stratospheric balloon.
 As can be seen from the table \ref{Flight_reliability}, during the last flights the avionics was implemented using an UAV technology. It used the Pixhawk autopilot with PX4 firmware. Telemetry was implemented by a very reliable combination of LoRa modem and SiK modem. Power was provided by Li-ion 18650 batteries that also have a reliable flight history.
 
 
 
 \subsection{Universal avionics}
-Based on our experiences we have used a universal concept of avionics called TF-ATMON that makes it possible to connect different types of payloads and carry out various atmospheric measurements. Furthermore, it provides the detectors with basic services such as power supply, time, position and orientation information. Basic quantities that affect many types of measurements are also recorded, including temperature, pressure, humidity, magnetic field and acceleration. Flight computer provides a possibility to record data from experiments in a common log file. Therefore it is extremely useful for testing high-altitude cosmic radiation detectors and dosimeters. It also reduces the number of modifications in experiments (dosimeters) required for balloon flight.
+Based on our experiences we have used the universal concept of avionics called TF-ATMON that makes it possible to connect different types of payloads and carry out various atmospheric measurements. Furthermore, it provides the detectors with basic services such as power supply, time, position and orientation information. Basic quantities that affect many types of measurements are also recorded, including temperature, pressure, humidity, magnetic field and acceleration. Flight computer provides a possibility to record data from experiments in a common log file. Therefore it is extremely useful for testing high-altitude cosmic radiation detectors and dosimeters. It also reduces the number of modifications in experiments (dosimeters) required for balloon flight.
 
 The schematic diagram of the new avionics is summarized in the figure \ref{avionics_schematics}.
 
@@ -180,7 +180,7 @@ The Log-norm distribution fit was used to determine the R-P maximum. The fit was
 
 The fit parameters $A$, $\mu$, $\sigma$ and the calculated R-P maximum positions are given in Figure \ref{R-P_maximum}. The range of barometric altitudes 7000 m to 29 000 m was chosen for the fit. The lower limit was chosen so that the course of the function was not affected by terrestrial radiation and radon progenies in the atmosphere. The upper limit was chosen based on a simulation because, according to the simulation, at higher altitudes the flux of ionizing radiation does not decrease evenly. 
 
-Note that the absolute number of measured particles corresponds to the active volume of the used detector. The larger the volume the more particles. At the same time every detector measured a different position of R-P maximum. The lowest altitude was measured by the detector with the highest density (NaI(Tl), $\rho$ = 3.67 g/cm$^3$), followed by the silicon detector (Si, $\rho$ = 2.33 g/cm$^3$) and finally, the highest altitude of the maximum was measured by G-M tube (thin metallic tube filled with low pressure gas, the exact material composition of this tube is not known).
+Note that the absolute number of measured particles corresponds to the active volume, material and sensitivity of the used detector. The larger the volume the more particles. At the same time every detector measured a different position of R-P maximum. The lowest altitude was measured by the detector with the highest density (NaI(Tl), $\rho$ = 3.67 g/cm$^3$), followed by the silicon detector (Si, $\rho$ = 2.33 g/cm$^3$) and finally, the highest altitude of the maximum was measured by G-M tube (thin metallic tube filled with low pressure gas, the exact material composition of this tube is not known).
 
 \begin{center}
 \begin{figure*}
