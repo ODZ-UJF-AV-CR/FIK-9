@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  19 NOV 2021 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.5)  24 NOV 2021 17:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -457,27 +457,42 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 29.
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 33--38
+Underfull \hbox (badness 1584) in paragraph at lines 33--37
 \OT1/ptm/m/n/9 [[]], [[]]. The maximum varies with geomagnetic
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 33--38
-\OT1/ptm/m/n/9 vertical cutoff rigidity and with solar cycle and it
+Underfull \hbox (badness 1325) in paragraph at lines 33--37
+\OT1/ptm/m/n/9 for space-based missions [[]] [[]] [[]]. Stratospheric
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 33--38
-\OT1/ptm/m/n/9 is generally located at 15-27 km [[]]. In the past,
+Underfull \hbox (badness 1484) in paragraph at lines 33--37
+\OT1/ptm/m/n/9 balloons are a useful tool for the investigation of
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 33--38
-\OT1/ptm/m/n/9 vertical profile of ionization in the atmosphere at
+Underfull \hbox (badness 1735) in paragraph at lines 33--37
+\OT1/ptm/m/n/9 the Regener-Pfotzer maximum region) and for the
+ []
+
+
+Underfull \hbox (badness 6461) in paragraph at lines 33--37
+\OT1/ptm/m/n/9 the radiation measuring instruments need to be
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 42--44
+\OT1/ptm/m/n/9 construction of balloon gondolas was designed for
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 42--44
+\OT1/ptm/m/n/9 specific radiation detectors during previous flights.
+ []
 
 
 Underfull \hbox (badness 2452) in paragraph at lines 49--50
@@ -485,7 +500,7 @@ Underfull \hbox (badness 2452) in paragraph at lines 49--50
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-1.
+2.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1
@@ -494,16 +509,6 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 
 ]
-Underfull \hbox (badness 1675) in paragraph at lines 55--56
-[]\OT1/ptm/m/n/9 Due to the fact that since the first flight there
- []
-
-
-Underfull \hbox (badness 2213) in paragraph at lines 55--56
-\OT1/ptm/m/n/9 were various partial shortcomings and despite the
- []
-
-
 Underfull \hbox (badness 1173) in paragraph at lines 60--61
 []\OT1/ptm/m/n/9 An overall overview of the success of the used
  []
@@ -969,7 +974,7 @@ mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy-type1/wasy9.
 pfb>
-Output written on document.pdf (8 pages, 1614085 bytes).
+Output written on document.pdf (8 pages, 1613968 bytes).
 PDF statistics:
  260 PDF objects out of 1000 (max. 8388607)
  223 compressed objects within 3 object streams
