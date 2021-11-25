@@ -91,12 +91,10 @@ Based on our experiences we have used the universal concept of avionics called T
 The schematic diagram of the new avionics is summarized in the figure \ref{avionics_schematics}.
 
 
-\begin{center}
 \begin{figure}%avionic
 	\centerline{\includegraphics[width=60mm]{img/avionics_block_schematics.eps}}
 	\caption{The schematic diagram of the new avionics \label{avionics_schematics}}
 \end{figure}
-\end{center}
 
 Transition to the concept, where the balloon specific parts of avionics are completely separate from the system of detectors simplified the realization of next balloon flights. It reduced the complexity of connecting different types of detectors and at the same time it improved the integrity of supplementary data measurements. Overall, the new features can be summarized as follows:
 
@@ -130,12 +128,10 @@ The G-M tube STS-5 was used in the Geiger–Müller counter. The cylindrical vol
 
 All detectors, together with other sensors and the TF-ATMON system were put inside a polystyrene box. 
 
-\begin{center}
 \begin{figure}%avionic
-	\centerline{\includegraphics[width=60mm]{img/FIK-6_experiment_setup.png}}
+	\centerline{\includegraphics[width=50mm]{img/FIK-6_experiment_setup.png}}
 	\caption{FIK-6 experiment setup using the Hwoyee Weather Balloon 1600. \label{FIK-6_setup}}
 \end{figure}
-\end{center}
 
 
 \section{Results and discussion}
@@ -145,32 +141,26 @@ The flight FIK-6 took place on December 18th, 2020 and lasted 1 hour and 40 minu
 The system TF-ATMON recorded temperature, air pressure, humidity and radiation characteristics as histograms of deposited energy of radiation events from all three radiation sensors in the gondola see Figure \ref{FIK-6_RAW_data}. The barometric altitude was calculated using the International Standard Atmosphere model 1976 \cite{standard_atmosphere}. 
 
 
-\begin{center}
 \begin{figure}%avionic
 	\centerline{\includegraphics[width=60mm]{img/FIK-6_RAW_data.png}}
 	\caption{Raw data measured during the whole flight. From top to bottom: temperature near scintillation crystal, air pressure inside the box of crystal, temperature inside the gondola, relative humidity inside the gondola, counts of radiation events per 10 seconds counted by scintillator, silicon detector, and  G-M counter, barometric altitude, and altitude from GNSS.\label{FIK-6_RAW_data}}
 \end{figure}
-\end{center}
 
 
-\begin{center}
 \begin{figure}%avionic
 	\centerline{\includegraphics[width=60mm]{img/FIK-6_metadada.png}}
 	\caption{Acceleration and Angular Speed in axis perpendicular to the ground combined with ionising radiation flux measured by the silicon PIN diode detector. \label{FIK-6_telemetry}}
 \end{figure}
-\end{center}
 
 The picture \ref{FIK-6_telemetry} demonstrates the importance of telemetry data during measurements processing. The graphs show an increase in the response of the silicon ionizing radiation detector at the times of take off, burst and landing, when there was a rapid increase in mechanical stress. The effect is probably caused by the microphone effect of the silicon detector. Telemetry data provided by the TF-ATMON system must be therefore taken into account during data evaluation. The effect of these data on measured quantities will be a subject of further research. 
 
 
 The graphs show that the maximum reached altitude was approximately 33km above sea level. During the flight the balloon passed the Regener-Pfotzer maximum twice. The rescue team followed the balloon along the whole flight trajectory. The precision of tracking allowed some participants of the rescue team to actually see the gondola touchdown visually. Therefore the gondola was successfully rescued within few minutes after touchdown Figure \ref{FIK-6_rescue_team}.
 
-\begin{center}
 \begin{figure}%avionic
 	\centerline{\includegraphics[width=40mm]{img/FIK-6_rescue_team.png}}
 	\caption{Chasing cars with telemetry receivers at the landing site. \label{FIK-6_rescue_team}}
 \end{figure}
-\end{center}
 
 By processing the data a graph of detected altitude Figure \ref{R-P_maximum} was obtained. It shows that the measured altitude of the Regener-Pfotzer maximum was for all detector types around 19km above sea level.
 
@@ -182,21 +172,20 @@ The fit parameters $A$, $\mu$, $\sigma$ and the calculated R-P maximum positions
 
 Note that the absolute number of measured particles corresponds to the active volume, material and sensitivity of the used detector. The larger the volume the more particles. At the same time every detector measured a different position of R-P maximum. The lowest altitude was measured by the detector with the highest density (NaI(Tl), $\rho$ = 3.67 g/cm$^3$), followed by the silicon detector (Si, $\rho$ = 2.33 g/cm$^3$) and finally, the highest altitude of the maximum was measured by G-M tube (thin metallic tube filled with low pressure gas, the exact material composition of this tube is not known).
 
-\begin{center}
-\begin{figure*}
-	\centerline{\includegraphics[width=150mm]{img/FIK-6_R-P_maximum.png}}
+\begin{figure}
+	\centerline{\includegraphics[width=70
+	mm]{img/FIK-6_R-P_maximum.png}}
 	\caption{Log-norm fit of ionising radiation measured data with calculated Regener-Pfotzer maxima for different detectors (G-M tube, NaI(Tl) scintillator and silicon PIN diode). Measured data are depicted with gray color as mean from 5 minutes of measurement with 2$\sigma$ standard errors. \label{R-P_maximum}}
-\end{figure*}
-\end{center}
+\end{figure}
 
 Altitudes of maxima of all three data sets were found using the log-normal fit (see Figure \ref{R-P_maximum}) described by mean value ($\mu_1$, $\mu_2$, $\mu_3$), variance ($\sigma_1$, $\sigma_2$, $\sigma_3$), and extent ($n_1$, $n_2$, $n_3$) where indexes 1, 2, and 3 refer to G-M counter, NaI(Tl) scintillator, and silicon PIN diode, respectively. We can see that altitudes of maxima differ. Statistical significance of this difference was evaluated using the two-selective testing of three hypotheses ($\mu_1 = \mu_2$, $\mu_1 = \mu_3$, and $\mu_2 = \mu_3$) about the equality of the mean values. We applied a two-selective T-test, see Table \ref{statistics}, which is correct also in case of a log-normal distribution according to \cite{confidence_intervals}.
 
 Table 2 Statistical testing of the hypotheses about the equality of the mean values of the log-normal distributions used in Figure \ref{R-P_maximum}. 
 
-\begin{table*}[t]
+\begin{table}
 \processtable{Statistical testing of the hypotheses about the equality of the mean values of the log-normal distributions used in Figure \ref{R-P_maximum}.\label{statistics}}
-{\begin{tabular}{p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth}  >{\centering\arraybackslash}p{0.15\textwidth}}
-Hypothesis & Empirical value of statistical criterion $t_{exp}$ & Statistical significance level $\alpha$& Critical value of statistical criterion $t_{n_1 + n_2 -2} (\alpha / 2)$ & Decision \\
+{\begin{tabular}{p{0.12\textwidth} >{\centering\arraybackslash}p{0.13\textwidth} p{0.1\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} p{0.08\textwidth}}
+Hypothesis & Statistical criterion $t_{exp}$ & Statistical significance $\alpha$& Critical value $t_{n_1 + n_2 -2} (\alpha / 2)$ & Decision \\
 \multirow{2}{*}{$H_0: \mu_1 = \mu_2$} & \multirow{2}{*}{0.614} & 0.01 & 2.594 & accept \\
                   &                        & 0.3  & 1.038 & accept \\
 \multirow{2}{*}{$H_0: \mu_1 = \mu_3$} & \multirow{2}{*}{1,097} & 0.01 & 2.594 & accept \\
@@ -204,8 +193,7 @@ Hypothesis & Empirical value of statistical criterion $t_{exp}$ & Statistical si
 \multirow{2}{*}{$H_0: \mu_2 = \mu_3$} & \multirow{2}{*}{0.469} & 0.01 & 2.594 & accept \\
                   &                        & 0.3  & 1.038 & accept
 \end{tabular}}{}
-\end{table*}
-
+\end{table}
 
 According to the results of the statistical analysis in Table \ref{statistics}, statistical criterion empirical values defined as \ref{Texp}
 
