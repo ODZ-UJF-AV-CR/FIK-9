@@ -21,8 +21,7 @@
 \date{Received on April 2, 2003, revised on November 19, 2003, accepted on December 22, 2003}
 
 \begin{abstract}
-The exact location of the Regener-Pfotzer maximum depends on many parameters such as atmospheric conditions, geographical locations, solar activity, and also the type of detected particles. Stratospheric balloons are a useful tool for the investigation of cosmic radiation at high altitudes and the tests of new detectors of cosmic radiation. Due to necessary data processing of data measured by instruments, the balloon gondola needs to carry, together with radiation detectors,  additional supplementary sensors measuring humidity, temperature, location and orientation, altitude, atmospheric pressure, acceleration etc. This was the reason why a new universal system TF-ATMON was developed. The system is based on using already existing tools of the PX4 open-source project that makes it possible, apart from data recording and monitoring, to solve other related issues - the possibility to trace the balloon gondola after the flight. The application was demonstrated on stratospheric balloon flight FIK 6. This flight  was unique because three different types of radiation detectors were used at one flight. It enabled us to compare the altitude of the Regener-Pfotzer maximum measured with different types of sensors sensitive to a different type of secondary cosmic radiation generated in the atmosphere.
-
+Stratospheric balloons are a useful tool for the investigation of cosmic radiation at high altitudes and the tests of new detectors of cosmic radiation. Due to necessary data processing, the balloon gondola needs to carry, together with radiation detectors, additional supplementary sensors measuring humidity, temperature, location and orientation, altitude, atmospheric pressure, acceleration etc. A newly developed universal system TF-ATMON, based on using already existing tools of the PX4 open-source project, enables apart from data recording and monitoring, also the possibility to trace the balloon gondola after the flight. The application was demonstrated on stratospheric balloon flight FIK-6. This flight was unique because three different types of radiation detectors were used at one flight. It enabled us to compare the altitude of the Regener-Pfotzer maximum measured with different types of sensors sensitive to a different type of secondary cosmic radiation generated in the atmosphere.
 \end{abstract}
 
 \maketitle
@@ -142,13 +141,13 @@ The system TF-ATMON recorded temperature, air pressure, humidity and radiation c
 
 
 \begin{figure}%avionic
-	\centerline{\includegraphics[width=60mm]{img/FIK-6_RAW_data.png}}
+	\centerline{\includegraphics[width=65mm]{img/FIK-6_RAW_data.png}}
 	\caption{Raw data measured during the whole flight. From top to bottom: temperature near scintillation crystal, air pressure inside the box of crystal, temperature inside the gondola, relative humidity inside the gondola, counts of radiation events per 10 seconds counted by scintillator, silicon detector, and  G-M counter, barometric altitude, and altitude from GNSS.\label{FIK-6_RAW_data}}
 \end{figure}
 
 
 \begin{figure}%avionic
-	\centerline{\includegraphics[width=60mm]{img/FIK-6_metadada.png}}
+	\centerline{\includegraphics[width=65mm]{img/FIK-6_metadada.png}}
 	\caption{Acceleration and Angular Speed in axis perpendicular to the ground combined with ionising radiation flux measured by the silicon PIN diode detector. \label{FIK-6_telemetry}}
 \end{figure}
 
@@ -184,7 +183,8 @@ Table 2 Statistical testing of the hypotheses about the equality of the mean val
 
 \begin{table}
 \processtable{Statistical testing of the hypotheses about the equality of the mean values of the log-normal distributions used in Figure \ref{R-P_maximum}.\label{statistics}}
-{\begin{tabular}{p{0.22\columnwidth} >{\centering\arraybackslash}p{0.15\columnwidth} p{0.15\columnwidth} >{\centering\arraybackslash}p{0.15\columnwidth} p{0.1\columnwidth}}
+{\begin{tabular}
+{p{0.22\columnwidth} >{\centering\arraybackslash}p{0.15\columnwidth} p{0.15\columnwidth} >{\centering\arraybackslash}p{0.15\columnwidth} p{0.1\columnwidth}}
 Hypothesis & Statistical criterion $t_{exp}$ & Statistical significance $\alpha$& Critical value $t_{n_1 + n_2 -2} (\alpha / 2)$ & Decision \\
 \multirow{2}{*}{$H_0: \mu_1 = \mu_2$} & \multirow{2}{*}{0.614} & 0.01 & 2.594 & accept \\
                   &                        & 0.3  & 1.038 & accept \\
@@ -259,7 +259,7 @@ This work was supported by Open Programme Research Development Education, MEYS, 
 
 \bibitem{AIRDOS-C} Velychko, O., Kákona, M., Ambrožová, I., and Ploc, O. (2021). Characterisation of AIRDOS-C detector for measurement of high-energy events in the atmosphere.
 
-\bibitem{standard_atmosphere} National Oceanic and Atmospheric Administration, National Aeronautics and Space Administration, United States Air Force. (1976). U.S. Standard Atmosphere. Washington, DC.
+\bibitem{standard_atmosphere} NOAA, United States Air Force. (1976). U.S. Standard Atmosphere. Washington, DC.
 
 \bibitem{confidence_intervals} Olsson, U. (2005). Confidence intervals for the mean of a log-normal distribution. Journal of Statistics Education, 13(1).
 
