@@ -7,6 +7,11 @@
 \usepackage{multirow}
 %\usepackage{csquotes}
 
+\usepackage[super]{cite}
+\makeatletter
+\renewcommand\@citess[1]{\textsuperscript{(#1)}}
+\makeatother
+
 \begin{document}
 
 \def\Sectitle{Section Title}%%This line can be removed if there is no
@@ -59,7 +64,7 @@ For this reason, the originally used telemetry system was made significantly mor
 An overall overview of the success of the used technologies is summarized in the table \ref{Flight_reliability}.
 
 
-\begin{table*}[t]
+\begin{table*}
 \processtable{Table summarising success of used technologies, with colours representing a degree of reliability: \newline \colorbox{red}{Failure} \colorbox{yellow}{Partial failure} \colorbox{green}{Correct function}.\label{Flight_reliability}}
 {\begin{tabular}{p{0.1\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth}}\toprule
 Flight & FIK-1 & FIK-2 & FIK-3 & FIK-4 & FIK-5 & FIK-6 \\\midrule
@@ -164,7 +169,6 @@ The graphs show that the maximum reached altitude was approximately 33km above s
 By processing the data a graph of detected altitude Figure \ref{R-P_maximum} was obtained. It shows that the measured altitude of the Regener-Pfotzer maximum was for all detector types around 19km above sea level.
 
 The Log-norm distribution fit was used to determine the R-P maximum. The fit was applied to measured data and normalized to the maximum number of particles for a given detector.
-
 \begin{equation}A \frac 1 {x\sigma\sqrt{2\pi}}\ \exp\left( - \frac{\left(\ln x-\mu\right)^2}{2\sigma^2}\right)\end{equation}
 
 The fit parameters $A$, $\mu$, $\sigma$ and the calculated R-P maximum positions are given in Figure \ref{R-P_maximum}. The range of barometric altitudes 7000 m to 29 000 m was chosen for the fit. The lower limit was chosen so that the course of the function was not affected by terrestrial radiation and radon progenies in the atmosphere. The upper limit was chosen based on a simulation because, according to the simulation, at higher altitudes the flux of ionizing radiation does not decrease evenly. 
@@ -196,7 +200,6 @@ Hypothesis & Statistical criterion $t_{exp}$ & Statistical significance $\alpha$
 \end{table}
 
 According to the results of the statistical analysis in Table \ref{statistics}, statistical criterion empirical values defined as \ref{Texp}
-
 \begin{equation}
 \begin{gathered}
 t_{exp} =  \frac{\mu_1 - \mu_2}{\sqrt{(n_1 - 1)\sigma_1 ^2 + (n_2 - 1)\sigma_2 ^2}} \\
@@ -206,9 +209,7 @@ t_{exp} =  \frac{\mu_1 - \mu_2}{\sqrt{(n_1 - 1)\sigma_1 ^2 + (n_2 - 1)\sigma_2 ^
 \end{equation}
 
 were not the element of the critical domains W defined as \ref{W} 
-
 \begin{equation}W = (- \infty ; -t_{n_1 + n_2 -2} (\alpha / 2) \rangle \cup \langle t_{n_1 + n_2 -2} (\alpha / 2); \infty)  \label{W} \end{equation}
-
 The $H_0$ hypothesis was therefore accepted in all tested cases, except for the case of P-F maxima measured with G-M counter and silicon PIN diode, where the difference is statistically significant for significance level $\alpha=30\%$.
 
 As the measured data show in \ref{FIK-6_RAW_data}, there is a very noticeable difference between a number of data points measured during the flight upwards and during the descent. This difference is mainly caused by the  different value of vertical speed. In the following balloon flights we are planning to overcome this problem by a controlled descent, during which its rate can be decreased in some phases of flight so that it can be more comparable with the speed of the ascent.
