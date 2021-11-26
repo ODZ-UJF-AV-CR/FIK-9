@@ -188,7 +188,7 @@ Table 2 Statistical testing of the hypotheses about the equality of the mean val
 \processtable{Statistical testing of the hypotheses about the equality of the mean values of the log-normal distributions used in Figure \ref{R-P_maximum}.\label{statistics}}
 {\begin{tabular}
 {p{0.22\columnwidth} >{\centering\arraybackslash}p{0.15\columnwidth} p{0.15\columnwidth} >{\centering\arraybackslash}p{0.15\columnwidth} p{0.1\columnwidth}}
-Hypothesis & Statistical criterion $t_{exp}$ & Statistical significance $\alpha$& Critical value $t_{n_1 + n_2 -2} (\alpha / 2)$ & Decision \\
+Hypothesis & Statistical criterion $t_{exp}$ & Statistical significance $\alpha$& Critical value $t_\nu (\alpha / 2)$ & Decision \\
 \multirow{2}{*}{$H_0: \mu_1 = \mu_2$} & \multirow{2}{*}{0.614} & 0.01 & 2.594 & accept \\
                   &                        & 0.3  & 1.038 & accept \\
 \multirow{2}{*}{$H_0: \mu_1 = \mu_3$} & \multirow{2}{*}{1,097} & 0.01 & 2.594 & accept \\
@@ -207,8 +207,13 @@ t_{exp} =  \frac{\mu_1 - \mu_2}{\sqrt{(n_1 - 1)\sigma_1 ^2 + (n_2 - 1)\sigma_2 ^
 \label{Texp}
 \end{equation}
 
-were not the element of the critical domains W defined as \ref{W} 
-\begin{equation}W = (- \infty ; -t_{n_1 + n_2 -2} (\alpha / 2) \rangle \cup \langle t_{n_1 + n_2 -2} (\alpha / 2); \infty)  \label{W} \end{equation}
+were not the element of the critical domains $W$ defined as \ref{W}, using degrees of freedom $\nu=n_1 + n_2 -2$
+\begin{equation}
+\begin{gathered}
+W = (- \infty ; -t_\nu (\alpha / 2) \rangle \cup \langle t_\nu (\alpha / 2); \infty)
+\end{gathered}
+\label{W} 
+\end{equation}
 The $H_0$ hypothesis was therefore accepted in all tested cases, except for the case of P-F maxima measured with G-M counter and silicon PIN diode, where the difference is statistically significant for significance level $\alpha=30\%$.
 
 As the measured data show in \ref{FIK-6_RAW_data}, there is a very noticeable difference between a number of data points measured during the flight upwards and during the descent. This difference is mainly caused by the  different value of vertical speed. In the following balloon flights we are planning to overcome this problem by a controlled descent, during which its rate can be decreased in some phases of flight so that it can be more comparable with the speed of the ascent.
