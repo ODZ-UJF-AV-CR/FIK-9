@@ -20,10 +20,10 @@
 \def\copyrightyear{2021}%
 
 \title[TF-ATMON ionizing radiation measurement]{Measurement of the Regener-Pfotzer maximum using different types of ionizing radiation detectors and a new telemetry system TF-ATMON}
-\author[Kakona J. \textit{et~al}]{Jakub Kákona\footnote{Corresponding author: kakonjak@fel.cvut.cz},$^{ a}$,  Martina Lužová \,$^{ b}$, Martin Kákona \,$^{ b}$, Marek Sommer \,$^{ b}$, Martin Povišer \,$^{ b}$, Ondřej Ploc \,$^{ b}$, Roman Dvořák \,$^{ c}$, Iva Ambrožová\,$^{ b}$}
-\address{$^{ a}$Czech Technical University in Prague, Faculty of Electrical Engineering, Prague, Czech Republic, $^{ b}$Department of Radiation Dosimetry, Nuclear Physics Institute of the CAS, Na Truhlářce 39/64, 180 00, Prague 8, Czech Republic, $^{ c}$ ThunderFly s.r.o., U Jatek 19, Soběslav  392 01, Czech Republic}
+\author[Kakona J. \textit{et~al}]{Jakub Kákona\footnote{Corresponding author: kakonjak@fel.cvut.cz},$^{ 1}$,  Martina Lužová \,$^{ 2}$, Martin Kákona \,$^{ 2}$, Marek Sommer \,$^{ 2}$, Martin Povišer \,$^{ 2}$, Ondřej Ploc \,$^{ 2}$, Roman Dvořák \,$^{ 3}$, Iva Ambrožová\,$^{ 2}$}
+\address{$^{ 1}$Czech Technical University in Prague, Faculty of Electrical Engineering, Prague, Czech Republic \newline $^{ 2}$Department of Radiation Dosimetry, Nuclear Physics Institute of the CAS, Na Truhlářce 39/64, 180 00, Prague 8, Czech Republic \newline $^{ 3}$ ThunderFly s.r.o., U Jatek 19, Soběslav  392 01, Czech Republic}
 
-\date{Received on April 2, 2003, revised on November 19, 2003, accepted on December 22, 2003}
+\date{Received month date year, amended month date year, accepted month date year} %% TODO uptade according to real dates
 
 \begin{abstract}
 Stratospheric balloons are a useful tool for the investigation of cosmic radiation at high altitudes and the tests of new detectors of cosmic radiation. Due to necessary data processing, the balloon gondola needs to carry, together with radiation detectors, additional supplementary sensors measuring humidity, temperature, location and orientation, altitude, atmospheric pressure, acceleration etc. A newly developed universal system TF-ATMON, based on using already existing tools of the PX4 open-source project, enables apart from data recording and monitoring, also the possibility to trace the balloon gondola after the flight. The application was demonstrated on stratospheric balloon flight FIK-6. This flight was unique because three different types of radiation detectors were used at one flight. It enabled us to compare the altitude of the Regener-Pfotzer maximum measured with different types of sensors sensitive to a different type of secondary cosmic radiation generated in the atmosphere.
@@ -65,20 +65,20 @@ An overall overview of the success of the used technologies is summarized in the
 
 
 \begin{table*}
-\processtable{Table summarising success of used technologies, with colours representing a degree of reliability: \newline \colorbox{red}{Failure} \colorbox{yellow}{Partial failure} \colorbox{green}{Correct function}.\label{Flight_reliability}}
+\processtable{Table summarising success of used technologies, with colours representing a degree of reliability: \newline \colorbox{black!65}{Failure} \colorbox{black!50}{Partial failure} \colorbox{black!25}{Correct function}.\label{Flight_reliability}}
 {\begin{tabular}{p{0.1\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth} >{\centering\arraybackslash}p{0.15\textwidth}}\toprule
 Flight & FIK-1 & FIK-2 & FIK-3 & FIK-4 & FIK-5 & FIK-6 \\\midrule
 Location (year) & CZ (2015) & CZ (2017) & CZ (2018) & SE (2019) & CZ (2019) & CZ (2020) \\
-Payload & \cellcolor{green} Candy detector, Web camera & \cellcolor{yellow} Candy detector, Web camera & \cellcolor{green} AIRDOS,
-360 deg camera & \cellcolor{green} AIRDOS-C CRY19, SPACEDOS, G-M, Socrat-R & \cellcolor{green} AIRDOS-C
-CRY19,SPACEDOS, G-M, 360 deg camera & \cellcolor{green} AIRDOS-C NaI(Tl), SPACEDOS, G-M, Ionmeter, 360 deg camera \\
-Landing site & \cellcolor{yellow} vineyard Austria & \cellcolor{green} rapeseed field & \cellcolor{red} Poland & \cellcolor{yellow} swamp (Finland) & \cellcolor{green} forest & \cellcolor{red} railway corridor\\
-Power source & \cellcolor{green} Li-ion 18650 accu & \cellcolor{yellow} Li-ion 18650 and li-pol accu & \cellcolor{yellow} Lithium primary cells and li-pol accu & \cellcolor{green} Lithium primary cells & \cellcolor{yellow} Lithium primary cells & \cellcolor{green} Li-ion 18650
+Payload & \cellcolor{black!25} Candy detector, Web camera & \cellcolor{black!50} Candy detector, Web camera & \cellcolor{black!25} AIRDOS,
+360 deg camera & \cellcolor{black!25} AIRDOS-C CRY19, SPACEDOS, G-M, Socrat-R & \cellcolor{black!25} AIRDOS-C
+CRY19,SPACEDOS, G-M, 360 deg camera & \cellcolor{black!25} AIRDOS-C NaI(Tl), SPACEDOS, G-M, Ionmeter, 360 deg camera \\
+Landing site & \cellcolor{black!50} vineyard Austria & \cellcolor{black!25} rapeseed field & \cellcolor{black!65} Poland & \cellcolor{black!50} swamp (Finland) & \cellcolor{black!25} forest & \cellcolor{black!65} railway corridor\\
+Power source & \cellcolor{black!25} Li-ion 18650 accu & \cellcolor{black!50} Li-ion 18650 and li-pol accu & \cellcolor{black!50} Lithium primary cells and li-pol accu & \cellcolor{black!25} Lithium primary cells & \cellcolor{black!50} Lithium primary cells & \cellcolor{black!25} Li-ion 18650
 accu \\
-Telemetry system & \cellcolor{red} GSM & \cellcolor{yellow} GSM, 868 MHz Proprietary Modem & \cellcolor{yellow} SigFox,
-868 MHz Proprietary Modem &  Outsourced & \cellcolor{green} LoRa, SigFox, SiK 433 MHz & \cellcolor{green} 2x LoRa, SiK 433 MHz \\
-Rescue beacon & \cellcolor{green} 433 MHz CW & \cellcolor{green} 433 MHz CW & \cellcolor{green} 433 MHz CW &  Outsourced & \cellcolor{green} 433 MHz CW & \cellcolor{green} 433 MHz CW \\
-Flight control computer & \cellcolor{yellow} Odroid-U2 & \cellcolor{yellow} Odroid-U2 & Not used & Not used/outsourced & \cellcolor{green} PX4, FMU v5 & \cellcolor{green} PX4, FMU v5 \\
+Telemetry system & \cellcolor{black!65} GSM & \cellcolor{black!50} GSM, 868 MHz Proprietary Modem & \cellcolor{black!50} SigFox,
+868 MHz Proprietary Modem &  Outsourced & \cellcolor{black!25} LoRa, SigFox, SiK 433 MHz & \cellcolor{black!25} 2x LoRa, SiK 433 MHz \\
+Rescue beacon & \cellcolor{black!25} 433 MHz CW & \cellcolor{black!25} 433 MHz CW & \cellcolor{black!25} 433 MHz CW &  Outsourced & \cellcolor{black!25} 433 MHz CW & \cellcolor{black!25} 433 MHz CW \\
+Flight control computer & \cellcolor{black!50} Odroid-U2 & \cellcolor{black!50} Odroid-U2 & Not used & Not used/outsourced & \cellcolor{black!25} PX4, FMU v5 & \cellcolor{black!25} PX4, FMU v5 \\
 \botrule
 \end{tabular}}{}
 \end{table*}
