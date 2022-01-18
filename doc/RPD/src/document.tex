@@ -23,7 +23,7 @@
 \author[Kakona J. \textit{et~al}]{Jakub Kákona\footnote{Corresponding author: kakonjak@fel.cvut.cz},$^{ 1}$,  Martina Lužová \,$^{ 2}$, Martin Kákona \,$^{ 2}$, Marek Sommer \,$^{ 2}$, Martin Povišer \,$^{ 2}$, Ondřej Ploc \,$^{ 2}$, Roman Dvořák \,$^{ 3}$, Iva Ambrožová\,$^{ 2}$}
 \address{$^{ 1}$Czech Technical University in Prague, Faculty of Electrical Engineering, Prague, Czech Republic \newline $^{ 2}$Department of Radiation Dosimetry, Nuclear Physics Institute of the CAS, Na Truhlářce 39/64, 180 00, Prague 8, Czech Republic \newline $^{ 3}$ ThunderFly s.r.o., U Jatek 19, Soběslav  392 01, Czech Republic}
 
-\date{Received month date year, amended month date year, accepted month date year} %% TODO uptade according to real dates
+\date{Received month date year, amended month date year, accepted month date year} %% TODO uptade according to the real dates
 
 \begin{abstract}
 Stratospheric balloons are a useful tool for the investigation of cosmic radiation at high altitudes and the tests of new detectors of cosmic radiation. Due to necessary data processing, the balloon gondola needs to carry, together with radiation detectors, additional supplementary sensors measuring humidity, temperature, location and orientation, altitude, atmospheric pressure, acceleration etc. A newly developed universal system TF-ATMON, based on using already existing tools of the PX4 open-source project, enables apart from data recording and monitoring, also the possibility to trace the balloon gondola after the flight. The application was demonstrated on stratospheric balloon flight FIK-6. This flight was unique because three different types of radiation detectors were used at one flight. It enabled us to compare the altitude of the Regener-Pfotzer maximum measured with different types of sensors sensitive to a different type of secondary cosmic radiation generated in the atmosphere.
@@ -34,12 +34,12 @@ Stratospheric balloons are a useful tool for the investigation of cosmic radiati
 
 \section{Introduction}
 
-Particles of primary cosmic radiation with sufficient energy interact in the upper part of the atmosphere and generate showers of secondary cosmic radiation. With increasing depth of the atmosphere the intensity of primary radiation decreases whereas the secondary component increases. At an altitude of about 20 km the intensity of secondary cosmic radiation reaches its maximum, called the Pfotzer-Regener maximum \cite{Regener, Pfotzer}. The maximum varies with geomagnetic vertical cutoff rigidity and with solar cycle and it is generally located at 15-27 km above sea level \cite{Bazilevskaya}.
-In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the word, mainly using radiosondes consisting of Geiger tubes \cite{Bazilevskaya, ionization_profile, Vertical_profile_measurements, cosmic_ray_intensity, Radioactivity_atmosphere}, or to characterize instruments’ response used for space-based missions \cite{Lawrence, Mukherjee, Timepix}.
+Particles of primary cosmic radiation with sufficient energy interact in the upper part of the atmosphere and generate showers of secondary cosmic radiation. With increasing depth of the atmosphere the intensity of primary radiation decreases whereas the secondary component increases. At an altitude of about 20 km the intensity of secondary cosmic radiation reaches its maximum, called the Regener-Pfotzer maximum \cite{Regener, Pfotzer}. The maximum varies with geomagnetic vertical cutoff rigidity and with solar cycle and it is generally located at 15-27 km above sea level \cite{Bazilevskaya}.
+In the past, several experiments were done with the aim to measure vertical profile of ionization in the atmosphere at various locations in the world, mainly using radiosondes consisting of Geiger tubes \cite{Bazilevskaya, ionization_profile, Vertical_profile_measurements, cosmic_ray_intensity, Radioactivity_atmosphere}, or to characterize instruments’ response used for space-based missions \cite{Lawrence, Mukherjee, Timepix}.
 Stratospheric balloons are a useful tool for the investigation of cosmic radiation at high altitudes (around and above the Regener-Pfotzer maximum region) and for the tests of new detectors of cosmic radiation.
-However, the radiation measuring instruments need to be supplemented by other sensors measuring temperature, pressure, humidity, altitude, acceleration, etc.  All these sensors should be continuously monitored during the launch and the flight of the balloon to verify their proper function and theirthe values have to be recorded for further processing of all obtained data.
+However, the radiation measuring instruments need to be supplemented by other sensors measuring temperature, pressure, humidity, altitude, acceleration, etc.  All these sensors should be continuously monitored during the launch and the flight of the balloon to verify their proper function and their values have to be recorded for further processing of all obtained data.
 
-The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an telemetry transmitter, enables it to monitor and record data during the flight and to trace the balloon. Its application is demonstrated on stratospheric balloon flight FIK-6 Fig. \ref{FIK-6_setup} various radiation detectors - Geiger-Mueller tubes, Si-diode based detector SPACEDOS, and scintillation detectors AIRDOS-C with inorganic scintillation crystals - were used to measure the vertical profile of cosmic radiation in the atmosphere.
+The universal system TF-ATMON, based on the use of existing tools of the open-source project PX4 and supplemented with an telemetry transmitter, enables it to monitor and record data during the flight and to trace the balloon. Its application is demonstrated on stratospheric balloon flight FIK-6. Experiment setup is shown in Fig. \ref{FIK-6_setup} . Various radiation detectors were used to measure the vertical profile of cosmic radiation in the atmosphere - Geiger-Mueller tubes, Si-diode based detector SPACEDOS, and scintillation detectors AIRDOS-C with inorganic scintillation crystals.
 
 \section{Materials and methods}
 
@@ -56,7 +56,7 @@ Due to a relatively high value of payload it was necessary to ensure the return 
 \end{itemize}
 
 
-Despite the generally successful nature of all fights and the fact that the gondolas were always found, different technologies were tried to eliminate the partial shortcomings which emerged during balloon flights. During the last experimental flights these also included the way the data was recorded.
+Despite the generally successful nature of all flights and the fact that the gondolas were always found, different technologies were tried to eliminate the partial shortcomings which emerged during balloon flights. During the last experimental flights these also included the way the data was recorded.
 
 For this reason, the originally used telemetry system was made significantly more robust and an IoT LoRa transmitter was added to the system, making it possible to transmit the data necessary for tracing the gondola to the TheThingsNetwork. This way, a high reliability of finding the gondola and recording the data was ensured. In case of active detectors, it was also necessary that the flight trajectory was recorded synchronously with the supplementary quantities.
 
@@ -212,7 +212,7 @@ W = (- \infty ; -t_\nu (\alpha / 2) \rangle \cup \langle t_\nu (\alpha / 2); \in
 \end{gathered}
 \label{W} 
 \end{equation}
-The $H_0$ hypothesis was therefore accepted in all tested cases, except for the case of P-F maxima measured with G-M counter and silicon PIN diode, where the difference is statistically significant for significance level $\alpha=30\%$.
+The $H_0$ hypothesis was therefore accepted in all tested cases, except for the case of R-P maxima measured with G-M counter and silicon PIN diode, where the difference is statistically significant for significance level $\alpha=30\%$.
 
 As the measured data show in Figure \ref{FIK-6_RAW_data}, there is a very noticeable difference between a number of data points measured during the flight upwards and during the descent. This difference is mainly caused by the  different value of vertical speed. In the following balloon flights we are planning to overcome this problem by a controlled descent, during which its rate can be decreased in some phases of flight so that it can be more comparable with the speed of the ascent.
 
@@ -231,7 +231,7 @@ The descent will be carried out using an unmanned autogyro carrying a payload. T
 Flight FIK-6 was unique due to radiation measurements of the Regener-Pfotzer maximum using three different types of radiation detectors. Altitude of the Regener-Pfotzer maximum was about 19 km and slightly differed based on the detector type: GM counter measured the highest value (19270 m), silicon PIN diode measured lower value (18802 m), and scintillation detectors the lowest value (18668 m). It was shown that this difference is statistically unimportant except for one case with high significance level 30\%. An increased accuracy in evaluation of the altitude of Regener-Pfotzer maximum is expected when the temperature corrections will be applied.
 A telemetric system TF-ATMON has been developed. It enables data recording, pre-flight instruments control and their monitoring during flight. Thanks to the availability of different communication interfaces on the basic avionics, the use of various alternative detectors is simplified. The technology at the same time improves the possibilities of a quick location of a balloon gondola after its landing. It is therefore possible to carry out even experiments requiring a very short period till recovering the balloon after the flight. The system was successfully tested during FIK-6 flight.
 
-\section*{Acknowledgement}
+\section*{Funding}
 
 This work was supported by Open Programme Research Development Education, MEYS, under the project CRREAT, \newline Reg. No. [CZ.02.1.01/0.0/0.0/15\_003/0000481] and CTU internal project \\ SGS, Reg. No. [SGS20/181/OHK3/3T/13]
 
