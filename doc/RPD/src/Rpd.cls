@@ -57,7 +57,7 @@
     \abovedisplayshortskip \z@ plus 2\p@
     \belowdisplayshortskip 4\p@ plus 2\p@ minus2\p@
     \def\@listi{\topsep 4.5\p@ plus 2\p@ minus 1\p@
-       \itemsep \parsep
+       \itemsep \parsep 
        \topsep 4\p@ plus 2\p@ minus 2\p@}}
 
 \newcommand\footnotesize{%
@@ -68,7 +68,7 @@
     \belowdisplayshortskip 6\p@ plus 3\p@ minus 3\p@
     \def\@listi{\topsep 3\p@ plus 1\p@ minus 1\p@
        \parsep 2\p@ plus 1\p@ minus 1\p@\itemsep \parsep}}
-
+       
 \def\scriptsize{\@setfontsize\scriptsize{7pt}{9pt}}
 \def\tiny{\@setfontsize\tiny{5pt}{7pt}}
 \def\large{\@setfontsize\large{11.5pt}{12pt}}
@@ -174,7 +174,7 @@
 \setcounter{topnumber}{5}
 \setcounter{bottomnumber}{5}
 % The maximum part of the top or bottom of a text page that can be
-% occupied by floats. This is set so that at least four lines of text
+% occupied by floats. This is set so that at least four lines of text 
 % fit on the page.
 \renewcommand\topfraction{.9}
 \renewcommand\bottomfraction{.9}
@@ -239,7 +239,7 @@
 %
 % Sectional units
 %
-
+  
 % Counters
 \newcounter{section}
 \newcounter{subsection}[section]
@@ -248,7 +248,7 @@
 \newcounter{subparagraph}[paragraph]
 \newcounter{figure}
 \newcounter{table}
-
+ 
 % Form of the numbers
 \newcommand\thepage{\arabic{page}}
 \renewcommand\thesection{\arabic{section}}
@@ -338,42 +338,42 @@
 \newif\iflastpagegiven   \lastpagegivenfalse
 \newcommand\firstpage[1]{%
   \gdef\@firstpage{#1}%
-  \ifnum\@firstpage>\c@page
+  \ifnum\@firstpage>\c@page  
     \setcounter{page}{#1}%
     \ClassWarning{BIO}{Increasing pagenumber to \@firstpage}%
-  \else \ifnum\@firstpage<\c@page
+  \else \ifnum\@firstpage<\c@page 
     \ClassWarning{BIO}{Firstpage lower than pagenumber}\fi\fi
-    \xdef\@firstpage{\the\c@page}%
+    \xdef\@firstpage{\the\c@page}%                                 
     }
 \def\@firstpage{1}
 \def\pagenumbering#1{%
     \global\c@page \@ne
     \gdef\thepage{\csname @#1\endcsname \c@page}%
-    \gdef\thefirstpage{%
+    \gdef\thefirstpage{% 
             \csname @#1\endcsname \@firstpage}%
     \gdef\thelastpage{%
             \csname @#1\endcsname \@lastpage}%
-    }
+    }  
 
 \newcommand\lastpage[1]{\xdef\@lastpage{#1}%
   \global\lastpagegiventrue}
-\def\@lastpage{0}
+\def\@lastpage{0}               
 \def\setlastpage{\iflastpagegiven\else
     \edef\@tempa{@lastpage@}%
-    \expandafter
+    \expandafter 
     \ifx \csname \@tempa \endcsname \relax
         \gdef\@lastpage{0}%
     \else
         \xdef\@lastpage{\@nameuse{@lastpage@}}%
         \fi
     \fi }
-\def\writelastpage{%
+\def\writelastpage{%                                    
     \iflastpagegiven \else
     \immediate\write\@auxout%
     {\string\global\string\@namedef{@lastpage@}{\the\c@page}}%
-    \fi
+    \fi                                                       
     }
-\def\thepagerange{%
+\def\thepagerange{%                                    
   \ifnum\@lastpage =0 {\ \bf ???} \else
   \ifnum\@lastpage = \@firstpage \ \thefirstpage\else
   \thefirstpage--\thelastpage \fi\fi}
@@ -464,7 +464,7 @@ DOI:~10.1093/rpd/\DOI\par}%
   \global\setbox\t@abstract=\vbox\bgroup
    \hsize\textwidth
    \normalsize\fontsize{8}{9}\fontseries{b}\selectfont%
-%  \parindent 1em
+%  \parindent 1em                      
   \noindent %{\bfseries\abstractname}
   \vskip 12\p@
   \noindent\ignorespaces}
@@ -482,12 +482,12 @@ DOI:~10.1093/rpd/\DOI\par}%
   \@startsection{section}{1}{\z@}
   {-15\p@ plus -3\p@}{5\p@}
   {\reset@font\normalsize\raggedright\MakeUppercase}}
-
+  
 \def\subsection{%
   \@startsection{subsection}{2}{\z@}
   {-15\p@ plus -2\p@}{5\p@}
   {\reset@font\raggedright\normalsize\bfseries\mathversion{bold}}}
-
+ 
 \def\subsubsection{%
   \@startsection{subsubsection}{3}{\z@}
   {-15\p@ plus -1\p@}{5\p@}
@@ -714,7 +714,7 @@ DOI:~10.1093/rpd/\DOI\par}%
      \setlength{\itemindent}{-2em}}}
 {\end{list}}
 
-
+      
 % ***********************
 % Quotes and Quotations *
 % ***********************
@@ -754,7 +754,7 @@ DOI:~10.1093/rpd/\DOI\par}%
      \@tempdima #3\relax
      \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
      {\itshape #4}\nobreak
-     \leaders\hbox{$\m@th
+     \leaders\hbox{$\m@th 
         \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
         mu$}\hfill
      \nobreak
@@ -794,7 +794,7 @@ DOI:~10.1093/rpd/\DOI\par}%
         \else
           \setlength{\labelsep}{\@tempdima}%
         \fi
-        \setlength{\leftmargin}{\labelwidth}%
+        \setlength{\leftmargin}{\labelwidth}% 
         \addtolength{\leftmargin}{\labelsep}%
         \def\makelabel##1{\hbox to \labelwidth{\hss{##1}}}%
         \usecounter{enumi}}}
@@ -812,7 +812,7 @@ DOI:~10.1093/rpd/\DOI\par}%
 
 %Math parameters
 
-\setlength{\jot}{5\p@}
+\setlength{\jot}{5\p@} 
 \mathchardef\@m=1500   % adapted value
 \def\@mathmargin{1em}%
 
@@ -878,3 +878,5 @@ DOI:~10.1093/rpd/\DOI\par}%
 \renewcommand{\dag}{{\mathversion{normal}$^{\dagger}$}}
 
 \endinput
+
+
