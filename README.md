@@ -2,27 +2,34 @@
 
 [Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech Academy of Sciences](http://www.ujf.cas.cz/en/departments/department-of-radiation-dosimetry/contact/) high-altitude balloon experiment
 
-![FIK-6 gondola pre-flight test weight](doc/img/FIK-6_gondola_weight.jpg)
-
+### Repo TODO
+- [ ] Block diagram update
+- [ ] PX4Firmware FMUv5
+- [ ] (?) PX4Firmware extender with Lora device
+- [ ] One direction Sik Modem Firmware 
+- [ ] Ground Software 
+- [ ] Car Software (car tracking, Sik recievers)
+- [ ] Standalone tracking device FW
+- [ ] Payload FW
 
 ![Block diagram](doc/img/block_schematics.png)
 
 
 ### Scientific payload
-
-  * Iontometer
-  * AIRDOS dosimeters
-
+(??)
 
 ### Supporting instruments
-
-  * Relative humidity sensor
-  * Temperature sensor
-  * Precise barometer
-  * Spheric (360 deg) camera
+ - [ ] Cuav FMUv5 with PX4 Firmware
+   - [ ] Sik telemetry
+   - [ ] Lora Telemetry (TX/RX)
+   - [ ] More advanced position estimation
+   - [ ] (?) Driving cut device
+   - [ ] Temperature measurement
+   - [ ] Logging processed data from payload
+ - [ ] Standalone tracking device
+ - [ ] Cutting device
 
 ### Design features
-
   * Redundant telemetry link
   * Gondola orientation tracking and logging
   * Reliable IMU sensor processing and calibration
@@ -32,14 +39,5 @@
 
 ### Flight data
 
-
-![Balloon burst at 33 km amsl](doc/img/balloon_burst.JPG)
-
-![Data measured by dosimeters](doc/img/dosimeters_data.png)
-
-
- A more detailed description of the flight and discussion of the experiment is included in [EURADOS presentation](doc/FIK-6_EURADOS_presentation.pdf)
-
 ### Links
-
   * [Facebook](https://www.facebook.com/balonfik/)
