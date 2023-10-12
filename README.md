@@ -8,7 +8,7 @@
 - [ ] (?) PX4Firmware extender with Lora device
 - [ ] One direction Sik Modem Firmware 
 - [ ] Ground Software 
-- [ ] Car Software (car tracking, Sik recievers)
+- [ ] Car Software
 - [ ] Standalone tracking device FW
 - [ ] Payload FW
 
