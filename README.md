@@ -12,6 +12,8 @@
 - [ ] Standalone tracking device FW
 - [ ] Payload FW
 
+![Sw diagram](doc/img/fik_9_sw_data.png)
+
 ![Block diagram](doc/img/block_schematics.png)
 
 
