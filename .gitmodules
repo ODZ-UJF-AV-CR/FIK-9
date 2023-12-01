@@ -19,3 +19,6 @@
 [submodule "notebooks/flight_review"]
 	path = notebooks/flight_review
 	url = git@github.com:PX4/flight_review.git
+[submodule "sw/Web-FIK"]
+	path = sw/Web-FIK
+	url = git@github.com:ODZ-UJF-AV-CR/Web-FIK.git
