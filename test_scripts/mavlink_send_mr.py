@@ -13,7 +13,7 @@ from pymavlink.dialects.v20 import common as mavlink2
 from pymavlink import mavutil
 import time
 
-the_connection = mavutil.mavlink_connection('udpout:127.0.0.1:14444',source_system=200,source_component=138)
+the_connection = mavutil.mavlink_connection('udpout:127.0.0.1:14445',source_system=200,source_component=138)
 
 the_connection.mav.heartbeat_send(mavutil.mavlink.MAV_TYPE_ONBOARD_CONTROLLER,
                                               mavutil.mavlink.MAV_AUTOPILOT_INVALID, 0, 0, 0)
