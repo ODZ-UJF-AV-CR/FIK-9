@@ -2,36 +2,39 @@
 
 [Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech Academy of Sciences](http://www.ujf.cas.cz/en/departments/department-of-radiation-dosimetry/contact/) high-altitude balloon experiment
 
-### Repo TODO
+### Repo TODO for documenting
 - [ ] Block diagram update
-- [ ] PX4Firmware FMUv5
-- [ ] (?) PX4Firmware extender with Lora device
-- [ ] One direction Sik Modem Firmware 
-- [ ] Ground Software 
-- [ ] Car Software
+- [ ] Correct submodule version PX4Firmware FMUv5
+- [ ] Link to the used one-way Sik Modem Firmware 
+- [ ] Ground Software description
+- [ ] Rescue cars Software description
 - [ ] Standalone tracking device FW
-- [ ] Payload FW
+- [ ] Payload FW and scripts
 
 ![Sw diagram](doc/img/fik_9_sw_data.png)
 
 ![Block diagram](doc/img/block_schematics.png)
 
 
-### Scientific payload
-(??)
+### Used Scientific payload
 
-### Supporting instruments
- - [ ] Cuav FMUv5 with PX4 Firmware
-   - [ ] Sik telemetry
-   - [ ] Lora Telemetry (TX/RX)
-   - [ ] More advanced position estimation
-   - [ ] (?) Driving cut device
-   - [ ] Temperature measurement
-   - [ ] Logging processed data from payload
+ - [AIRDOS04](https://github.com/UniversalScientificTechnologies/AIRDOS04) Prototype
+ - [LABDOS01B](https://github.com/UniversalScientificTechnologies/LABDOS01)
+ - [LABDOS01B](https://github.com/UniversalScientificTechnologies/LABDOS01/tree/LABDOS01A)
+ - PiTED?
+ - 
+
+### The used experiment support devices and technologies
+
+ - [ ] CUAV V5+ FMUv5 with PX4 Firmware
+   - [ ] 433 MHz Sik telemetry (one-way TX only)
+   - [ ] 868 MHz Lora Telemetry (TX only)
+   - [ ] TFHT01 Temperature and humidity sensors
+   - [ ] TF-ATMON Logging of data from the payload
  - [ ] Standalone tracking device
- - [ ] Cutting device
 
 ### Design features
+
   * Redundant telemetry link
   * Gondola orientation tracking and logging
   * Reliable IMU sensor processing and calibration
