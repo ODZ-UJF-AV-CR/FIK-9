@@ -26,18 +26,18 @@
 
  - [AIRDOS04](https://github.com/UniversalScientificTechnologies/AIRDOS04) Prototype
  - [LABDOS01B](https://github.com/UniversalScientificTechnologies/LABDOS01)
- - [LABDOS01B](https://github.com/UniversalScientificTechnologies/LABDOS01/tree/LABDOS01A)
+ - [LABDOS01A](https://github.com/UniversalScientificTechnologies/LABDOS01/tree/LABDOS01A)
  - PiTED?
  - MiniPIX
  -
 
 ### The used experiment support devices and technologies
 
- - [ ] CUAV V5+ FMUv5 with PX4 Firmware
-   - [ ] 433 MHz Sik telemetry (one-way TX only)
+ - CUAV V5+ FMUv5 with customised PX4 Firmware supporting
+   - [ ] [433 MHz Sik telemetry (one-way TX only)](https://github.com/ThunderFly-aerospace/TFSIK01)
    - [ ] 868 MHz Lora Telemetry (TX only)
-   - [ ] TFHT01 Temperature and humidity sensors
-   - [ ] TF-ATMON Logging of data from the payload
+   - [ ] [TFHT01 Temperature and humidity sensors](https://github.com/ThunderFly-aerospace/TFHT01)
+   - [ ] [TF-ATMON Logging of data from the payload](https://www.thunderfly.cz/tf-atmon.html)
  - [ ] Standalone tracking device
 
 ### Design features
