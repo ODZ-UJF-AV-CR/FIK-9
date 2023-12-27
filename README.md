@@ -2,6 +2,11 @@
 
 [Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech Academy of Sciences](http://www.ujf.cas.cz/en/departments/department-of-radiation-dosimetry/contact/) high-altitude balloon experiment
 
+![FIK-9 just before takeoff](doc/img/FIK-9_takeoff.jpg)
+
+![FIK-9 rescue team on touch down site](doc/img/FIK-9_rescue_team.jpg)
+
+
 ### Repo TODO for documenting
 - [ ] Block diagram update
 - [ ] Correct submodule version PX4Firmware FMUv5
@@ -15,6 +20,7 @@
 
 ![Block diagram](doc/img/block_schematics.png)
 
+![FIK-9 gondola opened after touch down](doc/img/FIK-9_gondola_opened_after_touchdown.jpg)
 
 ### Used Scientific payload
 
@@ -22,7 +28,8 @@
  - [LABDOS01B](https://github.com/UniversalScientificTechnologies/LABDOS01)
  - [LABDOS01B](https://github.com/UniversalScientificTechnologies/LABDOS01/tree/LABDOS01A)
  - PiTED?
- - 
+ - MiniPIX
+ -
 
 ### The used experiment support devices and technologies
 
@@ -43,6 +50,12 @@
   * Power monitoring and maximal uptime calculation relevant to actual temperature
 
 ### Flight data
+
+![Screenshots of FIK-9 trajectory just before touch down](doc/img/Screenshot from 2023-12-03 14-17-38.png)
+
+![Comparison of radiation captured by LABDOS01B and AIRDOS04 prototype](doc/img/LABDOS01B_AIRDOS04_raw_data.png)
+
+
 
 ### Links
   * [Facebook](https://www.facebook.com/balonfik/)
