@@ -51,7 +51,7 @@
 
 ### Flight data
 
-![Screenshots of FIK-9 trajectory just before touch down](doc/img/Screenshot from 2023-12-03 14-17-38.png)
+![Screenshots of FIK-9 trajectory just before touch down](doc/img/FIK-9_landing_trajectory.png)
 
 ![Comparison of radiation captured by LABDOS01B and AIRDOS04 prototype](doc/img/LABDOS01B_AIRDOS04_raw_data.png)
 
