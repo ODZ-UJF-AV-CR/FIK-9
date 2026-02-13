@@ -24,7 +24,7 @@
 
 ### Used Scientific payload
 
- - [AIRDOS04](https://github.com/UniversalScientificTechnologies/AIRDOS04) Prototype
+ - [AIRDOS04A Prototype](https://github.com/UniversalScientificTechnologies/AIRDOS04) 
  - [LABDOS01B](https://github.com/UniversalScientificTechnologies/LABDOS01)
  - [LABDOS01A](https://github.com/UniversalScientificTechnologies/LABDOS01/tree/LABDOS01A)
  - PiTED?
@@ -34,18 +34,18 @@
 ### The used experiment support devices and technologies
 
  - CUAV V5+ FMUv5 with customised PX4 Firmware supporting
-   - [ ] [433 MHz Sik telemetry (one-way TX only)](https://github.com/ThunderFly-aerospace/TFSIK01)
-   - [ ] 868 MHz Lora Telemetry (TX only)
-   - [ ] [TFHT01 Temperature and humidity sensors](https://github.com/ThunderFly-aerospace/TFHT01)
-   - [ ] [TF-ATMON Logging of data from the payload](https://www.thunderfly.cz/tf-atmon.html)
- - [ ] Standalone tracking device
+   - [433 MHz Sik telemetry (one-way TX only firmware)](https://docs.thunderfly.cz/avionics/TFSIK01/)
+   - [868 MHz Lora Telemetry (TX only)](https://docs.thunderfly.cz/avionics/TFLORA01/)
+   - [TFHT01 Temperature and humidity sensors](https://docs.thunderfly.cz/avionics/TFHT01/)
+   - [TF-ATMON Logging of data from the payload](https://docs.thunderfly.cz/instruments/TF-ATMON)
+ - Standalone 433 MHz CW transmitter
 
 ### Design features
 
   * Redundant telemetry link
   * Gondola orientation tracking and logging
   * Reliable IMU sensor processing and calibration
-  * Possible of use relatively high-power payloads
+  * Possible use of relatively high-power payloads
   * Pre-flight continuous charging possible
   * Power monitoring and maximal uptime calculation relevant to actual temperature
 
