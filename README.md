@@ -9,8 +9,8 @@
 
 ### Repo TODO for documenting
 - [ ] Block diagram update
-- [ ] Correct submodule version PX4Firmware FMUv5
-- [ ] Link to the used one-way Sik Modem Firmware 
+- [x] Correct submodule version PX4Firmware FMUv5
+- [x] Link to the used one-way Sik Modem Firmware 
 - [ ] Ground Software description
 - [ ] Rescue cars Software description
 - [ ] Standalone tracking device FW
